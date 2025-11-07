@@ -34,11 +34,16 @@ In this short sprint, you will:
 This lab assumes you have:
 
 * Oracle cloud account and privileges to create & manage Oracle Autonomous AI Database
-* Download the source code from the following GitHub location or use this [link](https://github.com/madhusudhanrao-ppm/dbdevrel/tree/main/create-oracleaidb26ai-devrel/sourcecodes)
+* Download the source code from the following GitHub location or use this direct [link](https://github.com/madhusudhanrao-ppm/dbdevrel/tree/main/create-oracleaidb26ai-devrel/sourcecodes)
 
     ```
-    wget https://github.com/madhusudhanrao-ppm/dbdevrel/tree/bdbc26e25c010e58bb09d8c8e6b9015401ac295c/create-oracleaidb26ai-devrel/sourcecodes
+    git clone https://github.com/madhusudhanrao-ppm/dbdevrel.git
     ```
+
+The **source code** folder has two subfolders 
+
+1. The folder **oracle-lakehouse-devedition-cli** has source code for Terraform command line interface, 
+2. The folder **oracle-lakehouse-devedition-stack** has source code Oracle Resource Manager zip file. you can also directly upload **oracle-lakehouse-devedition-stack.zip** file which has preconfigured values.
  
 ## Create an Oracle Resource Manager Stack
 
