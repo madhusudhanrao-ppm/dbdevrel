@@ -1,11 +1,9 @@
-# How can I create Oracle Autonomous AI Database for Developers with Terraform?
+# How can I create an Oracle Autonomous AI Database for Developers with Terraform?
  
 ## Introduction
 
 Autonomous AI Database for Developers provides you with low cost instances for developers and others to build and test new Autonomous AI Database applications.
-
-Billing for Autonomous AI Database for Developers databases is hourly per instance. [See Autonomous AI Database for Developers Billing and Tenancy Service Limit for details] (https://docs.oracle.com/en-us/iaas/autonomous-database-serverless/doc/autonomous-database-for-developers-billing.html).
-
+ 
 Autonomous AI Database for Developers are low-cost, fixed shape databases intended for development and testing uses cases, and are not recommended for production use cases. When you need more compute or storage resources or you want to take advantage of additional Autonomous AI Database features, you can upgrade your Autonomous AI Database for Developers instance to a full paid service instance.
 
 With Oracle Autonomous AI Database you can work on many tools such as 
@@ -26,50 +24,47 @@ Estimated Time: 2 to 5 minutes (max).
 
 In this short sprint, you will:
  
-* Create Oracle Autonomous AI Database for Developers using Oracle Resource Manager Stack
-* View Oracle Autonomous AI Database and Developer Tools
-* (Optional) Create Oracle Autonomous AI Database for Developers using Oracle Terraform Command Line Interface CLI
-* Cleanup resources created.
+* Create an Oracle Autonomous AI Database for Developers using Oracle Resource Manager Stack.
+* View Oracle Autonomous AI Database and Developer Tools.
+* (Optional) Create Oracle Autonomous AI Database for Developers using Oracle Terraform Command Line Interface CLI.
+* Cleanup the resources created.
 
 ### Prerequisites
 
 This lab assumes you have:
 
 * Oracle cloud account and privileges to create & manage Oracle Autonomous AI Database
-* Download Source code from the following Github location or use this [link](https://github.com/madhusudhanrao-ppm/dbdevrel/tree/main/create-oracleaidb26ai-devrel/sourcecodes)
+* Download the source code from the following GitHub location or use this [link](https://github.com/madhusudhanrao-ppm/dbdevrel/tree/main/create-oracleaidb26ai-devrel/sourcecodes)
 
     ```
     wget https://github.com/madhusudhanrao-ppm/dbdevrel/tree/bdbc26e25c010e58bb09d8c8e6b9015401ac295c/create-oracleaidb26ai-devrel/sourcecodes
     ```
+ 
+## Create an Oracle Resource Manager Stack
 
+1. Create an Autonomous AI Database using the Resource Manager Stack.
 
+    > Please Note: Billing for Autonomous AI Database for Developers databases is hourly per instance. please see more info section
 
-        
-## Create Oracle Resource Manager Stack
-
-1. Download the oracle-lakehouse-devedition-stack.zip file and Create Autonomous AI Database using Resource Manager Stack
-
-2. Login to https://cloud.oracle.com from the top left navigation select **Developer Services** and **Stacks** under **Resource Manager**
+2. Log in to https://cloud.oracle.com from the top left navigation select **Developer Services** and **Stacks** under **Resource Manager**
 
     ![Navigation](images/01-navigation.png )
     
-3. Click on **Create Stack** button. Upload the .zip file 
+3. Click on the **Create Stack** button. Upload the .zip file 
 
     ![Create Stack](images/02-createstack.png )
 
-4. Provide the Stack Information you can also accept the default values provided
+4. Provide the Stack Information. You can also accept the default values provided. Ensure that you select the right compartment, click **Next** button and verify the configuration variables, change the password as you prefer.
     
-    Ensure that you select the right compartment, click next and verify the configuration variables, change the password as you prefer.
-    
-5. Ensure that compartment id is correct, click **Next** button.
+5. Ensure that the compartment id is correct, and click **Next** button.
 
     ![Navigation](images/03-schema.png  )
 
-6. Review Stack Information. Check on **Run Apply** and **Create** button. 
+6. Review Stack Information. Check on **Run apply** and **Create** button. 
 
     ![Apply](images/04-apply.png )
     
-    This will create ORM Job, 
+    This will create ORM (Oracle Resource Manager) Job.
 
     ![ORM Job](images/05-orm.png )
 
@@ -77,11 +72,11 @@ This lab assumes you have:
 
     ![Logs](images/06-logs.png )
 
-8. Our AI Database is now created in 1 min and 15 seconds 
+8. Our AI Database is now created in 1 minute and 15 seconds.  
 
     ![Logs](images/07-logs.png ) 
         
-    > Please Note: Sometimes the time to create might slightly change to 2 and half mins depending on the region and/or internet speed. 
+    > Please Note: Sometimes the time to create might slightly change to 2 and a half mins depending on the region and/or internet speed. 
     
     ORM Job Success message
 
@@ -94,11 +89,11 @@ This lab assumes you have:
     ![ADB view](images/11-adb2.png )
     
     
-2. View the newly created Oracle Auonomous AI Database, with the Developer tag on the right side of name.
+2. View the newly created Oracle Autonomous AI Database, with the Developer tag on the right side of the name.
 
     ![ADB](images/10-adb.png  )
     
-    Click on the link, this will show all the enabled features and Tools
+    Click on the link, which will show all the enabled features and Tools
 
     ![Tools](images/12-alloptions.png  ) 
 
@@ -116,19 +111,19 @@ This lab assumes you have:
 
     ![SQL](images/13-sql.png  )
      
-    From the database actions menu, select View all database actions or select SQL
+    From the database actions menu, select View all database actions or select **SQL**
 
     ![SQL Run](images/14-sql2.png )
     
-    In the SQL Worksheet you can see the default SH Schema already pre created, You can start using this worksheet with an example SQL
+    In the **SQL Worksheet**, you can see the default **SH Schema** already pre-created, You can start using this worksheet with an example SQL
     
         ```
         SELECT * from SH.COUNTRIES
         ```
     
-    Clean up the created resources by going back to the Resource Manager Stack and click on Destroy button.
+    Clean up the created resources by going back to the Resource Manager Stack and clicking on the **Destroy** button.
     
-    Click on Destroy confirmation button.
+    Click on the Destroy confirmation button.
 
 
 ## (Optional) Create Oracle Autonomous AI Database for Developers using Oracle Terraform Command Line Interface CLI
@@ -197,7 +192,7 @@ This lab assumes you have:
 
     Refer [OCI CLI Terraform for Database Creation](https://registry.terraform.io/providers/oracle/oci/latest/docs/resources/database_autonomous_database)
            
-5. Start with terraform initialization
+5. Start with Terraform initialisation
 
  
     ```
@@ -218,14 +213,14 @@ This lab assumes you have:
 
     ![Logs](images/19-tfviewlogs.png )
 
-    The script has completed resource creation in approximately 3 mins. once you have completed using the Oracle Autonomous AI Database 26ai environment. you can destroy the environment
+    The script has completed resource creation in approximately 3 minutes. Once you have completed using the Oracle Autonomous AI Database 26ai environment. You can destroy the environment
   
     > Please note: This approach will be slightly slower than running it through the Oracle resource manager stack zip file upload. as you are connecting from your local laptop to OCI using using terraform command line interface.
   
 
 ## Cleanup resources created
 
-1. Destroy the resources created. If you have used using Oracle Stack by clicking on **Destroy** button.
+1. Destroy the resources created if you have used using Oracle Stack by clicking on the  **Destroy** button.
  
     ![Destroy](images/15-destroy.png  )
 
@@ -256,6 +251,7 @@ This lab assumes you have:
  
 * [Autonomous AI Database for Developers](https://docs.oracle.com/en-us/iaas/autonomous-database-serverless/doc/autonomous-database-for-developers.html) 
 * [Download Source code](https://github.com/madhusudhanrao-ppm/dbdevrel/tree/main/create-oracleaidb26ai-devrel/sourcecodes)
+* [See Autonomous AI Database for Developers Billing and Tenancy Service Limit for details] (https://docs.oracle.com/en-us/iaas/autonomous-database-serverless/doc/autonomous-database-for-developers-billing.html)
 
 ## Acknowledgements
 
