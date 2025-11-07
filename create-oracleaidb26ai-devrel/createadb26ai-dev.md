@@ -34,7 +34,8 @@ In this short sprint, you will:
 This lab assumes you have:
 
 * Oracle cloud account and privileges to create & manage Oracle Autonomous AI Database
-* Download the source code from the following GitHub location or use this direct [link](https://github.com/madhusudhanrao-ppm/dbdevrel/tree/main/create-oracleaidb26ai-devrel/sourcecodes)
+* Option 1: [Direct ORM deployment link](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://objectstorage.us-phoenix-1.oraclecloud.com/p/jtfUsV33KtLR937hWybAgrq8qtuQQuAaIw1K_VBThhlUF6Z1HYF0Ai50sQlp06bQ/n/oradbclouducm/b/medical_transcripts/o/Terraform/oracle-lakehouse-devedition-stack.zip)
+* Option 2: Download the source code from the following GitHub location or use this [GitHub direct link](https://objectstorage.us-phoenix-1.oraclecloud.com/p/jtfUsV33KtLR937hWybAgrq8qtuQQuAaIw1K_VBThhlUF6Z1HYF0Ai50sQlp06bQ/n/oradbclouducm/b/medical_transcripts/o/Terraform/oracle-lakehouse-devedition-stack.zip)
 
     ```
     git clone https://github.com/madhusudhanrao-ppm/dbdevrel.git
@@ -44,6 +45,7 @@ The **source code** folder has two subfolders
 
 1. The folder **oracle-lakehouse-devedition-cli** has source code for Terraform command line interface, 
 2. The folder **oracle-lakehouse-devedition-stack** has source code Oracle Resource Manager zip file. you can also directly upload **oracle-lakehouse-devedition-stack.zip** file which has preconfigured values.
+
  
 ## Create an Oracle Resource Manager Stack
 
