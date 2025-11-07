@@ -38,7 +38,11 @@ This lab assumes you have:
 * Option 2: Download the source code from the following GitHub location or use this [GitHub direct link](https://objectstorage.us-phoenix-1.oraclecloud.com/p/jtfUsV33KtLR937hWybAgrq8qtuQQuAaIw1K_VBThhlUF6Z1HYF0Ai50sQlp06bQ/n/oradbclouducm/b/medical_transcripts/o/Terraform/oracle-lakehouse-devedition-stack.zip)
 
     ```
+    -- Clone the GitHub Repo
     git clone https://github.com/madhusudhanrao-ppm/dbdevrel.git
+
+    -- GitHub Repo web link
+    https://github.com/madhusudhanrao-ppm/dbdevrel/tree/main/create-oracleaidb26ai-devrel
     ```
 
 The **source code** folder has two subfolders 
