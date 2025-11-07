@@ -4,9 +4,21 @@
 
 Autonomous AI Database for Developers provides you with low cost instances for developers and others to build and test new Autonomous AI Database applications.
 
-Billing for Autonomous AI Database for Developers databases is hourly per instance. See Autonomous AI Database for Developers Billing and Tenancy Service Limit for details.
+Billing for Autonomous AI Database for Developers databases is hourly per instance. [See Autonomous AI Database for Developers Billing and Tenancy Service Limit for details] (https://docs.oracle.com/en-us/iaas/autonomous-database-serverless/doc/autonomous-database-for-developers-billing.html).
 
 Autonomous AI Database for Developers are low-cost, fixed shape databases intended for development and testing uses cases, and are not recommended for production use cases. When you need more compute or storage resources or you want to take advantage of additional Autonomous AI Database features, you can upgrade your Autonomous AI Database for Developers instance to a full paid service instance.
+
+With Oracle Autonomous AI Database you can work on many tools such as 
+
+* Oracle APEX
+* Database Actions
+* Graph Studio
+* Oracle Machine Learning user interface
+* Data Transforms
+* Web Access (ORDS)
+* MongoDB API 
+* Data Lake Accelerator  
+* SODA Drivers
 
 Estimated Time: 2 to 5 minutes (max).  
  
@@ -24,6 +36,14 @@ In this short sprint, you will:
 This lab assumes you have:
 
 * Oracle cloud account and privileges to create & manage Oracle Autonomous AI Database
+* Download Source code from the following Github location or use this [link](https://github.com/madhusudhanrao-ppm/dbdevrel/tree/main/create-oracleaidb26ai-devrel/sourcecodes)
+
+    ```
+    wget https://github.com/madhusudhanrao-ppm/dbdevrel/tree/bdbc26e25c010e58bb09d8c8e6b9015401ac295c/create-oracleaidb26ai-devrel/sourcecodes
+    ```
+
+
+
         
 ## Create Oracle Resource Manager Stack
 
@@ -89,8 +109,7 @@ This lab assumes you have:
     * Data Transforms
     * Web Access (ORDS)
     * MongoDB API 
-    * Data Lake Accelerator 
-    * MongoDB APi
+    * Data Lake Accelerator  
     * SODA Drivers
 
 3. Copy the link and open the required tools.
@@ -233,9 +252,10 @@ This lab assumes you have:
 <b>Duration:</b> 2 minutes 
   
 
-## Learn More
+## Learn More & Downloads
  
 * [Autonomous AI Database for Developers](https://docs.oracle.com/en-us/iaas/autonomous-database-serverless/doc/autonomous-database-for-developers.html) 
+* [Download Source code](https://github.com/madhusudhanrao-ppm/dbdevrel/tree/main/create-oracleaidb26ai-devrel/sourcecodes)
 
 ## Acknowledgements
 
