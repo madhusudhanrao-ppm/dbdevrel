@@ -27,7 +27,7 @@ In this short sprint, you will:
 * Create an Oracle Autonomous AI Database for Developers using Oracle Resource Manager Stack.
 * View Oracle Autonomous AI Database and Developer Tools.
 * (Optional) Create Oracle Autonomous AI Database for Developers using Oracle Terraform Command Line Interface CLI.
-* (Optional) Download Connection Details, View Source and Create Database User
+* (Optional) Download Database Wallet, Note Connection Details and Create Database User
 * Cleanup the resources created.
 
 ### Prerequisites
@@ -229,7 +229,7 @@ The **source code** folder has two subfolders
   
     > Please note: This approach will be slightly slower than running it through the Oracle resource manager stack zip file upload. as you are connecting from your local laptop to OCI using using terraform command line interface.
   
-## (Optional) Download Connection Details, View Source and Create Database User
+## (Optional) Download database wallet, Note connection details and Create database user
 
 1. From the top right navigation menu click on **Database Connection** button
 
@@ -290,18 +290,18 @@ The **source code** folder has two subfolders
     -- Enter yes for confirmation 
  
 
-## Try Live SQL
+## (Optional) Try Live SQL
  
 <livesql-button src="https://livesql.oracle.com/next/worksheet?tutorial=json-duality-views-quick-start-D3wdHG&share_key=jCX1875rL3">
 
 <b>Live SQL Execution:</b> Sign-In Required</br>
 <b>Duration:</b> 2 minutes 
-  
-
+   
 ## Learn More & Downloads
  
 * [Autonomous AI Database for Developers](https://docs.oracle.com/en-us/iaas/autonomous-database-serverless/doc/autonomous-database-for-developers.html) 
 * [Download Source code](https://github.com/madhusudhanrao-ppm/dbdevrel/tree/main/create-oracleaidb26ai-devrel/sourcecodes)
+* [Direct ORM deployment link](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://objectstorage.us-phoenix-1.oraclecloud.com/p/jtfUsV33KtLR937hWybAgrq8qtuQQuAaIw1K_VBThhlUF6Z1HYF0Ai50sQlp06bQ/n/oradbclouducm/b/medical_transcripts/o/Terraform/oracle-lakehouse-devedition-stack.zip)
 * [See Autonomous AI Database for Developers Billing and Tenancy Service Limit for details] (https://docs.oracle.com/en-us/iaas/autonomous-database-serverless/doc/autonomous-database-for-developers-billing.html)
 
 ## Acknowledgements
