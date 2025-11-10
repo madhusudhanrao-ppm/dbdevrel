@@ -27,6 +27,7 @@ In this short sprint, you will:
 * Create an Oracle Autonomous AI Database for Developers using Oracle Resource Manager Stack.
 * View Oracle Autonomous AI Database and Developer Tools.
 * (Optional) Create Oracle Autonomous AI Database for Developers using Oracle Terraform Command Line Interface CLI.
+* (Optional) Download Connection Details, View Source and Create Database User
 * Cleanup the resources created.
 
 ### Prerequisites
@@ -35,13 +36,13 @@ This lab assumes you have:
 
 * Oracle cloud account and privileges to create & manage Oracle Autonomous AI Database
 * Option 1: [Direct ORM deployment link](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://objectstorage.us-phoenix-1.oraclecloud.com/p/jtfUsV33KtLR937hWybAgrq8qtuQQuAaIw1K_VBThhlUF6Z1HYF0Ai50sQlp06bQ/n/oradbclouducm/b/medical_transcripts/o/Terraform/oracle-lakehouse-devedition-stack.zip)
-* Option 2: Download the source code from the following GitHub location or use this [GitHub direct link](https://objectstorage.us-phoenix-1.oraclecloud.com/p/jtfUsV33KtLR937hWybAgrq8qtuQQuAaIw1K_VBThhlUF6Z1HYF0Ai50sQlp06bQ/n/oradbclouducm/b/medical_transcripts/o/Terraform/oracle-lakehouse-devedition-stack.zip)
+* Option 2: Download the source code from the following GitHub location or use this [.zip file direct download link](https://objectstorage.us-phoenix-1.oraclecloud.com/p/jtfUsV33KtLR937hWybAgrq8qtuQQuAaIw1K_VBThhlUF6Z1HYF0Ai50sQlp06bQ/n/oradbclouducm/b/medical_transcripts/o/Terraform/oracle-lakehouse-devedition-stack.zip)
 
     ```
     -- Clone the GitHub Repo
     git clone https://github.com/madhusudhanrao-ppm/dbdevrel.git
-
-    -- GitHub Repo web link
+ 
+    -- GitHub Repo
     https://github.com/madhusudhanrao-ppm/dbdevrel/tree/main/create-oracleaidb26ai-devrel
     ```
 
@@ -228,6 +229,45 @@ The **source code** folder has two subfolders
   
     > Please note: This approach will be slightly slower than running it through the Oracle resource manager stack zip file upload. as you are connecting from your local laptop to OCI using using terraform command line interface.
   
+## (Optional) Download Connection Details, View Source and Create Database User
+
+1. From the top right navigation menu click on **Database Connection** button
+
+    ![DB Conn](images/db-conn.png  )
+
+2. Download wallet
+
+    ![Wallet](images/download-wallet.png  ) 
+
+    Provide wallet password and save the wallet.
+
+3. Copy and save TNS Name, which would be of the following format, where database name and region will change. we will need this details for database connection. 
+
+    ```
+    devdbhs556l_high = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.us-phoenix-1.oraclecloud.com))(connect_data=(service_name=wkrfs4xeqva1jcu_devdbhs556l_high.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
+    ```
+
+    <!-- ```
+    devdbhs7g6l_high = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.us-phoenix-1.oraclecloud.com))(connect_data=(service_name=wkrfs4xeqva1jcu_devdbhs7g6l_high.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
+
+    DEMOUSER/Welcome123456#
+    ``` -->
+
+4. Create Database user by clicking on **Database Actions** Menu and **Database Users**
+
+    ![Create User](images/create-user.png  )
+
+    Click on create user button 
+
+    ![Create User2](images/create-user2.png  )
+
+    Provide user name and password and select user options
+
+    ![Destroy](images/user-options.png  )
+  
+5.  Update **Granted Roles** as required by your application and **Apply Changes** . 
+  
+    ![Destroy](images/role-grants.png  )
 
 ## Cleanup resources created
 
