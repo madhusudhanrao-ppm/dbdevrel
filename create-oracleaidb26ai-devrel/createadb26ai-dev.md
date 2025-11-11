@@ -30,6 +30,8 @@ In this short sprint, you will:
 * (Optional) Download Database Wallet, Note Connection Details and Create Database User
 * Cleanup the resources created.
 
+    [Demo video on Create Oracle Autonomous AI Database](youtube:V2PETW_F7XI:large) 
+
 ### Prerequisites
 
 This lab assumes you have:
@@ -53,7 +55,7 @@ The **source code** folder has two subfolders
 
  
 ## Create an Oracle Resource Manager Stack
-
+  
 1. Create an Autonomous AI Database using the Resource Manager Stack.
 
     > Please Note: Billing for Autonomous AI Database for Developers databases is hourly per instance. please see more info section
