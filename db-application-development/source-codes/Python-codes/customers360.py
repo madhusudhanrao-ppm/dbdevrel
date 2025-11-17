@@ -2,7 +2,7 @@ import oracledb
 
 # database username and password  
 username = "DEMOUSER"
-user_pwd = "Welcome123456#"
+user_pwd = "<Your-Password>"
 
 # connection string copied from Lab 1, Task 5. or copy paste connection string from above step.
 # oracledb.exceptions.OperationalError: DPY-6005: cannot connect to database (CONNECTION_ID=GfCDL1AKMXB51k6T6e1waQ==).

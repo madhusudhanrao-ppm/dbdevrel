@@ -32,11 +32,15 @@
             "filename": "../../nodedb-development/nodedb-development.md"
         }, 
         {
-            "title": "Lab 5: Develop Java Applications",
+            "title": "Lab 5: Develop React.js Applications",
+            "filename": "../../reactjs/reactjs.md"
+        }, 
+        {
+            "title": "Lab 6: Develop Java Applications",
             "filename": "../../javadb-development/javadb-development.md"
         }, 
         {
-            "title": "Lab 6: Develop .NET Applications",
+            "title": "Lab 7: Develop .NET Applications",
             "filename": "../../dotnet-development/dotnet-development.md"
         }  
     ]

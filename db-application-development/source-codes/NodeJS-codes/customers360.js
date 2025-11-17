@@ -35,7 +35,7 @@ async function run() {
       try {
             connection = await oracledb.getConnection({
                   user: "DEMOUSER",
-                  password: "Welcome123456#",
+                  password: "<Your-Password>",
                   connectionString: "(description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.ap-mumbai-1.oraclecloud.com))(connect_data=(service_name=r9nv7ifxzvf7rhn_indeducation_high.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))",
             });
 

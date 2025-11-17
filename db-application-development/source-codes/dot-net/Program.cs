@@ -8,7 +8,7 @@ namespace ODP.NET_Core_Autonomous
             static void Main(string[] args)
             {  
 
-                  string conString = "User Id=DEMOUSER;Password=Welcome123456#;Data Source=indeducation_high;Connection Timeout=30;";
+                  string conString = "User Id=DEMOUSER;Password=<Your-Password>;Data Source=indeducation_high;Connection Timeout=30;";
                   using (OracleConnection con = new OracleConnection(conString))
                   {
                         using (OracleCommand cmd = con.CreateCommand())

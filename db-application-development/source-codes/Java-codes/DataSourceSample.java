@@ -21,7 +21,7 @@ public class DataSourceSample {
       // In case of windows, use the following URL 
       // final static String DB_URL="jdbc:oracle:thin:@wallet_dbname?TNS_ADMIN=C:/Users/test/wallet_dbname";
       final static String DB_USER = "DEMOUSER";
-      final static String DB_PASSWORD = "Welcome123456#";
+      final static String DB_PASSWORD = "<Your-Password>";
 
       /*
       * The method gets a database connection using 

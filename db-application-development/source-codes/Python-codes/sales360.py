@@ -2,7 +2,7 @@ import oracledb
 
 # database username and password 
 username = "DEMOUSER"
-user_pwd = "Welcome123456#"
+user_pwd = "<Your-Password>"
 
 # for example
 # username = "demouser"
