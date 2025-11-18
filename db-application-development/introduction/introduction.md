@@ -12,7 +12,11 @@ One could extend the Architecture to use microservices to connect and communicat
 
 This workshop will demonstrate running SQL queries from Python, Node.js, Java, and .NET to connect with an Oracle Autonomous Database using a wallet or through a wallet-less connection.
 
-![Polyglot Architecture](images/polyglot-architecture-v2.png)
+![Polyglot Architecture](images/polyglotnew.jpeg)
+<!-- 
+Architecture
+
+![Polyglot Architecture](images/polyglot-architecture-v2.png) -->
 
 Estimated Time:  1 hour 30 mins
 
@@ -20,9 +24,9 @@ Estimated Time:  1 hour 30 mins
 
 The objective of this workshop is:
 
-* Create and configure an Autonomous Database to allow application access.
-* Develop Polyglot database applications using Node.js, Python, Java and .NET
-* Run SQL queries on an Autonomous Database.
+* Create and configure an Oracle Autonomous AI Database to allow application access.
+* Develop Database applications using Node.js, React.js, Python, Streamlit with Python, Java and .NET
+* Run SQL queries on an Oracle Autonomous AI Database.
 
 ### Prerequisites
 
@@ -41,4 +45,4 @@ The objective of this workshop is:
     - Alex Keh, Senior Principal Product Manager.
     - Christian Shay, Senior Principal Product Manager.
     - Sharad Chandran R, Principal Product Manager 
-* **Last Updated By/Date** -  Madhusudhan Rao, Nov 12th, 2025
+* **Last Updated By/Date** -  Madhusudhan Rao, Nov 18th, 2025
