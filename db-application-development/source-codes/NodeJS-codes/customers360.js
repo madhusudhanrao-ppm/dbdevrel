@@ -36,7 +36,7 @@ async function run() {
             connection = await oracledb.getConnection({
                   user: "DEMOUSER",
                   password: "<Your-Password>",
-                  connectionString: "(description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.ap-mumbai-1.oraclecloud.com))(connect_data=(service_name=r9nv7ifxzvf7rhn_indeducation_high.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))",
+                  connectionString: "(description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.ap-mumbai-1.oraclecloud.com))(connect_data=(service_name=r9nvxxxrhn_indeducation_high.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))",
             });
 
             console.log("Connected to DB and select from customers360 table");
