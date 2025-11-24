@@ -12,11 +12,11 @@ user_pwd = "<Your-Password>"
 #wall_config_dir = "/<path_to_config_folder_mywalletfiles>"
 
 # for example here mywalletfiles folder contains extracted zip file
-wall_config_dir = "/Users/madhusudhanrao/Workarea/Wallets_welcome1/Wallet_IndEducation"
+wall_config_dir = "/Wallets_welcome1/Wallet_IndEducation"
 
 # wallet password 
 #wall_pwd = "<wallet_password>"
-wall_pwd = "welcome1"
+wall_pwd = "<Your-Password>"
 
 # connection string name for example demoadw_high
 # please check tnsnames.ora file in your database wallet to get tns_name 

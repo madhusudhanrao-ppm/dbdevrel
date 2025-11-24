@@ -16,7 +16,7 @@ public class DataSourceSample {
       //final static String DB_URL= "jdbc:oracle:thin:@myhost:1521/myorcldbservicename";
       // For ATP and ADW - use the TNS Alias name along with the TNS_ADMIN when using 18.3 JDBC driver
       // Please refer Lab 1 on how to get TNS Names
-      final static String DB_URL="jdbc:oracle:thin:@indeducation_high?TNS_ADMIN=/Users/madhusudhanrao/Workarea/Wallets_welcome1/Wallet_IndEducation";
+      final static String DB_URL="jdbc:oracle:thin:@indeducation_high?TNS_ADMIN=/Wallets_welcome1/Wallet_IndEducation";
       // final static String DB_URL="jdbc:oracle:thin:@adbdw110612_high?TNS_ADMIN=/Users/username/Workarea/Polyglot/wallet/Wallet_ADBDW110612";
       // In case of windows, use the following URL 
       // final static String DB_URL="jdbc:oracle:thin:@wallet_dbname?TNS_ADMIN=C:/Users/test/wallet_dbname";

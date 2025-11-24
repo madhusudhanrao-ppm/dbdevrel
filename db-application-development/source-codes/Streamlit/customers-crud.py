@@ -6,10 +6,10 @@ import pandas as pd
 # Oracle database connection settings
 username = 'DEMOUSER'
 password = 'Welcome123456#'
-dsn = '(description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.ap-mumbai-1.oraclecloud.com))(connect_data=(service_name=r9nv7ifxzvf7rhn_indeducation_high.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))'
+dsn = '(description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.ap-mumbai-1.oraclecloud.com))(connect_data=(service_name=r9nv7ixxxxhn_indeducation_high.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))'
 tns_name = "indeducation_high"
-wall_config_dir = "/Users/madhusudhanrao/Workarea/Wallets_welcome1/Wallet_IndEducation" 
-wall_pwd = "welcome1"
+wall_config_dir = "/Wallets_welcome1/Wallet_IndEducation" 
+wall_pwd = "<Your-Password>"
 
 # Create a connection to the Oracle database
 def create_connection():

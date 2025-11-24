@@ -16,9 +16,9 @@ namespace ODP.NET_Core_Autonomous
                         try
                         {
                               //Enter directory where the tnsnames.ora and sqlnet.ora files are located
-                              OracleConfiguration.TnsAdmin = @"/Users/madhusudhanrao/Workarea/Wallets_welcome1/Wallet_IndEducation";  
+                              OracleConfiguration.TnsAdmin = @"/Wallets_welcome1/Wallet_IndEducation";  
                               //Enter directory where wallet is stored locally
-                              OracleConfiguration.WalletLocation = @"/Users/madhusudhanrao/Workarea/Wallets_welcome1/Wallet_IndEducation";
+                              OracleConfiguration.WalletLocation = @"/Wallets_welcome1/Wallet_IndEducation";
                               con.Open();
                               Console.WriteLine("Successfully connected to Oracle Autonomous Database");
                               cmd.CommandText = "select CUST_FIRST_NAME, CUST_LAST_NAME, CUST_CITY, CUST_CREDIT_LIMIT " +

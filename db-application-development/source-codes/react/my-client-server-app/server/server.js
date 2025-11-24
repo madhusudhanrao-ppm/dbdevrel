@@ -9,7 +9,7 @@ app.use(express.json());
 const dbConfig = {
   user: 'DEMOUSER',
   password: '<Your-Password>',
-  connectString: '(description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.ap-mumbai-1.oraclecloud.com))(connect_data=(service_name=r9nv7ifxzvf7rhn_indeducation_high.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))',
+  connectString: '(description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.ap-mumbai-1.oraclecloud.com))(connect_data=(service_name=r9nvxxxx7rhn_indeducation_high.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))',
 };
   
 oracledb.autoCommit = true;
