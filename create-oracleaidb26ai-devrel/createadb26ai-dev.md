@@ -45,7 +45,7 @@ This lab assumes you have:
     git clone https://github.com/madhusudhanrao-ppm/dbdevrel.git
  
     -- GitHub Repo
-    https://github.com/madhusudhanrao-ppm/dbdevrel/tree/main/create-oracleaidb26ai-devrel
+    https://github.com/madhusudhanrao-ppm/dbdevrel/tree/main/source-codes/create-adb-terraform
     ```
 
 The **source code** folder has two subfolders 
