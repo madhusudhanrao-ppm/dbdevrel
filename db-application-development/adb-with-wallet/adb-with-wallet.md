@@ -20,6 +20,10 @@ With Oracle Autonomous AI Database you can work on many tools such as
 
 This lab walks you through the steps to get started using the Oracle Autonomous Database on Oracle Cloud. You will provision a new Autonomous Data Warehouse instance.  
 
+[Terraform source code download](https://github.com/madhusudhanrao-ppm/dbdevrel/tree/main/source-codes/create-adb-terraform)
+
+[Application source code download](https://github.com/madhusudhanrao-ppm/dbdevrel/tree/main/source-codes/db-applications)
+
 Estimated Time: 20 minutes
 
 [Demo video on Create Oracle Autonomous AI Database](youtube:V2PETW_F7XI:large) 
