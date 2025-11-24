@@ -34,7 +34,7 @@ The objective of this workshop is:
 
 ### Source code download
 
-* You can download source code from the following [GitHub location](https://github.com/madhusudhanrao-ppm/dbdevrel/tree/main/db-application-development/source-codes) 
+* You can download source code from the following [GitHub location](https://github.com/madhusudhanrao-ppm/dbdevrel/tree/main/source-codes/db-applications) 
 
 ## Acknowledgements
 
