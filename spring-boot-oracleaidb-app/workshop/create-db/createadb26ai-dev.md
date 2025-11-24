@@ -131,9 +131,9 @@ The **source code** folder has two subfolders
     
     In the **SQL Worksheet**, you can see the default **SH Schema** already pre-created, You can start using this worksheet with an example SQL
     
-        ```
-        SELECT * from SH.COUNTRIES
-        ```
+    ```
+    SELECT * from SH.COUNTRIES
+    ```
     
     Clean up the created resources by going back to the Resource Manager Stack and clicking on the **Destroy** button.
     
