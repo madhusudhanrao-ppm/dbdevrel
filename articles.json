@@ -1,0 +1,135 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Video Analysis with OCI Vision AI Services & Oracle AI Database 26ai",
+      "description": "AI-driven video analysis is no longer limited to complex, high-cost solutions.  With Oracle AI Vision Service, developers can harness pre-built machine learning models to analyze videos,  detect objects & text, identify scenes, and extract metadata—all through simple, scalable APIs. ",
+      "image": "images/001l.jpeg",
+      "url": "https://www.linkedin.com/pulse/video-analysis-oci-vision-ai-services-oracle-database-madhusudhan-rao-erdof/", 
+      "technologies": "#OracleAIDatabase26ai #OracleAPEX #OracleAIVision #VisionAI #GenerativeAI #OracleGenAI #OracleDatabase",
+      "buttonlabel": "Video Analysis with OCI Vision AI"
+    },
+    {
+      "id": 2,
+      "title": "Create a Streamlit Python and ReactJS Oracle AI Database Applications for CRUD operations",
+      "description": "A Step-by-Step Guide to Building a Full-Stack Application. In this article, we'll take you on a journey to build a full-stack application using Oracle Cloud, React.js, and Streamlit. We'll cover everything from setting up the Cockpit web console and monitoring invalid login attempts to creating a simple Streamlit application for CRUD operations on a Customers table.",
+      "image": "images/002l.jpeg",
+      "url": "https://www.linkedin.com/pulse/oracle-database-developer-series-2-create-streamlit-madhusudhan-rao-aiwnf/",
+      "technologies": "#OracleAutonomousAIDatabase #Streamlit #Python #ReactJS #OracleAutonomousLinux #Python-oracledb #OracleDatabase23ai #OracleAIDatabase26ai #MCP",
+      "buttonlabel": "Streamlit Python and ReactJS AI Database App"
+    },
+    {
+      "id": 3,
+      "title": "How to Install Oracle AI Database 26ai & 23ai on OCI Autonomous Linux",
+      "description": "A Step-by-Step Guide to Installation and Setup This article provides a comprehensive walkthrough on setting up Oracle Database 23ai Free & Oracle AI Database 26ai from scratch. From creating a Compute Instance and configuring your network to installing SQL Developer and connecting to your database, we'll guide you through every step of the process. Follow along as we explore the world of Oracle Database 23ai, and get ready to unlock the full potential of your data management needs..",
+      "image": "images/003l.jpeg",
+      "url": "https://www.linkedin.com/pulse/oracle-database-developer-series-1-how-install-23ai-madhusudhan-rao-tirsf",
+      "technologies": "#OracleDatabase23ai #OracleAIDatabase26ai #DatabaseDevelopers #OCI #ApplicationDevelopers",
+      "buttonlabel": "Install Oracle AI Database 26ai & 23ai"
+    },
+    {
+      "id": 4,
+      "title": "Enhancing Customer Support with Oracle AI Services and Oracle APEX",
+      "description": "Discover how to leverage Oracle AI Services and Oracle APEX to improve customer support...",
+      "image": "images/004l.jpeg",
+      "url": "https://www.linkedin.com/pulse/enhancing-customer-support-oracle-ai-services-apex-madhusudhan-rao/",
+      "technologies": "#CustomerSupport #OracleAI #OracleAPEX"
+    },  
+    {
+      "id": 5,
+      "title": "Automating Document Processing with Oracle AI Services and Oracle APEX",
+      "description": "Learn how to automate document processing using Oracle AI Services and Oracle APEX...",
+      "image": "images/005l.jpeg",
+      "url": "https://www.linkedin.com/pulse/automating-document-processing-oracle-ai-services-apex-madhusudhan-rao/",
+      "technologies": "#DocumentProcessing #OracleAI #OracleAPEX"
+    },
+    {
+      "id": 6,
+      "title": "Sentiment Analysis in Oracle APEX using Oracle AI Services",
+      "description": "Implement sentiment analysis in your Oracle APEX applications using Oracle AI Services...",
+      "image": "images/006l.jpeg",
+      "url": "https://www.linkedin.com/pulse/sentiment-analysis-oracle-apex-using-ai-services-madhusudhan-rao/",
+      "technologies": "#SentimentAnalysis #OracleAI #OracleAPEX"
+    },
+    {
+      "id": 7,
+      "title": "Building a Chatbot with Oracle APEX and Oracle AI Services",
+      "description": "Create an intelligent chatbot using Oracle APEX and Oracle AI Services to enhance user interaction...",
+      "image": "images/007l.jpeg",
+      "url": "https://www.linkedin.com/pulse/building-chatbot-oracle-apex-ai-services-madhusudhan-rao/",
+      "technologies": "#Chatbot #OracleAI #OracleAPEX"
+    },
+    {
+      "id": 8,
+      "title": "Image Recognition in Oracle APEX using Oracle AI Services",
+      "description": "Integrate image recognition capabilities into your Oracle APEX applications using Oracle AI Services...",
+      "image": "images/008l.jpeg",
+      "url": "https://www.linkedin.com/pulse/image-recognition-oracle-apex-using-ai-services-madhusudhan-rao/",
+      "technologies": "#ImageRecognition #OracleAI #OracleAPEX"
+    },
+    {
+      "id": 9,
+      "title": "Natural Language Processing in Oracle APEX with Oracle AI Services",
+      "description": "Leverage natural language processing capabilities in your Oracle APEX applications using Oracle AI Services...",
+      "image": "images/009l.jpeg",
+      "url": "https://www.linkedin.com/pulse/natural-language-processing-oracle-apex-ai-services-madhusudhan-rao/",
+      "technologies": "#NLP #OracleAI #OracleAPEX"
+    },
+    {
+      "id": 10,
+      "title": "Predictive Analytics in Oracle APEX using Oracle AI Services",
+      "description": "Implement predictive analytics in your Oracle APEX applications using Oracle AI Services...",
+      "image": "images/010l.jpeg",
+      "url": "https://www.linkedin.com/pulse/predictive-analytics-oracle-apex-using-ai-services-madhusudhan-rao/",
+      "technologies": "#PredictiveAnalytics #OracleAI #OracleAPEX"
+    },
+    {
+      "id": 11,
+      "title": "Voice Recognition in Oracle APEX using Oracle AI Services",
+      "description": "Integrate voice recognition capabilities into your Oracle APEX applications using Oracle AI Services...",
+      "image": "images/011l.jpeg",
+      "url": "https://www.linkedin.com/pulse/voice-recognition-oracle-apex-using-ai-services-madhusudhan-rao/",
+      "technologies": "#VoiceRecognition #OracleAI #OracleAPEX"
+    },
+    {
+      "id": 12,
+      "title": "Fraud Detection in Oracle APEX using Oracle AI Services",
+      "description": "Implement fraud detection mechanisms in your Oracle APEX applications using Oracle AI Services...",
+      "image": "images/012l.jpeg",
+      "url": "https://www.linkedin.com/pulse/fraud-detection-oracle-apex-using-ai-services-madhusudhan-rao/",
+      "technologies": "#FraudDetection #OracleAI #OracleAPEX"
+    },
+    {
+      "id": 13,
+      "title": "Recommendation Systems in Oracle APEX using Oracle AI Services",
+      "description": "Build recommendation systems in your Oracle APEX applications using Oracle AI Services...",
+      "image": "images/013l.jpeg",
+      "url": "https://www.linkedin.com/pulse/recommendation-systems-oracle-apex-using-ai-services-madhusudhan-rao/",
+      "technologies": "#RecommendationSystems #OracleAI #OracleAPEX"
+    },
+    {
+      "id": 14,
+      "title": "Time Series Forecasting in Oracle APEX using Oracle AI Services",
+      "description": "Implement time series forecasting in your Oracle APEX applications using Oracle AI Services...",
+      "image": "images/014l.jpeg",
+      "url": "https://www.linkedin.com/pulse/time-series-forecasting-oracle-apex-using-ai-services-madhusudhan-rao/",
+      "technologies": "#TimeSeriesForecasting #OracleAI #OracleAPEX"
+    },
+    {
+      "id": 15,
+      "title": "Anomaly Detection in Oracle APEX using Oracle AI Services",
+      "description": "Detect anomalies in your data using Oracle AI Services integrated with Oracle APEX...",
+      "image": "images/015l.jpeg",
+      "url": "https://www.linkedin.com/pulse/anomaly-detection-oracle-apex-using-ai-services-madhusudhan-rao/",
+      "technologies": "#AnomalyDetection #OracleAI #OracleAPEX"
+    },
+    {
+      "id": 16,
+      "title": "Optical Character Recognition (OCR) in Oracle APEX using Oracle AI Services",
+      "description": "Incorporate OCR capabilities into your Oracle APEX applications using Oracle AI Services...",
+      "image": "images/016l.jpeg",
+      "url": "https://www.linkedin.com/pulse/optical-character-recognition-             ocr-oracle-apex-using-ai-madhusudhan-rao/",
+      "technologies": "#OCR #OracleAI #OracleAPEX"
+    } 
+  ]
+}
