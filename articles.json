@@ -7,7 +7,8 @@
       "image": "images/001l.jpeg",
       "url": "https://www.linkedin.com/pulse/video-analysis-oci-vision-ai-services-oracle-database-madhusudhan-rao-erdof/", 
       "technologies": "#OracleAIDatabase26ai #OracleAPEX #OracleAIVision #VisionAI #GenerativeAI #OracleGenAI #OracleDatabase",
-      "buttonlabel": "Video Analysis with OCI Vision AI"
+      "buttonlabel": "Video Analysis with OCI Vision AI",
+      "section": "Oracle AI Services"
     },
     {
       "id": 2,
@@ -16,7 +17,8 @@
       "image": "images/002l.jpeg",
       "url": "https://www.linkedin.com/pulse/oracle-database-developer-series-2-create-streamlit-madhusudhan-rao-aiwnf/",
       "technologies": "#OracleAutonomousAIDatabase #Streamlit #Python #ReactJS #OracleAutonomousLinux #Python-oracledb #OracleDatabase23ai #OracleAIDatabase26ai #MCP",
-      "buttonlabel": "Streamlit Python and ReactJS AI Database App"
+      "buttonlabel": "Streamlit Python and ReactJS AI Database App",
+      "section": "Oracle AI Database - Developer Applications"
     },
     {
       "id": 3,
@@ -25,111 +27,449 @@
       "image": "images/003l.jpeg",
       "url": "https://www.linkedin.com/pulse/oracle-database-developer-series-1-how-install-23ai-madhusudhan-rao-tirsf",
       "technologies": "#OracleDatabase23ai #OracleAIDatabase26ai #DatabaseDevelopers #OCI #ApplicationDevelopers",
-      "buttonlabel": "Install Oracle AI Database 26ai & 23ai"
+      "buttonlabel": "Install Oracle AI Database 26ai & 23ai",
+      "section": "Oracle AI Database"
     },
     {
       "id": 4,
-      "title": "Enhancing Customer Support with Oracle AI Services and Oracle APEX",
-      "description": "Discover how to leverage Oracle AI Services and Oracle APEX to improve customer support...",
+      "title": "MCP Toolbox - Write your own MCP Servers and MCP Server with Oracle Generative AI",
+      "description": "Are you ready to dive into the world of MCP and unlock its full potential? In this hands-on tutorial, we'll take you on a journey to build, deploy, and manage your own MCP servers. From setting up your development environment to deploying on cloud platforms, we'll cover it all. Follow along as we create everything from simple \"Hello World\" servers to functional calculators, and learn how to integrate MCP with popular tools like Claude desktop. Let's get started and explore the exciting possibilities of MCP! We will also create MCP Server with Oracle Generative AI and integrate that with Claude Desktop.",
       "image": "images/004l.jpeg",
-      "url": "https://www.linkedin.com/pulse/enhancing-customer-support-oracle-ai-services-apex-madhusudhan-rao/",
-      "technologies": "#CustomerSupport #OracleAI #OracleAPEX"
+      "url": "https://www.linkedin.com/pulse/mcp-toolbox-write-your-own-servers-concepts-web-inspector-rao-verpf",
+      "technologies": "#CustomerSupport #OracleAI #OracleAPEX",
+      "buttonlabel": "MCP Toolbox Write your own MCP Servers",
+      "section": "Oracle AI Services"
     },  
     {
       "id": 5,
-      "title": "Automating Document Processing with Oracle AI Services and Oracle APEX",
-      "description": "Learn how to automate document processing using Oracle AI Services and Oracle APEX...",
+      "title": "Unlocking the Power of Model Context Protocol (MCP) and Oracle Database 23ai",
+      "description": "n this article, we'll explore the innovative world of Model Context Protocol (MCP) and its seamless integration with Oracle Database 23ai. We'll dive into the exciting possibilities of leveraging MCP to streamline development workflows, enhance productivity, and unlock new insights from your data.",
       "image": "images/005l.jpeg",
-      "url": "https://www.linkedin.com/pulse/automating-document-processing-oracle-ai-services-apex-madhusudhan-rao/",
-      "technologies": "#DocumentProcessing #OracleAI #OracleAPEX"
+      "url": "https://www.linkedin.com/pulse/unlocking-power-model-context-protocol-mcp-oracle-database-rao-l2hsf",
+      "technologies": "#MCP, #OracleDatabase23ai, #SQLcl , #Claude #GitHub #Copilot. ",
+      "buttonlabel": "Power of MCP and Oracle Database 23ai",
+      "section": "Oracle AI Services"
     },
     {
       "id": 6,
-      "title": "Sentiment Analysis in Oracle APEX using Oracle AI Services",
-      "description": "Implement sentiment analysis in your Oracle APEX applications using Oracle AI Services...",
+      "title": "Streamlining Data Migration: Snowflake to Oracle Database 23ai",
+      "description": "In today's data-driven landscape, organizations are constantly seeking efficient ways to migrate and integrate data across different platforms. Whether it's transitioning from cloud-based data warehouses like Snowflake to robust relational databases such as Oracle Database 23ai, or migrating from NoSQL databases like MongoDB, the process requires careful planning, the right tools, and a deep understanding of data migration architectures.",
       "image": "images/006l.jpeg",
-      "url": "https://www.linkedin.com/pulse/sentiment-analysis-oracle-apex-using-ai-services-madhusudhan-rao/",
-      "technologies": "#SentimentAnalysis #OracleAI #OracleAPEX"
+      "url": "https://www.linkedin.com/pulse/streamlining-data-migration-snowflake-oracle-database-madhusudhan-rao-zkbrf",
+      "technologies": "#Snowflake #Migration" ,
+      "buttonlabel": "Data Migration: Snowflake to Oracle Database 23ai",
+      "section":"Oracle AI Database"
     },
     {
       "id": 7,
-      "title": "Building a Chatbot with Oracle APEX and Oracle AI Services",
-      "description": "Create an intelligent chatbot using Oracle APEX and Oracle AI Services to enhance user interaction...",
+      "title": "The Future of Intelligent Search: A Comprehensive Guide to RAG AI Agents, Knowledge base and Graph RAG",
+      "description": "The Future of Intelligent Search: A Comprehensive Guide to RAG AI Agents, Knowledge base and Graph RAG. The rapid advancement of artificial intelligence (AI) is transforming the way organizations manage and interact with complex data. Retrieval-Augmented Generation (RAG) AI Agents are at the forefront of this revolution, enabling intelligent search, retrieval, and generation capabilities that can unlock new insights and drive business value. ",
       "image": "images/007l.jpeg",
-      "url": "https://www.linkedin.com/pulse/building-chatbot-oracle-apex-ai-services-madhusudhan-rao/",
-      "technologies": "#Chatbot #OracleAI #OracleAPEX"
+      "url": "https://www.linkedin.com/pulse/unlocking-future-intelligent-search-comprehensive-guide-rao-vrhdf",
+      "technologies": "#AIAgent #GraphRAG #TrainLLMs #KnowledgeRepository #DocumentSummarizer #VisualContent",
+      "buttonlabel": "Future of Intelligent Search: RAG AI Agents",
+      "section": "Oracle AI Services"
     },
     {
       "id": 8,
-      "title": "Image Recognition in Oracle APEX using Oracle AI Services",
-      "description": "Integrate image recognition capabilities into your Oracle APEX applications using Oracle AI Services...",
+      "title": "A Step-by-Step Guide to Building a Retrieval-Augmented Generation (RAG) Application",
+      "description": "The world of artificial intelligence is rapidly evolving, and one of the most exciting developments is the emergence of AI agents. These autonomous systems can perceive their environment, take actions, and learn from their experiences, making them incredibly powerful tools for a wide range of applications. In this article, we'll explore the concepts of AI agents, agentic AI, and retrieval-augmented generation (RAG), and provide a hands-on guide to building a RAG application using Oracle Cloud Infrastructure (OCI).",
       "image": "images/008l.jpeg",
-      "url": "https://www.linkedin.com/pulse/image-recognition-oracle-apex-using-ai-services-madhusudhan-rao/",
-      "technologies": "#ImageRecognition #OracleAI #OracleAPEX"
+      "url": "https://www.linkedin.com/pulse/unlocking-power-ai-agents-step-by-step-guide-building-madhusudhan-rao-7kwuf/",
+      "technologies": "#AIAgents #Agentic AI #RAG #OracleCloudInfrastructure #OCI #GenerativeAI #OracleGenAI",
+      "buttonlabel": "Building a RAG Application",
+      "section": "Oracle AI Services"
     },
     {
       "id": 9,
-      "title": "Natural Language Processing in Oracle APEX with Oracle AI Services",
-      "description": "Leverage natural language processing capabilities in your Oracle APEX applications using Oracle AI Services...",
-      "image": "images/009l.jpeg",
-      "url": "https://www.linkedin.com/pulse/natural-language-processing-oracle-apex-ai-services-madhusudhan-rao/",
-      "technologies": "#NLP #OracleAI #OracleAPEX"
+      "title": "Oracle Globally Distributed Database - Banking Application CRUD Operations using Oracle APEX",
+      "description": "This article (Part 3/3) covers setting up and demonstrating an Oracle Sharding application with Streamlit python application. Key steps include: Database Setup: Creating application users, tablespaces, and schema for a demo banking application. Data Management: Inserting records into sharded and duplicated tables across different shards.",
+      "image": "images/009l.png",
+      "url": "https://www.linkedin.com/pulse/oracle-globally-distributed-database-banking-application-rao-h0ijf",
+      "technologies": "#NLP #OracleAI #OracleAPEX",
+      "buttonlabel": "Oracle Globally Distributed Database - Banking App",
+      "section": "Oracle Globally Distributed Database"
     },
     {
       "id": 10,
-      "title": "Predictive Analytics in Oracle APEX using Oracle AI Services",
-      "description": "Implement predictive analytics in your Oracle APEX applications using Oracle AI Services...",
+      "title": "Setup Oracle Globally Distributed Database with RAFT Replication",
+      "description": "This article covers setting up and configuring Oracle's Globally Distributed Database with RAFT replication. Key steps include: Infrastructure Setup: Creating compute instances and networking using hashtag#Terraform. Environment Preparation: Disabling firewall and setting up SSH connections to compute instances. Enabling and managing RAFT replication, including operations and settings.",
       "image": "images/010l.jpeg",
-      "url": "https://www.linkedin.com/pulse/predictive-analytics-oracle-apex-using-ai-services-madhusudhan-rao/",
-      "technologies": "#PredictiveAnalytics #OracleAI #OracleAPEX"
+      "url": "https://www.linkedin.com/pulse/setup-oracle-globally-distributed-database-raft-replication-rao-a7o6f",
+      "technologies": "#OracleDatabase #OracleSharding #RAFTReplication #Terraform",
+      "buttonlabel": "Setup Oracle Globally Distributed Database",
+      "section": "Oracle Globally Distributed Database"
     },
     {
       "id": 11,
-      "title": "Voice Recognition in Oracle APEX using Oracle AI Services",
-      "description": "Integrate voice recognition capabilities into your Oracle APEX applications using Oracle AI Services...",
+      "title": "Oracle Globally Distributed Databases and Sharding concepts",
+      "description": "This article (Part 1/3) provides an overview of Oracle's Globally Distributed Database, covering its architecture, features, and components. Key topics include: Introduction: Defining  Oracle Globally DistributedDatabase and its benefits. Sharding: Explaining single logical database hashtag#Sharding, automated sharding and resharding, and shard architecture.",
       "image": "images/011l.jpeg",
-      "url": "https://www.linkedin.com/pulse/voice-recognition-oracle-apex-using-ai-services-madhusudhan-rao/",
-      "technologies": "#VoiceRecognition #OracleAI #OracleAPEX"
+      "url": "https://www.linkedin.com/pulse/oracle-globally-distributed-databases-sharding-concepts-rao-9jbyf",
+      "technologies": "#OracleDatabase #OracleSharding #DistributedDatabases",
+      "buttonlabel": "Oracle Globally Distributed Databases and Sharding",
+      "section": "Oracle Globally Distributed Database"
     },
     {
       "id": 12,
-      "title": "Fraud Detection in Oracle APEX using Oracle AI Services",
-      "description": "Implement fraud detection mechanisms in your Oracle APEX applications using Oracle AI Services...",
+      "title": "Migrating Oracle APEX Applications Across Workspaces",
+      "description": "Migrating your Oracle APEX application? This comprehensive guide covers it all! From pre-migration prep and application clean-up to exporting, importing, and post-migration testing, we've got you covered. Ensure a smooth transition with our step-by-step guide on creating database objects, troubleshooting, and monitoring activity logs.",
       "image": "images/012l.jpeg",
-      "url": "https://www.linkedin.com/pulse/fraud-detection-oracle-apex-using-ai-services-madhusudhan-rao/",
-      "technologies": "#FraudDetection #OracleAI #OracleAPEX"
+      "url": "https://www.linkedin.com/pulse/migrating-oracle-apex-applications-across-workspaces-madhusudhan-rao-qzssf/",
+      "technologies": "#OracleAPEX #ApplicationMigration #DatabaseManagement #CloudMigration #OracleAPEX #MigrationGuide",
+      "buttonlabel": "Migrating Oracle APEX Applications",
+      "section": "Oracle AI Database"
     },
     {
       "id": 13,
-      "title": "Recommendation Systems in Oracle APEX using Oracle AI Services",
-      "description": "Build recommendation systems in your Oracle APEX applications using Oracle AI Services...",
-      "image": "images/013l.jpeg",
-      "url": "https://www.linkedin.com/pulse/recommendation-systems-oracle-apex-using-ai-services-madhusudhan-rao/",
-      "technologies": "#RecommendationSystems #OracleAI #OracleAPEX"
+      "title": "From MCP Server Setup to Oracle Autonomous Database 23ai and GitHub Integration",
+      "description": "This article presents a comprehensive outline of the AI-powered website development process, highlighting the key technologies and methodologies involved. By leveraging hashtag#ModelContextProtocol (hashtag#MCP), hashtag#CursorAI agent integration with hashtag#OracleAutonomousDatabase23ai, developers can create dynamic and functional websites with ease. The article guides readers through the process of generating static websites using AI Code Generators, creating AI-powered websites, and deploying auto-generated websites",
+      "image": "images/013l.png",
+      "url": "https://www.linkedin.com/pulse/hands-on-guide-model-context-protocol-mcp-from-server-madhusudhan-rao-kxdvf/",
+      "technologies": "#MCP #OracleDatabase23ai #GitHub #CursorAI #AICodeGenerator",
+      "buttonlabel": "Model Context Protocol Server Setup Guide",
+      "section": "Oracle AI Database"
     },
     {
       "id": 14,
-      "title": "Time Series Forecasting in Oracle APEX using Oracle AI Services",
-      "description": "Implement time series forecasting in your Oracle APEX applications using Oracle AI Services...",
+      "title": "Build a Suspected Transaction Review Business Process with Oracle Integration, Process Automation",
+      "description": "Designing a Suspected Transaction Review Process: A step-by-step guide to creating a manual review process for suspected transactions, enabling informed approval/rejection decisions based on key parameters. The process ensures efficient transaction validation, minimizing fraudulent activity, and leverages Oracle's integrated suite of products for effective transaction management.",
       "image": "images/014l.jpeg",
-      "url": "https://www.linkedin.com/pulse/time-series-forecasting-oracle-apex-using-ai-services-madhusudhan-rao/",
-      "technologies": "#TimeSeriesForecasting #OracleAI #OracleAPEX"
+      "url": "https://www.linkedin.com/pulse/building-robust-suspected-transaction-review-business-madhusudhan-rao-w6k2f/",
+      "technologies": "#OracleIntegrationCloud, #OracleProcessAutomation, #OracleDatabase23ai, #OracleAnalyticsCloud with #MachineLearning and #AutoInsights",
+      "buttonlabel": "Suspected Transaction Review Business Process",
+      "section": "Oracle AI Database"
     },
     {
       "id": 15,
-      "title": "Anomaly Detection in Oracle APEX using Oracle AI Services",
-      "description": "Detect anomalies in your data using Oracle AI Services integrated with Oracle APEX...",
+      "title": "Automate Business Process with Oracle APEX Workflows, Task Definitions, Push Notifications, ORDS",
+      "description": "Automating business processes is crucial in today's digital landscape to boost efficiency, reduce errors, and enhance customer satisfaction. The automation of opening a premium bank account is a prime example, involving a series of steps that can be streamlined for both applicants and banks. This automation offers numerous benefits, including improved efficiency, enhanced customer experience, increased accuracy, and reduced costs",
       "image": "images/015l.jpeg",
-      "url": "https://www.linkedin.com/pulse/anomaly-detection-oracle-apex-using-ai-services-madhusudhan-rao/",
-      "technologies": "#AnomalyDetection #OracleAI #OracleAPEX"
+      "url": "https://www.linkedin.com/pulse/how-automate-business-process-oracle-apex-workflows-task-rao-9na6f/",
+      "technologies": "#OracleDatabase23ai, #OracleAPEX, #MobileInstallable, #PushNotifications, #TaskDefinitions, #ORDS, #ServiceInvocation, #DBMS_REDACT",
+      "buttonlabel": "Automate Business Process with Oracle APEX",
+      "section": "Oracle AI Database"
     },
     {
       "id": 16,
-      "title": "Optical Character Recognition (OCR) in Oracle APEX using Oracle AI Services",
-      "description": "Incorporate OCR capabilities into your Oracle APEX applications using Oracle AI Services...",
-      "image": "images/016l.jpeg",
-      "url": "https://www.linkedin.com/pulse/optical-character-recognition-             ocr-oracle-apex-using-ai-madhusudhan-rao/",
-      "technologies": "#OCR #OracleAI #OracleAPEX"
-    } 
+      "title": "Generative AI Meta Llama Instruct and Vision Models with Oracle Database 23ai",
+      "description": "This article explores the capabilities of hashtag#MetaLlama hashtag#VisionInstruct models on Oracle Cloud and hashtag#OracleDatabase23ai, demonstrating how to access and utilize these powerful AI tools for various applications",
+      "image": "images/016l.png",
+      "url": "https://www.linkedin.com/pulse/unlocking-power-generative-ai-meta-llama-instruct-vision-rao-q0myf",
+      "technologies": "#GenerativeAI #MetaLlama #VisionInstruct #OracleDatabase23ai #OracleGenAI #OCI",
+      "buttonlabel": "Generative AI Meta Llama Instruct and Vision Models",
+      "section": "Oracle AI Services"
+    },  
+    {
+      "id": 17,
+      "title": "How to migrate the MERN stack MongoDB application to Oracle Autonomous Database 23ai",
+      "description": "In this article, we will explore how to build AI-powered chatbots using Oracle Digital Assistant (ODA) and Oracle AI Services. We will cover the key steps involved in creating a chatbot, integrating it with Oracle AI Services, and deploying it for various use cases.",
+      "image": "images/017l.jpeg",
+      "url": "https://www.linkedin.com/pulse/how-migrate-mern-stack-mongodb-application-oracle-autonomous-rao-fpv0f",
+      "technologies": "#OracleDigitalAssistant #OracleAI #Chatbots #GenerativeAI #OracleGenAI #OracleAIDatabase26ai",
+      "buttonlabel": "How to migrate the MERN stack MongoDB application",
+      "section": "Oracle AI Services"
+    },
+    {
+      "id": 18,
+      "title": "AI for Healthcare Innovations: How to Build an AI Medical Helper",
+      "description": "In this article, we will see how to create an AI Medical helper that can take patients' input parameters such as Blood sugar level, or blood glucose level, which refers to the amount of sugar in your blood and also Blood pressure, which is a force of blood pushing against the walls of your arteries. Suppose the patient has a family history of diabetes, smoking habits, exercises regularly, etc., and based on these inputs. It generates a diet plan and exercise plan",
+      "image": "images/018l.jpeg",
+      "url": "https://www.linkedin.com/pulse/ai-healthcare-innovations-how-build-medical-helpers-madhusudhan-rao-0y77f/",
+      "technologies": "#OracleDatabase23ai, #OracleAPEX, #GenerativeAI and #OracleSpeechAI",
+      "buttonlabel": "AI for Healthcare Innovations",
+      "section": "Industry Solutions"
+    },
+    {
+      "id": 19,
+      "title": "AI for Aviation - Create Realtime Passenger Dashboard with Transactional Event Queues, Advanced Queuing, Scheduler Jobs",
+      "description": "AI for Aviation. In this article, we will see how Oracle Advanced Queuing and Scheduling Jobs with Oracle Scheduler can help in process automation and smooth run aviation passenger traffic into the airport till passengers board a flight. There are multiple queues such as Immigration check & passport stamping, baggage check-in, security check, etc., and many priorities such as regular passengers, VIP and VVIP passengers, and airport lounge users",
+      "image": "images/019l.jpeg",
+      "url": "https://www.linkedin.com/pulse/ai-aviation-create-realtime-passenger-dashboard-event-rao-6iqaf/",
+      "technologies": "#OracleAdvancedQueuing #TransactionalEventQueues #Scheduler #Jobs #ProcessAutomation #OracleDatabase23ai",
+      "buttonlabel": "AI for Aviation - Realtime Passenger Dashboard",
+      "section": "Industry Solutions"
+    },
+    {
+      "id": 20,
+      "title": "Multicloud Oracle Database@Microsoft Azure - How to create & access Oracle Autonomous Database 23ai on Azure Cloud",
+      "description": "In this article, we will see how to create an Oracle Autonomous Database @ Microsoft Azure Cloud. We will try the Azure Portal and The Azure Command Line Interface approaches to familiarize ourselves with both. There is a troubleshooting section for common errors that you might come across. Use Azure Copilot to help us debug errors, We will look deeper into the details of creating an Azure Resource Group, Azure virtual network, Create Azure Public IP, Azure Windows Virtual Machine, List various images and Create Bastion Host. Once the environment is available, what are the various options to access these services? These include Data Studio, Microsoft .Net Core Project, Java and Python applications, and more. Multicloud opens up infinite opportunities to leverage the best of both the cloud worlds, Oracle Cloud OCI and Microsoft Azure.",
+      "image": "images/020l.jpeg",
+      "url": "https://www.linkedin.com/pulse/multicloud-oracle-databasemicrosoft-azure-how-create-rao-rx3xf",
+      "technologies": "#OracleDatabase23ai #MicrosoftAzure #Multicloud #AzureCLI #AzurePortal #AzureCopilot",
+      "buttonlabel": "Multicloud Oracle Database@Microsoft Azure",
+      "section": "Oracle Multicloud"
+    },
+    {
+      "id": 21,
+      "title": "Multicloud Oracle Database@Google Cloud - How to create & access Oracle Autonomous Database 23ai on Google Cloud",
+      "description": "n this article, we will see how to create Oracle Autonomous Database 23ai instance, Network, Subnets, Firewalls, Windows VMs, Bastion Host, Firewalls, etc., on the Google Cloud platform GPC, leveraging the best of both cloud worlds, Google Cloud, and Oracle Cloud OCI. Oracle Database@Google Cloud gives customers direct access to Oracle database services running on OCI and deployed in Google Cloud data centres. This new offering is designed to help customers accelerate their migration to the cloud so they can modernize their IT environments and take advantage of Google Cloud infrastructure, tooling, and AI services, including data and analytics, Vertex AI, and the company’s Gemini foundation models.",
+      "image": "images/021l.jpeg",
+      "url": "https://www.linkedin.com/pulse/multicloud-oracle-databasegoogle-cloud-how-setup-autonomous-rao-zzagf",
+      "technologies": "#OracleDatabase23ai #GoogleCloud #Multicloud #GCP #OCI",
+      "buttonlabel": "Multicloud Oracle Database@Google Cloud",
+      "section": "Oracle Multicloud"
+    },
+    {
+      "id": 22,
+      "title": "AI for Healthcare with Oracle Database 23ai & Its Building Blocks",
+      "description": "In this article, we will see how to create Oracle Autonomous Database 23ai instance, Network, Subnets, Firewalls, Windows VMs, Bastion Host, Firewalls, etc., on the Amazon Web Services cloud platform AWS, leveraging the best of both cloud worlds, AWS and Oracle Cloud OCI. Oracle Database@AWS gives customers direct access to Oracle database services running on OCI and deployed in AWS data centres. This new offering is designed to help customers accelerate their migration to the cloud so they can modernize their IT environments and take advantage of AWS infrastructure, tooling, and AI services, including data and analytics, Bedrock AI service, and more. This Partnership helps customers simplify cloud migration, Multicloud deployment, and management.",
+      "image": "images/022l.jpeg",
+      "url": "https://www.linkedin.com/pulse/ai-healthcare-oracle-database-23ai-its-building-blocks-rao-xhhif/",
+      "technologies": "#OracleDatabase23ai #Healthcare #AI #IndustrySolutions",
+      "buttonlabel": "AI for Healthcare with Oracle Database 23ai",
+      "section": "Industry Solutions"
+    },
+    {
+      "id": 23,
+      "title": "LangChain4j LLM framework with Oracle Database 23ai Vector Embedding Store - Fruit Search Java App",
+      "description": "In this article we will see how to use the LangChain4j LLM framework with Oracle Database 23ai Vector Embedding Store to create a simple fruit search Java application. Fruit details are stored in an Oracle Database embedded vector store, users search queries are looked up in the embedded vector store, and corresponding results (fruit details) are displayed based on natural language processing. A single Java file is used to keep it simple, and the entire application is written from a basic HelloWorld Maven project. We will check and monitor the Docker container logs related to this application. ",
+      "image": "images/023l.jpeg",
+      "url": "https://www.linkedin.com/pulse/langchain4j-llm-framework-oracle-database-23ai-vector-madhusudhan-rao-jwvuf/",
+      "technologies": "#LangChain4j #LLMFramework #OracleDatabase23ai #VectorEmbeddingStore #JavaApp #GenerativeAI #OracleGenAI",
+      "buttonlabel": "LangChain4j with Oracle Database 23ai Vector Embedding Store",
+      "section": "Oracle AI Database - Developer Applications"
+    },
+    {
+      "id": 24,
+      "title": "Sticker Sorcery with Oracle Database 23ai, ReactJs and Node Oracle DB Driver",
+      "description": "If you have attended a few major events this year, one of the most popular applications was the Design Your Own DeeBee sticker application or Sticker Sorcery with Oracle Database 23ai in the demo booths. This is a different kind of application that's fun to use. It's great to learn where users can create awesome stickers and print, and it uses lots of the latest imaging technology in the background. I thought, let me share my experience of building this application based on Bitmoji Icons theme",
+      "image": "images/024l.jpeg",
+      "url": "https://www.linkedin.com/pulse/sticker-sorcery-oracle-database-23ai-reactjs-node-db-driver-rao-bhtpf",
+      "technologies": "#OracleDatabase23ai #ReactJs #NodeOracleDBDriver #GenerativeAI #OracleGenAI",
+      "buttonlabel": "Sticker Sorcery with Oracle Database 23ai",
+      "section": "Oracle AI Database - Developer Applications"
+    },
+    {
+      "id": 25,
+      "title": "Comprehensive Guide on Data Transformation, Load, Analysis, ORDS, OML, Scheduler, Live Feeds, Modeler, Database Security",
+      "description": "In this comprehensive video series guide, we will focus primarily on #OracleAutonomousDatabase23ai Database Actions and Data Studio. This set of videos will help you create an Oracle Database 23ai instance and Load Data from OCI Object storage and other cloud service providers like Google, Microsoft Azure, AWS, etc. We will see, once the connection is established, how the data can be moved into a different tenancy",
+      "image": "images/025l.png",
+      "url": "https://www.linkedin.com/pulse/oracle-database-23ai-comprehensive-guide-data-load-analysis-rao-tzrnc",
+      "technologies": "#OracleDatabase23ai #DataTransformation #DataLoad #ORDS #OML #Scheduler #LiveFeeds #Modeler #DatabaseSecurity",
+      "buttonlabel": "Comprehensive Guide on Data Transformation, Load, Analysis",
+      "section": "Oracle AI Database"
+    },
+    {
+      "id": 26,
+      "title": "Oracle Database 23c cool & essential features",
+      "description": "Oracle Database 23ai introduces several new features and capabilities that enhance its performance, scalability, and AI integration. Some of the key highlights include advanced vector search capabilities, improved AI model management, enhanced security features, and seamless integration with Oracle Cloud Infrastructure (OCI) services. These advancements empower developers and data scientists to build more intelligent applications and leverage the full potential of AI within their database environments.",
+      "image": "images/026l.png",
+      "url": "https://www.linkedin.com/pulse/oracle-database-23c-cool-essential-features-madhusudhan-rao-ykqxf/",
+      "technologies": "#OracleDatabase23ai #NewFeatures #AICapabilities #OCI #GenerativeAI #OracleGenAI",
+      "buttonlabel": "Oracle Database 23ai New Features & Capabilities",
+      "section": "Oracle AI Services"
+    },
+    {
+      "id": 27,
+      "title": "Oracle Database 23ai: Building Generative AI Applications with Oracle APEX and OCI Services",
+      "description": "n this article, we will see how Oracle APEX's latest release of 24.* and Oracle Database 23ai can help build truly enterprise-grade applications leveraging the power of generative AI and low code application development.",
+      "image": "images/027l.png",
+      "url": "https://www.linkedin.com/pulse/oracle-database-23ai-building-generative-ai-applications-rao-vfkjf",
+      "technologies": "#OracleAPEX #GenerativeAI #NLP #NaturalLanguageProcessing #Chatbots #AI Applications #OracleDatabase23ai #OCI",
+      "buttonlabel": "Building Generative AI Applications with Oracle APEX",
+      "section": "Oracle AI Services"
+    },
+    {
+      "id": 28,
+      "title": "Application Development in ReactJS, NodeJS, Streamlit, Python, Java, JSON, ORDS and DevOps with GitHub  ",
+      "description": "In this article, we will explore how to build AI-powered applications using Oracle APEX and Oracle AI Services. We will cover the key steps involved in creating an application, integrating it with Oracle AI Services, and deploying it for various use cases.",
+      "image": "images/028l.png",
+      "url": "https://www.linkedin.com/pulse/oracle-database-23ai-application-development-reactjs-rao-lvvxf",
+      "technologies": "#OracleAPEX #OracleAI #Chatbots #GenerativeAI #OracleGenAI #OracleAIDatabase26ai",
+      "buttonlabel": "Application Development with Oracle Database 23ai",
+      "section": "Oracle AI Database - Developer Applications"
+    },
+    {
+      "id": 29,
+      "title": "Data Migration from MongoDB to Oracle Autonomous Database 23ai using Python",
+      "description": "In this article, we will explore how to migrate data from MongoDB to Oracle Autonomous Database 23ai using Python. We will cover the key steps involved in connecting to both databases, extracting data from MongoDB, transforming it as needed, and loading it into Oracle Autonomous Database 23ai.",
+      "image": "images/029l.jpeg",
+      "url": "https://www.linkedin.com/pulse/how-migrate-mern-stack-mongodb-application-oracle-autonomous-rao-fpv0f",
+      "technologies": "#MongoDB #OracleDatabase23ai #DataMigration #Python #GenerativeAI #OracleGenAI",
+      "buttonlabel": "Data Migration from MongoDB to Oracle Autonomous Database 23ai",
+      "section": "Oracle AI Database"
+    },  
+    {
+      "id": 30,
+      "title": "Streamlining Data Migration: Snowflake to Oracle Database 23ai",
+      "description": "In today's data-driven landscape, organizations are constantly seeking efficient ways to migrate and integrate data across different platforms. Whether it's transitioning from cloud-based data warehouses like Snowflake to robust relational databases such as Oracle Database 23ai, or migrating from NoSQL databases like MongoDB, the process requires careful planning, the right tools, and a deep understanding of data migration architectures.",
+      "image": "images/006l.jpeg",
+      "url": "https://www.linkedin.com/pulse/streamlining-data-migration-snowflake-oracle-database-madhusudhan-rao-zkbrf",
+      "technologies": "#Snowflake #Migration" ,
+      "buttonlabel": "Data Migration: Snowflake to Oracle Database 23ai",
+      "section":"Oracle AI Database"
+    },
+    {
+      "id": 31,
+      "title": "Oracle Analytics Cloud, Machine Learning, Anomaly Detection, Generative AI for Environment Data Analysis and Retail Industries",
+      "description": "We will see how to analyse data with Oracle Machine Learning & Oracle Analytics Cloud. We will leverage Oracle Generative AI to understand what is impacting the environment globally. We will drill through data related to carbon emissions, nitrogen emissions, greenhouse gas impacts, water abstractions, deforestation, etc. We will also analyse retail customer data and create Anomaly Detection machine learning models to segment the demographic data into clusters and examine the customer data anomalies. ",
+      "image": "images/031l.jpeg",
+      "url": "https://www.linkedin.com/pulse/oracle-database-23ai-analytics-cloud-machine-learning-madhusudhan-rao-u7lmf",
+      "technologies": "#OracleAnalyticsCloud #MachineLearning #AnomalyDetection #GenerativeAI #OracleGenAI #EnvironmentData #RetailIndustries",  
+      "buttonlabel": "Oracle Analytics Cloud, Machine Learning, Anomaly Detection",
+      "section":"Industry Solutions"
+    },
+    {
+      "id": 32,
+      "title": "Oracle AI Vector Search & Retrieval Augmented Generation (RAG) with Oracle APEX",
+      "description": "In today's data-driven landscape, organizations are constantly seeking efficient ways to migrate and integrate data across different platforms. Whether it's transitioning from cloud-based data warehouses like Snowflake to robust relational databases such as Oracle Database 23ai, or migrating from NoSQL databases like MongoDB, the process requires careful planning, the right tools, and a deep understanding of data migration architectures.",
+      "image": "images/032l.jpeg",
+      "url": "https://www.linkedin.com/pulse/oracle-database-23ai-ai-vector-search-retrieval-augmented-rao-bqkcf/",
+      "technologies": "#OracleAIVectorSearch #RAG #OracleAPEX #GenerativeAI #OracleGenAI" ,
+      "buttonlabel": "Oracle AI Vector Search & RAG with Oracle APEX",
+      "section":"Oracle AI Database"
+    },
+    {
+      "id": 33,
+      "title": "Install Oracle Database 23ai, ORDS and Oracle APEX 24.1 on Oracle Cloud OEL Instance",
+      "description": "In today's data-driven landscape, organizations are constantly seeking efficient ways to migrate and integrate data across different platforms. Whether it's transitioning from cloud-based data warehouses like Snowflake to robust relational databases such as Oracle Database 23ai, or migrating from NoSQL databases like MongoDB, the process requires careful planning, the right tools, and a deep understanding of data migration architectures.",
+      "image": "images/033l.jpeg",
+      "url": "https://www.linkedin.com/pulse/how-install-oracle-database-23ai-ords-apex-cloud-oel-instance-rao-smr5f",
+      "technologies": "#OracleDatabase23ai #ORDS #OracleAPEX24.1 #OEL #OracleCloud" ,
+      "buttonlabel": "Install Oracle Database 23ai, ORDS and Oracle APEX 24.1",
+      "section":"Oracle AI Database"
+    },
+    {
+      "id": 34,
+      "title": "Oracle Generative AI for the Motion pictures & Print Media Industry",
+      "description": "There are so many Large Language Models (LLMs) and AI service providers today that choosing what's best can also be another challenge with Generative AI and the physical hardware and infrastructure required to run these LLMs. In this article, we will use Oracle Generative AI, LangChain, and Streamlit to generate a movie script. Based on this script, we will generate AI images using HuggingFace Image generation models and stable diffusion. We will also compare various models and see the generated output.",
+      "image": "images/034l.jpeg",
+      "url": "https://www.linkedin.com/pulse/oracle-generative-ai-motion-pictures-print-media-industry-rao-im4vc/",
+      "technologies": "#OracleGenerativeAI #MotionPictures #PrintMedia #LangChain #Streamlit #HuggingFace #StableDiffusion #GenerativeAI #OracleGenAI",
+      "buttonlabel": "Generative AI for the Motion pictures & Print Media Industry",
+      "section": "Industry Solutions"
+    },
+    {
+      "id": 35,
+      "title": "Creating a RAG-Based Chatbot with Internal PDFs and Oracle Database Tables",
+      "description": "In this article, we will explore how to create a Retrieval-Augmented Generation (RAG) based chatbot using internal PDFs and Oracle Database tables. We will cover the key steps involved in setting up the chatbot, integrating it with Oracle Database, and training the AI model to provide accurate responses based on the provided data sources.",
+      "image": "images/035l.png",
+      "url": "https://www.linkedin.com/pulse/oracle-database-23ai-how-create-rag-based-chatbot-internal-rao-bb95f",
+      "technologies": "#RAG #Chatbot #OracleDatabaseTables #PDFIntegration #GenerativeAI #OracleGenAI",
+      "buttonlabel": "Creating a RAG-Based Chatbot with Internal PDFs",
+      "section": "Oracle AI Services"
+    },
+    {
+      "id": 36,
+      "title": "How to work with LangChain and Oracle Generative AI",
+      "description": "In this article, we will learn how to work with #LangChain's open-source building blocks, components & #LLMs integrations, #Streamlit, an open-source #Python framework for #DataScientists and AI/ML engineers and #OracleGenerativeAI to build the next generation of Intelligent Applications. We will do the groundwork of setting up the OCI Command line interface, Creating a simple LangChain app, writing an interactive #Healthcare application, and creating a search application that can scan through a training #PDF document. ",
+      "image": "images/036l.jpeg",
+      "url": "https://www.linkedin.com/pulse/how-work-langchain-oracle-generative-ai-madhusudhan-rao-8efgf",
+      "technologies": "#LangChain #OracleGenerativeAI #Streamlit #Python #IntelligentApplications #GenerativeAI #OracleGenAI",
+      "buttonlabel": "How to work with LangChain and Oracle Generative AI",
+      "section": "Oracle AI Database - Developer Applications"
+    },
+    {
+      "id": 37,
+      "title": "Working with Oracle Container Engine for Kubernetes (OKE) Microservices and Dockers",
+      "description": "In this article, we will create an Oracle Container Engine for hashtag#KubernetesCluster hashtag#OKE with 3 Nodes, understand some of the Kubernetes concepts such as Namespace, PODS, Deployments, High Availability, Micro Services , View and monitor Logs of PODs, create an OKE deployment from a Docker repository. Expose a service through Oracle LoadBalancer, Create Tomcat and Nginx services on Kubernetes, Create a PHP and Redis Kubernetes Service on OKE and access it through a Load Balancer, use the same code example of an Application that runs on Google Kubernetes Engine (GKE) on Oracle Container Engine for Kubernetes Cluster OKE",
+      "image": "images/037l.jpeg",
+      "url": "https://www.linkedin.com/pulse/working-oracle-container-engine-kubernetes-oke-google-madhusudhan-rao-ycgjf",
+      "technologies": "#OracleContainerEngine #Kubernetes #OKE #Microservices #Docker #LoadBalancer #Tomcat #Nginx #PHP #Redis",
+      "buttonlabel": "Container Engine for Kubernetes, Microservices and Dockers",
+      "section": "Oracle AI Database - Developer Applications"
+    },
+    {
+      "id": 38,
+      "title": "Spatial and Generative AI for Travel and Hospitality Industry",
+      "description": "In this article we will search for UNESCO sites based on the travel destinations. Using Oracle Spatial location intelligence from the selected UNESCO site, we will search for other UNESCO sites nearby within a radius of say 10 km or 100 km - so that, as a traveller, we can visit the nearest place. We will also leverage Oracle Generative AI to learn more about the selected UNESCO site and find the nearest, cheapest and best Airbnb accommodation around the UNESCO site. We will also see how we can find our location data and find nearest UNESCO sites around us based on distance.",
+      "image": "images/038l.png",
+      "url": "https://www.linkedin.com/pulse/spatial-generative-ai-travel-madhusudhan-rao-nfolf",
+      "technologies": "#OracleSpatial #GenerativeAI #TravelIndustry #HospitalityIndustry #UNESCOSites #LocationIntelligence #OracleGenAI",
+      "buttonlabel": "Spatial and Generative AI for Travel Industry",
+      "section": "Industry Solutions"
+    },
+    {
+      "id": 39,
+      "title": "Oracle Database 23c cool & essential features",
+      "description": "Oracle Database 23c is the next long-term support release of Oracle Database. Oracle Database 23c code named  App Simple, accelerates Oracle's mission to make it simple to develop and run all data-driven applications. It's the sum of all the features from the Oracle Database 21c innovation release plus over 300 new features and enhancements. Key focus areas include JSON, graphs, Microservices, and developer productivity.",
+      "image": "images/039l.png",
+      "url": "https://www.linkedin.com/pulse/oracle-database-23c-cool-essential-features-madhusudhan-rao-ykqxf",
+      "technologies": "#OracleDatabase23c #NewFeatures #EssentialFeatures #DatabaseManagement",
+      "buttonlabel": "Oracle Database 23c cool & essential features",
+      "section": "Oracle AI Database - Developer Applications"
+    },
+    {
+      "id": 40,
+      "title": "How to build intelligent applications using Oracle Generative AI and Oracle APEX",
+      "description": "In this article will show a hands-on approach to building AI-driven innovative applications using #OracleGenerativeAI services and low code #OracleAPEX Applications. We will test our AI model with questions related to Neurology, Weather conditions, Writing emails, Generating Java code, Generating SQL, or even how to make mixed fruit jam. The Oracle #AILanguage Translation Service can easily translate these AI response texts into various languages.",
+      "image": "images/040l.png",
+      "url": "https://www.linkedin.com/pulse/how-build-intelligent-apps-oracle-generative-ai-apex-madhusudhan-rao-z423f",
+      "technologies": "#OracleGenerativeAI #OracleAPEX #IntelligentApplications #LowCode #GenerativeAI #OracleGenAI",
+      "buttonlabel": "Build intelligent apps using Oracle Generative AI",
+      "section": "Oracle AI Services"
+    },
+    {
+      "id": 41,
+      "title": "How to Translate text using OCI AI Language and Oracle APEX",
+      "description": "In this article, we will learn how to translate text from one language to another using the AI-Language Translate service and Oracle APEX for front-end user interface applications. We can also translate the output of an AI service (Cohere, OpenAI or Oracle Generative AI) into any desired language supported by the AI service.",
+      "image": "images/041l.jpeg",
+      "url": "https://www.linkedin.com/pulse/how-translate-text-using-oci-ai-language-oracle-apex-madhusudhan-rao-seq0f",
+      "technologies": "#OCIAILanguage #TextTranslation #OracleAPEX #GenerativeAI #OracleGenAI",
+      "buttonlabel": "Translate text using OCI AI Language",
+      "section": "Oracle AI Services"
+    },
+    {
+      "id": 42,
+      "title": "Oracle Select AI with Cohere to Generate SQLs from Natural Language",
+      "description": "In this article, we will learn how to generate SQLs or chat using #Cohere AI or #OpenAI with Oracle #SelectAI to respond to users' input prompts. DBMS_CLOUD_AI package facilitates and configures the translation of natural language prompts to SQL statements. Oracle #APEX helps create a user interface for accepting user inputs and displaying AI results. Use Oracle Machine Learning #OML notebooks to run some of the Select AI SQLs.",
+      "image": "images/042l.jpeg",
+      "url": "https://www.linkedin.com/pulse/how-use-oracle-select-ai-cohere-openai-generate-sqls-from-rao-zabjf",
+      "technologies": "#OracleSelectAI #CohereAI #OpenAI #SQLGeneration #NaturalLanguageProcessing #GenerativeAI #OracleGenAI",
+     "buttonlabel": "Oracle Select AI with Cohere to Generate SQLs",
+      "section": "Oracle AI Database"
+    },
+    {
+      "id": 43,
+      "title": "Build Database Chatbots with SQL Dialog Skills",
+      "description": "In this article, we will differentiate and classify various types of chatbots. We will see how to create AI and ML-based chatbots that can process natural language and interact with #OracleAutonomousDatabases. These chatbots with #OracleDigitalAssistant are super smart and can be game-changers. They can accept users' questions on chat, understand intent, and convert them into SQL statements and query databases to deliver the result in the web chatbot or mobile chatbot app or Oracle #APEX Application. ",
+      "image": "images/043l.jpeg",
+      "url": "https://www.linkedin.com/pulse/retrieval-augmented-generation-chatbots-aimlnlp-based-madhusudhan-rao-pgodf",
+      "technologies": "#DatabaseChatbots #SQLDialogSkills #OracleDigitalAssistant #OracleAutonomousDatabase #GenerativeAI #OracleGenAI",
+      "buttonlabel": "Build Database Chatbots with SQL Dialog Skills",
+      "section": "Oracle AI Services"
+    },
+    {
+      "id": 44,
+      "title": "Create dynamic websites on an always-free Oracle Cloud Instance",
+      "description": "In this article, we will see how to create an #AlwaysFree Oracle Compute Instance on #Oracle Cloud Infrastructure ,set up #Oracle Enterprise Linux, #Apache, #PHP #MySQL (#LAMP Stack) on that Compute Instance, register a domain and set a domain name service with #DNS mapping to make our #Website publicly available. Optionally setup #FTP Server and #Cockpit GUI for OEL Administration",
+      "image": "images/044l.jpeg",
+      "url": "https://www.linkedin.com/pulse/how-create-enterprise-grade-dynamic-website-always-free-rao-9hgmf",
+      "technologies": "#OracleCloud #AlwaysFree #ComputeInstance #LAMPStack #WebsiteDevelopment #GenerativeAI #OracleGenAI",
+      "buttonlabel": "Create dynamic websites on OCI",
+      "section": "Oracle AI Database - Developer Applications"   
+    },
+    {
+      "id": 45,
+      "title": "Working with Oracle APEX and Oracle Analytics Cloud platform",
+      "description": "This article will show how to establish SSO between Oracle APEX and Oracle Analytics Cloud. Create a few simple reports in the Oracle Analytics cloud and access them within the Oracle APEX application",
+      "image": "images/045l.png",
+      "url": "https://www.linkedin.com/pulse/working-oracle-apex-analytics-platform-madhusudhan-rao-tfwvf",
+      "technologies": "#OracleGenerativeAI #EducationIndustry #AIinEducation #GenerativeAI #OracleGenAI",
+      "buttonlabel": "SSO with Oracle APEX and Oracle Analytics Cloud",
+      "section": "Oracle AI Database"   
+    },
+    {
+      "id": 46,
+      "title": "Working with JSON-Relational Duality Views and Oracle APEX",
+      "description": "JSON-relational duality views combine the advantages of using JSON documents with the advantages of the relational model, while avoiding the limitations of each. With duality views, the only objects you map to relational data are JSON documents. You could say that a duality view is a document-relational mapping (DRM), or a JSON-relational mapping (JRM).",
+      "image": "images/046l.png",
+      "url": "https://www.linkedin.com/pulse/working-json-relational-duality-views-oracle-apex-madhusudhan-rao-a2izf",
+      "technologies": "#JSONRelationalDualityViews #OracleAPEX #GenerativeAI #OracleGenAI",
+      "buttonlabel": "JSON-Relational Duality Views and Oracle APEX",
+      "section": "Oracle AI Database"
+    },
+    {
+      "id": 47,
+      "title": "How to Integrate Google Cloud YouTube APIs with Oracle APEX Applications",
+      "description": "Consider this use case scenario: Suppose you have many of your videos uploaded on various YouTube channels. It may be challenging to run analytics on how many views, likes and comments on each of those videos to get a total engagement level on these YouTube videos. Most likely, You will focus on your future content with higher views and engagement levels rather than the one that no one wants to see.",
+      "image": "images/047l.png",
+      "url": "https://www.linkedin.com/pulse/how-integrate-google-cloud-youtube-apis-oracle-apex-madhusudhan-rao",
+      "technologies": "#GoogleCloud #YouTubeAPIs #OracleAPEX #GenerativeAI #OracleGenAI",
+      "buttonlabel": "Integrate Google Cloud YouTube APIs with Oracle APEX",
+      "section": "Oracle Multicloud"
+    }
+    
   ]
 }

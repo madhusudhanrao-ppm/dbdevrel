@@ -67,6 +67,49 @@
             padding: 2rem;
             color: #e0e0e0;
         }
+
+        /* Section styles */
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            margin: 1rem 0 0.5rem;
+        }
+        .section-header h2 {
+            margin: 0;
+            font-size: 1.25rem;
+            color: #ffffff;
+        }
+        .section-divider {
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+            margin: .75rem 0 1.5rem;
+            border: none;
+        }
+
+        /* Collapse toggle styles */
+        .section-toggle {
+            background: transparent;
+            border: none;
+            color: #cfcfcf;
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            font-size: 0.95rem;
+            padding: .25rem .5rem;
+        }
+        .section-toggle:focus { outline: none; box-shadow: none; }
+        .chev {
+            display: inline-block;
+            transition: transform .2s ease;
+            width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent;
+            border-top: 8px solid #cfcfcf;
+            transform-origin: center;
+        }
+        .collapsed .chev { transform: rotate(0deg); }
+        .expanded .chev { transform: rotate(180deg); }
     </style>
 </head>
 <body>
@@ -90,46 +133,153 @@
 
     <!-- Content Area -->
     <div class="container-fluid py-5 site-padding">
-        <div id="articlesContainer" class="row g-4">
+        <div id="articlesContainer">
             <div class="loading">Loading articles...</div>
         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+        // counter to generate unique IDs for collapsible sections
+        let sectionCounter = 0;
+
+        function createCardHTML(article) {
+            const label = article.buttonlabel || 'Read More';
+            const image = article.image || 'https://via.placeholder.com/600x400?text=No+Image';
+            const tech = article.technologies ? `<br/><br/><b>Technologies: ${article.technologies}</b>` : '';
+            return `
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="${image}" class="card-img-top" alt="${(article.title||'Article').replace(/"/g,'')}" />
+                        <div class="card-body">
+                            <h5 class="card-title">${article.title || ''}</h5>
+                            <p class="card-text">${article.description || ''}${tech}</p>
+                            <a href="${article.url || '#'}" class="btn btn-primary" target="_blank">${label}</a>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+        
+          function renderSection(container, title, articles) {
+            sectionCounter += 1;
+            const sectionId = `section-${sectionCounter}`;
+            const collapseId = `collapse-${sectionCounter}`;
+
+            // wrapper section
+            const sectionWrapper = document.createElement('section');
+            sectionWrapper.className = 'mb-5';
+
+            // header with toggle button
+            const header = document.createElement('div');
+            header.className = 'section-header';
+            const h2 = document.createElement('h2');
+            h2.textContent = title;
+            header.appendChild(h2);
+
+            // For first section keep expanded, others collapsed
+            const isFirst = sectionCounter === 1;
+            const toggleBtn = document.createElement('button');
+            toggleBtn.className = `section-toggle ${isFirst ? 'expanded' : 'collapsed'}`;
+            toggleBtn.setAttribute('type', 'button');
+            toggleBtn.setAttribute('data-bs-toggle', 'collapse');
+            toggleBtn.setAttribute('data-bs-target', `#${collapseId}`);
+            toggleBtn.setAttribute('aria-expanded', isFirst ? 'true' : 'false');
+            toggleBtn.setAttribute('aria-controls', collapseId);
+            toggleBtn.innerHTML = `<span class="chev"></span><span>${isFirst ? 'Collapse' : 'Expand'}</span>`;
+
+            header.appendChild(toggleBtn);
+            sectionWrapper.appendChild(header);
+
+            const divider = document.createElement('hr');
+            divider.className = 'section-divider';
+            sectionWrapper.appendChild(divider);
+
+            // collapse wrapper (Bootstrap collapse) - only first section shown by default
+            const collapseDiv = document.createElement('div');
+            collapseDiv.className = isFirst ? 'collapse show' : 'collapse';
+            collapseDiv.id = collapseId;
+
+            const row = document.createElement('div');
+            row.className = 'row g-4';
+
+            // append cards
+            articles.forEach(article => {
+                const temp = document.createElement('div');
+                temp.innerHTML = createCardHTML(article);
+                row.appendChild(temp.firstElementChild);
+            });
+
+            collapseDiv.appendChild(row);
+            sectionWrapper.appendChild(collapseDiv);
+            container.appendChild(sectionWrapper);
+
+            // wire bootstrap collapse events to update toggle text/icon
+            collapseDiv.addEventListener('hide.bs.collapse', () => {
+                toggleBtn.classList.remove('expanded');
+                toggleBtn.classList.add('collapsed');
+                toggleBtn.setAttribute('aria-expanded', 'false');
+                toggleBtn.querySelector('span:last-child').textContent = 'Expand';
+            });
+            collapseDiv.addEventListener('show.bs.collapse', () => {
+                toggleBtn.classList.remove('collapsed');
+                toggleBtn.classList.add('expanded');
+                toggleBtn.setAttribute('aria-expanded', 'true');
+                toggleBtn.querySelector('span:last-child').textContent = 'Collapse';
+            });
+        }
+
         async function loadArticles() {
             try {
-                const response = await fetch('articles.json');
-                const data = await response.json();
+                const res = await fetch('articles.json');
+                if (!res.ok) throw new Error('Failed to load articles.json');
+                const data = await res.json();
                 const container = document.getElementById('articlesContainer');
                 container.innerHTML = '';
 
-                data.articles.forEach(article => {
-                    const col = document.createElement('div');
-                    col.className = 'col-md-6 col-lg-4';
-                    col.innerHTML = `
-                        <div class="card h-100">
-                            <img src="${article.image}" class="card-img-top" alt="${article.title}">
-                            <div class="card-body">
-                                <h5 class="card-title">${article.title}</h5>
-                                <p class="card-text">${article.description}<br/><br/>
-                                    <b>Technologies: ${article.technologies}</b>
-                                </p>
-                                <a href="${article.url}" class="btn btn-primary" target="_blank">${article.buttonlabel}</a>
-                            </div>
-                        </div>
-                    `;
-                    container.appendChild(col);
-                });
-            } catch (error) {
-                console.error('Error loading articles:', error);
-                document.getElementById('articlesContainer').innerHTML = 
+                // If file already provides sections array: { sections: [ { title, articles: [...] } ] }
+                if (Array.isArray(data.sections) && data.sections.length) {
+                    data.sections.forEach(sec => {
+                        const title = sec.title || 'Untitled Section';
+                        const articles = Array.isArray(sec.articles) ? sec.articles : [];
+                        renderSection(container, title, articles);
+                    });
+                    return;
+                }
+
+                // Otherwise, if articles array exists, group by article.section (or fallback to 'General')
+                if (Array.isArray(data.articles)) {
+                    const grouped = {};
+                    data.articles.forEach(a => {
+                        const key = a.section || 'General';
+                        if (!grouped[key]) grouped[key] = [];
+                        grouped[key].push(a);
+                    });
+
+                    // render each group in the order of appearance in the file (preserve order)
+                    const order = [];
+                    data.articles.forEach(a => {
+                        const k = a.section || 'General';
+                        if (!order.includes(k)) order.push(k);
+                    });
+
+                    order.forEach(secTitle => {
+                        renderSection(container, secTitle, grouped[secTitle] || []);
+                    });
+                    return;
+                }
+
+                // fallback: no recognized structure
+                container.innerHTML = '<div class="loading">No articles found in articles.json</div>';
+            } catch (err) {
+                console.error('Error loading articles:', err);
+                document.getElementById('articlesContainer').innerHTML =
                     '<div class="loading">Failed to load articles</div>';
             }
         }
-
-        // Load articles on page load
+        
         document.addEventListener('DOMContentLoaded', loadArticles);
     </script>
 </body>
 </html>
+ 
