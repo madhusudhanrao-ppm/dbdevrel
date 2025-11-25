@@ -110,22 +110,35 @@
         }
         .collapsed .chev { transform: rotate(0deg); }
         .expanded .chev { transform: rotate(180deg); }
+
+        /* navbar search tweaks */
+        .nav-search .form-control { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06); color: #e0e0e0; }
+        .nav-search .btn { min-width: 66px; }
     </style>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><strong>Oracle Database DevRel Tech Content</strong></a>
+            <a class="navbar-brand me-3" href="#"><strong>Oracle Database DevRel Tech Content</strong></a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Single search box (searches both title and text) -->
+                <form class="d-flex align-items-center nav-search me-3" id="searchForm" onsubmit="return false;">
+                    <input id="searchQuery" class="form-control form-control-sm me-2" type="search" placeholder="Search title & text" aria-label="Search title and text" style="min-width:320px;">
+                    <button id="searchBtn" class="btn btn-sm btn-outline-light me-1" type="button">Search</button>
+                    <button id="clearSearchBtn" class="btn btn-sm btn-outline-secondary" type="button">Clear</button>
+                </form>
+
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="#">Home</a></li> 
                     <li class="nav-item"><a class="nav-link" href="#">Oracle AI Database</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">AI Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/madhusudhanraobm/" target="_new">About Madhu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/madhusudhanraobm/" target="_new" style="color: aqua;">About Madhusudhan Rao</a></li>
                 </ul>
             </div>
         </div>
@@ -142,6 +155,7 @@
     <script>
         // counter to generate unique IDs for collapsible sections
         let sectionCounter = 0;
+        let loadedData = null; // store original articles.json content for filtering
 
         function createCardHTML(article) {
             const label = article.buttonlabel || 'Read More';
@@ -161,23 +175,19 @@
             `;
         }
         
-          function renderSection(container, title, articles) {
+        function renderSection(container, title, articles) {
             sectionCounter += 1;
-            const sectionId = `section-${sectionCounter}`;
             const collapseId = `collapse-${sectionCounter}`;
 
-            // wrapper section
             const sectionWrapper = document.createElement('section');
             sectionWrapper.className = 'mb-5';
 
-            // header with toggle button
             const header = document.createElement('div');
             header.className = 'section-header';
             const h2 = document.createElement('h2');
             h2.textContent = title;
             header.appendChild(h2);
 
-            // For first section keep expanded, others collapsed
             const isFirst = sectionCounter === 1;
             const toggleBtn = document.createElement('button');
             toggleBtn.className = `section-toggle ${isFirst ? 'expanded' : 'collapsed'}`;
@@ -195,7 +205,6 @@
             divider.className = 'section-divider';
             sectionWrapper.appendChild(divider);
 
-            // collapse wrapper (Bootstrap collapse) - only first section shown by default
             const collapseDiv = document.createElement('div');
             collapseDiv.className = isFirst ? 'collapse show' : 'collapse';
             collapseDiv.id = collapseId;
@@ -203,7 +212,6 @@
             const row = document.createElement('div');
             row.className = 'row g-4';
 
-            // append cards
             articles.forEach(article => {
                 const temp = document.createElement('div');
                 temp.innerHTML = createCardHTML(article);
@@ -214,7 +222,7 @@
             sectionWrapper.appendChild(collapseDiv);
             container.appendChild(sectionWrapper);
 
-            // wire bootstrap collapse events to update toggle text/icon
+            // update toggle text/icon on collapse events
             collapseDiv.addEventListener('hide.bs.collapse', () => {
                 toggleBtn.classList.remove('expanded');
                 toggleBtn.classList.add('collapsed');
@@ -229,57 +237,106 @@
             });
         }
 
+        // render data (either {sections:[]} or {articles:[]})
+        function renderData(data) {
+            sectionCounter = 0;
+            const container = document.getElementById('articlesContainer');
+            container.innerHTML = '';
+
+            if (!data) {
+                container.innerHTML = '<div class="loading">No articles</div>';
+                return;
+            }
+
+            if (Array.isArray(data.sections) && data.sections.length) {
+                data.sections.forEach(sec => {
+                    const title = sec.title || 'Untitled Section';
+                    const articles = Array.isArray(sec.articles) ? sec.articles : [];
+                    if (articles.length) renderSection(container, title, articles);
+                });
+                if (!container.firstChild) container.innerHTML = '<div class="loading">No matching articles</div>';
+                return;
+            }
+
+            if (Array.isArray(data.articles)) {
+                const grouped = {};
+                const order = [];
+                data.articles.forEach(a => {
+                    const key = a.section || 'General';
+                    if (!grouped[key]) grouped[key] = [];
+                    grouped[key].push(a);
+                    if (!order.includes(key)) order.push(key);
+                });
+                order.forEach(k => {
+                    const articles = grouped[k] || [];
+                    if (articles.length) renderSection(container, k, articles);
+                });
+                if (!container.firstChild) container.innerHTML = '<div class="loading">No matching articles</div>';
+                return;
+            }
+
+            container.innerHTML = '<div class="loading">No articles found in articles.json</div>';
+        }
+
+        function matchesQuery(article, q) {
+            if (!q) return true;
+            const query = q.toLowerCase();
+            const title = (article.title || '').toLowerCase();
+            const desc = (article.description || '').toLowerCase();
+            const tech = (article.technologies || '').toLowerCase();
+            const combined = `${title} ${desc} ${tech}`;
+            return title.includes(query) || combined.includes(query);
+        }
+
+        function performSearch() {
+            if (!loadedData) return;
+            const q = document.getElementById('searchQuery').value.trim().toLowerCase();
+
+            if (Array.isArray(loadedData.sections)) {
+                const filteredSections = loadedData.sections.map(sec => {
+                    const articles = (sec.articles || []).filter(a => matchesQuery(a, q));
+                    return { title: sec.title, articles };
+                }).filter(s => s.articles.length > 0);
+                renderData({ sections: filteredSections });
+                return;
+            }
+
+            if (Array.isArray(loadedData.articles)) {
+                const filtered = loadedData.articles.filter(a => matchesQuery(a, q));
+                renderData({ articles: filtered });
+                return;
+            }
+        }
+
+        function clearSearch() {
+            document.getElementById('searchQuery').value = '';
+            renderData(loadedData);
+        }
+
         async function loadArticles() {
             try {
                 const res = await fetch('articles.json');
                 if (!res.ok) throw new Error('Failed to load articles.json');
-                const data = await res.json();
-                const container = document.getElementById('articlesContainer');
-                container.innerHTML = '';
-
-                // If file already provides sections array: { sections: [ { title, articles: [...] } ] }
-                if (Array.isArray(data.sections) && data.sections.length) {
-                    data.sections.forEach(sec => {
-                        const title = sec.title || 'Untitled Section';
-                        const articles = Array.isArray(sec.articles) ? sec.articles : [];
-                        renderSection(container, title, articles);
-                    });
-                    return;
-                }
-
-                // Otherwise, if articles array exists, group by article.section (or fallback to 'General')
-                if (Array.isArray(data.articles)) {
-                    const grouped = {};
-                    data.articles.forEach(a => {
-                        const key = a.section || 'General';
-                        if (!grouped[key]) grouped[key] = [];
-                        grouped[key].push(a);
-                    });
-
-                    // render each group in the order of appearance in the file (preserve order)
-                    const order = [];
-                    data.articles.forEach(a => {
-                        const k = a.section || 'General';
-                        if (!order.includes(k)) order.push(k);
-                    });
-
-                    order.forEach(secTitle => {
-                        renderSection(container, secTitle, grouped[secTitle] || []);
-                    });
-                    return;
-                }
-
-                // fallback: no recognized structure
-                container.innerHTML = '<div class="loading">No articles found in articles.json</div>';
+                loadedData = await res.json();
+                renderData(loadedData);
             } catch (err) {
                 console.error('Error loading articles:', err);
                 document.getElementById('articlesContainer').innerHTML =
                     '<div class="loading">Failed to load articles</div>';
             }
         }
-        
-        document.addEventListener('DOMContentLoaded', loadArticles);
+
+        document.addEventListener('DOMContentLoaded', () => {
+            loadArticles();
+
+            // wire search controls
+            document.getElementById('searchBtn').addEventListener('click', performSearch);
+            document.getElementById('clearSearchBtn').addEventListener('click', clearSearch);
+            const input = document.getElementById('searchQuery');
+            input.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') performSearch();
+            });
+        });
     </script>
 </body>
 </html>
- 
