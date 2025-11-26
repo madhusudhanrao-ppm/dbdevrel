@@ -27,8 +27,8 @@ In this short sprint, you will:
 * The application will support Create, Read, Update, Delete [CRUD] operations.
 * Start with a completely working Spring Boot app template and quickly create database application.
   
-    <!-- [Demo video on Create Oracle Autonomous AI Database](youtube:V2PETW_F7XI:large)  -->
-
+    [Spring Boot Application](youtube:FQHXNHTTFLg:large)  
+    
 ### Prerequisites
 
 This lab assumes you have:
