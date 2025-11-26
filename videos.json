@@ -32,7 +32,18 @@
       "technologies": "#OracleDatabase23ai #OracleAIDatabase26ai #DatabaseDevelopers #OCI #ApplicationDevelopers",
       "buttonlabel": "Oracle Generative AI & Oracle Database 23ai using MCP",
       "section": "Oracle AI Services"
-    } 
+    },
+    {
+      "id": 4,
+      "title": "🔥 Spring Boot + Oracle Autonomous AI Database A Quick Start Workshop 🔥",
+      "description": "Spring Boot lets you spin up production‑grade, stand‑alone applications quickly. It bundles an embedded server (Tomcat, Jetty, or Undertow), offers opinionated starters to streamline builds, auto‑configures Spring and third‑party libs, and ships with built‑in metrics, health checks, and externalized config.In our hands‑on workshop, we will: <br/>👉 Create a Spring Boot application from the source or from the starter kit <br/>👉  Integrate it with Oracle Autonomous AI Database <br/>👉  Leverage starter dependencies and auto‑configuration for a smooth dev experience",
+      "image": "images/051l.png",
+      "videourl": "https://www.youtube.com/watch?v=FQHXNHTTFLg",
+      "url": "https://madhusudhanrao-ppm.github.io/dbdevrel/spring-boot-oracleaidb-app/workshop/index.html?lab=spring-boot-app",
+      "technologies": "#SpringBoot #OracleAutonomousAIDatabase #Java #Microservices #GenerativeAI #OracleGenAI",
+      "buttonlabel": "Spring Boot + Oracle Autonomous AI Database Workshop",
+      "section": "Oracle AI Database - Developer Applications"
+    }
     
   ]
 }
