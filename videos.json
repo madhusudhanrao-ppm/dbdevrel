@@ -1,0 +1,38 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Create Oracle AI Autonomous Database in 1 minute",
+      "description": "Autonomous AI Database for Developers are low-cost, fixed shape databases intended for development and testing uses cases, and are not recommended for production use cases. When you need more compute or storage resources or you want to take advantage of additional Autonomous AI Database features, you can upgrade your Autonomous AI Database for Developers instance to a full paid service instance.",
+      "image": "images/001l.jpeg",
+      "videourl": "https://www.youtube.com/watch?v=V2PETW_F7XI",
+      "url": "https://madhusudhanrao-ppm.github.io/dbdevrel/create-oracleaidb26ai-devrel/index.html", 
+      "technologies": "#OracleAIDatabase26ai #OracleAPEX #OracleAIVision #VisionAI #GenerativeAI #OracleGenAI #OracleDatabase",
+      "buttonlabel": "Create Oracle AI Autonomous Database",
+      "section": "Oracle AI Services"
+    },
+    {
+      "id": 2,
+      "title": "Video Analysis with OCI Vision AI Service, Oracle Generative AI, Oracle AI Database 26ai",
+      "description": "AI-driven video analysis is no longer limited to complex, high-cost solutions. With Oracle AI Vision Service, developers can harness pre-built machine learning models to analyze videos, detect objects & text, identify scenes, and extract metadata—all through simple, scalable APIs.",
+      "image": "images/002l.jpeg",
+      "videourl": "https://www.youtube.com/watch?v=qaT5nbCXpe4",
+      "url": "https://www.linkedin.com/pulse/video-analysis-oci-vision-ai-services-oracle-database-madhusudhan-rao-erdof/",
+      "technologies": "#OracleAutonomousAIDatabase #Streamlit #Python #ReactJS #OracleAutonomousLinux #Python-oracledb #OracleDatabase23ai #OracleAIDatabase26ai #MCP",
+      "buttonlabel": "Video Analysis with OCI Vision AI",
+      "section": "Oracle AI Services"
+    },
+    {
+      "id": 3,
+      "title": "Innovate with Oracle Generative AI & Oracle Database 23ai using MCP",
+      "description": "In this article, we'll explore the innovative world of Model Context Protocol (MCP) and its seamless integration with Oracle Database 23ai. We'll dive into the exciting possibilities of leveraging MCP to streamline development workflows, enhance productivity, and unlock new insights from your data.",
+      "image": "images/003l.jpeg",
+      "videourl": "https://www.youtube.com/watch?v=PUKRWh_sVB8",
+      "url": "https://www.linkedin.com/pulse/oracle-database-developer-series-1-how-install-23ai-madhusudhan-rao-tirsf",
+      "technologies": "#OracleDatabase23ai #OracleAIDatabase26ai #DatabaseDevelopers #OCI #ApplicationDevelopers",
+      "buttonlabel": "Oracle Generative AI & Oracle Database 23ai using MCP",
+      "section": "Oracle AI Services"
+    } 
+    
+  ]
+}

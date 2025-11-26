@@ -9,13 +9,14 @@
         body {
             background-color: #3A3632;
             color: #e0e0e0;
-            min-height: 100vh; 
+            min-height: 100vh;
+            padding-top: 70px;
         }
         .navbar {
             background-color: #2C2A26 !important;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
         }
-        .navbar.fixed-top { z-index: 1030; } /* ensure navbar is above other content */
+        .navbar.fixed-top { z-index: 1030; }
         .card {
             background-color: #2C2A26;
             border: 1px solid #404040;
@@ -61,6 +62,24 @@
         .card-img-top {
             height: 220px;
             object-fit: cover;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
         }
         
         .loading {
@@ -121,7 +140,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand me-3" href="index.html"><strong>DevRel Technical Content</strong></a>
+            <a class="navbar-brand me-3" href="index.html"><strong>DevRel Video Content</strong></a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -144,9 +163,9 @@
                 </div>
 
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>   
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
                     <li class="nav-item"><a class="nav-link" href="https://www.oracle.com/in/database/technologies/oracle-database-software-downloads.html" target="_new" style="color: red;">Oracle AI Database</a></li> 
-                    <li class="nav-item"><a class="nav-link" href="videos.html" target="_new" style="color: aqua;">Tech Videos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="videos.html">Videos</a></li>
                     <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/madhusudhanraobm/" target="_new" style="color: aqua;">About Madhusudhan Rao</a></li>
                 </ul>
             </div>
@@ -155,25 +174,36 @@
 
     <!-- Content Area -->
     <div class="container-fluid py-5 site-padding">
-        <div id="articlesContainer">
-            <div class="loading">Loading articles...</div>
+        <div id="videosContainer">
+            <div class="loading">Loading videos...</div>
         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // counter to generate unique IDs for collapsible sections
         let sectionCounter = 0;
-        let loadedData = null; // store original articles.json content for filtering
+        let loadedData = null;
 
-        function createCardHTML(article) {
+        function extractYouTubeVideoId(url) {
+            const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+            const match = url.match(regExp);
+            return (match && match[2].length === 11) ? match[2] : null;
+        }
+
+        function createVideoCardHTML(article) {
             const label = article.buttonlabel || 'Read More';
-            const image = article.image || 'https://via.placeholder.com/600x400?text=No+Image';
+            const videoId = extractYouTubeVideoId(article.videourl);
+            const embedUrl = videoId ? `https://www.youtube.com/embed/${videoId}?rel=0&fs=1` : '';
             const tech = article.technologies ? `<br/><br/><b>Technologies: ${article.technologies}</b>` : '';
+            
             return `
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100">
-                        <img src="${image}" class="card-img-top" alt="${(article.title||'Article').replace(/"/g,'')}" />
+                        ${embedUrl ? `
+                            <div class="video-container">
+                                <iframe src="${embedUrl}" allowfullscreen="" loading="lazy" onload="setupYouTubeEndScreen(this)"></iframe>
+                            </div>
+                        ` : `<img src="${article.image || 'https://via.placeholder.com/600x400?text=No+Image'}" class="card-img-top" alt="${(article.title||'Video').replace(/"/g,'')}" />`}
                         <div class="card-body">
                             <h5 class="card-title">${article.title || ''}</h5>
                             <p class="card-text">${article.description || ''}${tech}</p>
@@ -183,14 +213,29 @@
                 </div>
             `;
         }
-        
+
+        // Hide YouTube end screen and related videos
+        function setupYouTubeEndScreen(iframe) {
+            // Use postMessage API to hide endscreen
+            setInterval(() => {
+                try {
+                    iframe.contentWindow.postMessage({
+                        event: 'command',
+                        func: 'hideControls'
+                    }, '*');
+                } catch (e) {
+                    // Silently fail if cross-origin restrictions apply
+                }
+            }, 1000);
+        }
+
         function renderSection(container, title, articles) {
             sectionCounter += 1;
             const collapseId = `collapse-${sectionCounter}`;
 
             const sectionWrapper = document.createElement('section');
             sectionWrapper.className = 'mb-5';
-            sectionWrapper.id = `section-${sectionCounter}`; // anchorable id for dropdown links
+            sectionWrapper.id = `section-${sectionCounter}`;
 
             const header = document.createElement('div');
             header.className = 'section-header';
@@ -224,7 +269,7 @@
 
             articles.forEach(article => {
                 const temp = document.createElement('div');
-                temp.innerHTML = createCardHTML(article);
+                temp.innerHTML = createVideoCardHTML(article);
                 row.appendChild(temp.firstElementChild);
             });
 
@@ -232,7 +277,6 @@
             sectionWrapper.appendChild(collapseDiv);
             container.appendChild(sectionWrapper);
 
-            // update toggle text/icon on collapse events
             collapseDiv.addEventListener('hide.bs.collapse', () => {
                 toggleBtn.classList.remove('expanded');
                 toggleBtn.classList.add('collapsed');
@@ -247,25 +291,13 @@
             });
         }
 
-        // render data (either {sections:[]} or {articles:[]})
         function renderData(data) {
             sectionCounter = 0;
-            const container = document.getElementById('articlesContainer');
+            const container = document.getElementById('videosContainer');
             container.innerHTML = '';
 
             if (!data) {
-                container.innerHTML = '<div class="loading">No articles</div>';
-                buildSectionsMenu();
-                return;
-            }
-
-            if (Array.isArray(data.sections) && data.sections.length) {
-                data.sections.forEach(sec => {
-                    const title = sec.title || 'Untitled Section';
-                    const articles = Array.isArray(sec.articles) ? sec.articles : [];
-                    if (articles.length) renderSection(container, title, articles);
-                });
-                if (!container.firstChild) container.innerHTML = '<div class="loading">No matching articles</div>';
+                container.innerHTML = '<div class="loading">No videos</div>';
                 buildSectionsMenu();
                 return;
             }
@@ -283,20 +315,19 @@
                     const articles = grouped[k] || [];
                     if (articles.length) renderSection(container, k, articles);
                 });
-                if (!container.firstChild) container.innerHTML = '<div class="loading">No matching articles</div>';
+                if (!container.firstChild) container.innerHTML = '<div class="loading">No matching videos</div>';
                 buildSectionsMenu();
                 return;
             }
 
-            container.innerHTML = '<div class="loading">No articles found in articles.json</div>';
+            container.innerHTML = '<div class="loading">No videos found in videos.json</div>';
             buildSectionsMenu();
         }
 
-        // populate the sections dropdown from rendered sections
         function buildSectionsMenu() {
             const menu = document.getElementById('sectionsMenu');
             menu.innerHTML = '';
-            const sections = document.querySelectorAll('#articlesContainer section');
+            const sections = document.querySelectorAll('#videosContainer section');
             if (!sections.length) {
                 const li = document.createElement('li');
                 li.innerHTML = '<span class="dropdown-item-text text-muted">No sections</span>';
@@ -316,20 +347,17 @@
                 a.textContent = title;
                 a.addEventListener('click', (e) => {
                     e.preventDefault();
-                    // collapse other sections
-                    document.querySelectorAll('#articlesContainer .collapse.show').forEach(c => {
+                    document.querySelectorAll('#videosContainer .collapse.show').forEach(c => {
                         if (c.id !== collapseId) {
                             const inst = bootstrap.Collapse.getOrCreateInstance(c);
                             inst.hide();
                         }
                     });
-                    // show target section
                     if (collapseId) {
                         const target = document.getElementById(collapseId);
                         const inst = bootstrap.Collapse.getOrCreateInstance(target);
                         inst.show();
                     }
-                    // smooth scroll to the section wrapper
                     document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth', block: 'start' });
                 });
                 li.appendChild(a);
@@ -351,15 +379,6 @@
             if (!loadedData) return;
             const q = document.getElementById('searchQuery').value.trim().toLowerCase();
 
-            if (Array.isArray(loadedData.sections)) {
-                const filteredSections = loadedData.sections.map(sec => {
-                    const articles = (sec.articles || []).filter(a => matchesQuery(a, q));
-                    return { title: sec.title, articles };
-                }).filter(s => s.articles.length > 0);
-                renderData({ sections: filteredSections });
-                return;
-            }
-
             if (Array.isArray(loadedData.articles)) {
                 const filtered = loadedData.articles.filter(a => matchesQuery(a, q));
                 renderData({ articles: filtered });
@@ -372,24 +391,23 @@
             renderData(loadedData);
         }
 
-        async function loadArticles() {
+        async function loadVideos() {
             try {
-                const res = await fetch('articles.json');
-                if (!res.ok) throw new Error('Failed to load articles.json');
+                const res = await fetch('videos.json');
+                if (!res.ok) throw new Error('Failed to load videos.json');
                 loadedData = await res.json();
                 renderData(loadedData);
             } catch (err) {
-                console.error('Error loading articles:', err);
-                document.getElementById('articlesContainer').innerHTML =
-                    '<div class="loading">Failed to load articles</div>';
+                console.error('Error loading videos:', err);
+                document.getElementById('videosContainer').innerHTML =
+                    '<div class="loading">Failed to load videos</div>';
                 buildSectionsMenu();
             }
         }
 
         document.addEventListener('DOMContentLoaded', () => {
-            loadArticles();
+            loadVideos();
 
-            // wire search controls
             document.getElementById('searchBtn').addEventListener('click', performSearch);
             document.getElementById('clearSearchBtn').addEventListener('click', clearSearch);
             const input = document.getElementById('searchQuery');
@@ -397,7 +415,6 @@
                 if (e.key === 'Enter') performSearch();
             });
         });
-        document.addEventListener('DOMContentLoaded', () => { const nav = document.querySelector('nav.navbar'); function updatePadding() { document.body.style.paddingTop = nav ? `${nav.offsetHeight}px` : '0'; } updatePadding(); window.addEventListener('resize', updatePadding); }); 
     </script>
 </body>
 </html>

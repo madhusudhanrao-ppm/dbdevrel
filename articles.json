@@ -469,6 +469,36 @@
       "technologies": "#GoogleCloud #YouTubeAPIs #OracleAPEX #GenerativeAI #OracleGenAI",
       "buttonlabel": "Integrate Google Cloud YouTube APIs with Oracle APEX",
       "section": "Oracle Multicloud"
+    },
+    {
+      "id": 48,
+      "title": "Start Application Development with Oracle Autonomous AI Database",
+      "description": "Polyglot programming offers a solution, enabling developers to leverage multiple languages and technologies to create seamless interactions with underlying databases. In this context, understanding how to harness polyglot programming is crucial for efficient data management and integration.Join our workshop to explore how to build Oracle Autonomous AI Database Applications using Python, Node.js, Java, and .NET. Learn how to connect to Autonomous Databases with and without database wallets, utilizing Access Control Lists and Mutual TLS authentication",
+      "image": "images/048l.jpeg",
+      "url": "https://www.linkedin.com/pulse/building-ai-powered-educational-applications-oracle-madhusudhan-rao/",
+      "technologies": "#OracleGenerativeAI #EducationIndustry #AIinEducation #GenerativeAI #OracleGenAI #Java #Python #NodeJS #DotNet #Streamlit",
+      "buttonlabel": "Start Application Development with Oracle Autonomous AI Database",
+      "section": "Oracle AI Database - Developer Applications"
+    },
+    {
+      "id": 49,
+      "title": "🔥 Create Oracle Autonomous AI Database in 1 minute 🔥 ",
+      "description": "Imagine creating a complete Oracle Autonomous AI Database in just around 1 minute (+/- few seconds) with just two button clicks on OCI ! 🌤️ Not only do you get the powerful Oracle Database AI capabilities, but also a suite of developer tools to boost your productivity! ",
+      "image": "images/049l.jpeg",
+      "url": "https://madhusudhanrao-ppm.github.io/dbdevrel/create-oracleaidb26ai-devrel/index.html",
+      "technologies": "#OracleGenerativeAI #Terraform #OracleResourceManager #Stack",
+      "buttonlabel": "Create Oracle Autonomous AI Database in 1 minute",
+      "section": "Oracle AI Database - Developer Applications"
+    },
+    {
+      "id": 50,
+      "title": "Innovate with Oracle Generative AI & Oracle Database 23ai using MCP Server and SQLcl",
+      "description": "Join us in this video as we showcase the seamless integration of Oracle Database 23ai with Oracle Generative AI models, including Cohere and Meta Llama, using MCP Server and hashtag#SQLcl.",
+      "image": "images/050l.png",
+      "url": "https://www.youtube.com/watch?v=PUKRWh_sVB8",
+      "technologies": "#OracleDatabase23ai #OracleGenerativeAI #UNESCO #MCPServer",
+      "buttonlabel": "Innovate with Oracle Generative AI & Oracle Database 23ai",
+      "section": "Oracle AI Services"
     }
     
   ]
