@@ -309,4 +309,4 @@ The **source code** folder has two subfolders
 ## Acknowledgements
 
 * **Author** - Madhusudhan Rao, Principal Product Manager, Oracle Database DevRel 
-* **Last Updated By/Date** - 5th Nov, 2025
+* **Last Updated By/Date** - 28th Nov, 2025
