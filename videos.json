@@ -43,6 +43,50 @@
       "technologies": "#SpringBoot #OracleAutonomousAIDatabase #Java #Microservices #GenerativeAI #OracleGenAI",
       "buttonlabel": "Spring Boot + Oracle Autonomous AI Database Workshop",
       "section": "Oracle AI Database - Developer Applications"
+    }, 
+    {
+      "id": 5,
+      "title": "Oracle RAG AI Agent and RAG Graph",
+      "description": " In this article, we'll explore the concepts of AI agents, agentic AI, and retrieval-augmented generation (RAG), and provide a hands-on guide to building a RAG application using Oracle Cloud Infrastructure (OCI).",
+      "image": "images/053l.png",
+      "videourl": "https://youtu.be/uHIFW1JxLZE",
+      "url": "https://www.linkedin.com/pulse/unlocking-power-ai-agents-step-by-step-guide-building-madhusudhan-rao-7kwuf",
+      "technologies": "#OracleAPEX #OracleAIDatabase26ai #GenerativeAI #AIApplications #OracleDatabase",
+      "buttonlabel": "Oracle RAG AI Agent and RAG Graph",
+      "section": "Oracle AI Services"
+    },
+    {
+      "id": 6,
+      "title": "Oracle Globally Distributed Database - Banking Application CRUD Operations",
+      "description": "This article will help Oracle Database application developers on setting up and working with Oracle Sharding and Streamlit for a demo banking application.",
+      "image": "images/052l.png",
+      "videourl": "https://youtu.be/M-_e0Gm8NsM",
+      "url": "https://www.linkedin.com/pulse/oracle-globally-distributed-database-banking-application-rao-h0ijf",
+      "technologies": "#OracleDatabase23ai #OracleAIDatabase26ai #DatabaseDevelopers #OCI #ApplicationDevelopers",
+      "buttonlabel": "Banking Application CRUD Operations",
+      "section": "Oracle AI Services"
+    },  
+    {
+      "id": 7,
+      "title": "Process Automation and Analytics Cloud with Oracle AI Database 26ai",
+      "description": "n today's fast-paced digital landscape, automating business processes has become essential for organisations seeking to enhance efficiency, reduce manual errors, and improve customer satisfaction. This article will delve into the automation of a business process, specifically the opening of a new premium bank account.",
+      "image": "images/054l.png",
+      "videourl": "https://youtu.be/0os68czbtYw",
+      "url": "https://www.linkedin.com/pulse/building-robust-suspected-transaction-review-business-madhusudhan-rao-w6k2f",
+      "technologies": "#OracleAIDatabase26ai #OracleAPEX #OracleProcessAutomationCloud #OracleAnalyticsCloud #GenerativeAI #OracleGenAI",
+      "buttonlabel": "Process Automation and Analytics Cloud with Oracle AI Database 26ai",
+      "section": "Oracle AI Database"
+    },
+    {
+      "id": 8,
+      "title": "Open Bank Account Business Process Automation with Oracle APEX Workflows and Task Definitions",
+      "description": "In today's fast-paced digital landscape, automating business processes has become essential for organisations seeking to enhance efficiency, reduce manual errors, and improve customer satisfaction. This article will delve into the automation of a business process, specifically the opening of a new premium bank account.",
+      "image": "images/055l.png",
+      "videourl": "https://youtu.be/iDlTZnCIGh8",
+      "url": "https://www.linkedin.com/pulse/how-automate-business-process-oracle-apex-workflows-task-rao-9na6f",
+      "technologies": "#OracleDatabase23ai #OracleAIDatabase26ai #DatabaseDevelopers #OCI #ApplicationDevelopers #Python-oracledb",
+      "buttonlabel": "Open Bank Account Business Process Automation",
+      "section": "Oracle AI Database"
     }
     
   ]
