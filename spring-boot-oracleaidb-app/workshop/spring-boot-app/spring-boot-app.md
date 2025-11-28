@@ -481,11 +481,11 @@ and provides the actual implementation of the business logic
 ## Learn More & Downloads
  
 * [Autonomous AI Database for Developers](https://docs.oracle.com/en-us/iaas/autonomous-database-serverless/doc/autonomous-database-for-developers.html) 
-* [Download Source code](https://github.com/madhusudhanrao-ppm/dbdevrel/tree/main/create-oracleaidb26ai-devrel/sourcecodes)
+* [Download Source code](https://github.com/madhusudhanrao-ppm/dbdevrel/tree/main/source-codes)
 * [Direct ORM deployment link](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://objectstorage.us-phoenix-1.oraclecloud.com/p/jtfUsV33KtLR937hWybAgrq8qtuQQuAaIw1K_VBThhlUF6Z1HYF0Ai50sQlp06bQ/n/oradbclouducm/b/medical_transcripts/o/Terraform/oracle-lakehouse-devedition-stack.zip)
 * [See Autonomous AI Database for Developers Billing and Tenancy Service Limit for details] (https://docs.oracle.com/en-us/iaas/autonomous-database-serverless/doc/autonomous-database-for-developers-billing.html)
 
 ## Acknowledgements
 
 * **Author** - Madhusudhan Rao, Principal Product Manager, Oracle Database DevRel 
-* **Last Updated By/Date** - 24th Nov, 2025
+* **Last Updated By/Date** - 28th Nov, 2025
