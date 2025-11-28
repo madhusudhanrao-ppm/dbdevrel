@@ -1,0 +1,29 @@
+{
+  "links": [
+    {
+      "id": 1,
+      "label": "Oracle AI Database",
+      "url": "https://www.oracle.com/in/database/technologies/oracle-database-software-downloads.html"
+    },
+    {
+      "id": 2,
+      "label": "Developer Center",
+      "url": "https://www.oracle.com/in/developer/"
+    },
+    {
+      "id": 3,
+      "label": "Free OCI Signup",
+      "url": "https://www.oracle.com/in/cloud/free/"
+    },
+    {
+      "id": 4,
+      "label": "Discussion",
+      "url": "https://github.com/madhusudhanrao-ppm/dbdevrel/discussions/1"
+    },
+    {
+      "id": 5,
+      "label": "GitHub Source codes",
+      "url": "https://github.com/madhusudhanrao-ppm/dbdevrel/tree/main/source-codes"
+    }
+  ]
+}
