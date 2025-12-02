@@ -475,7 +475,7 @@
       "title": "Start Application Development with Oracle Autonomous AI Database",
       "description": "Polyglot programming offers a solution, enabling developers to leverage multiple languages and technologies to create seamless interactions with underlying databases. In this context, understanding how to harness polyglot programming is crucial for efficient data management and integration.Join our workshop to explore how to build Oracle Autonomous AI Database Applications using Python, Node.js, Java, and .NET. Learn how to connect to Autonomous Databases with and without database wallets, utilizing Access Control Lists and Mutual TLS authentication",
       "image": "images/048l.jpeg",
-      "url": "https://www.linkedin.com/pulse/building-ai-powered-educational-applications-oracle-madhusudhan-rao/",
+      "url": "https://madhusudhanrao-ppm.github.io/dbdevrel/db-application-development/workshops/freetier/index.html",
       "technologies": "#OracleGenerativeAI #EducationIndustry #AIinEducation #GenerativeAI #OracleGenAI #Java #Python #NodeJS #DotNet #Streamlit",
       "buttonlabel": "Start Application Development with Oracle Autonomous AI Database",
       "section": "Oracle AI Database - Developer Applications"
