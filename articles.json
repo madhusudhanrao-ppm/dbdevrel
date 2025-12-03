@@ -509,6 +509,16 @@
       "technologies": "#SpringBoot #OracleAutonomousAIDatabase #Java #Microservices #GenerativeAI #OracleGenAI",
       "buttonlabel": "Spring Boot + Oracle Autonomous AI Database Workshop",
       "section": "Oracle AI Database - Developer Applications"
+    },
+    { 
+      "id": 52,
+      "title": "How Can I Create Semantic Similarity Search in Oracle Database 19c",
+      "description": "In this lab, you will learn how to create a similarity search application using LangChain, Streamlit, and Sentence Transformers Hugging Face Model with Oracle Autonomous AI Database 19c",
+      "image": "images/053l.png",
+      "url": "https://madhusudhanrao-ppm.github.io/dbdevrel/similarity-search-19c/index.html",
+      "technologies": "#OracleDatabase19c #SemanticSimilaritySearch #LangChain #Streamlit #HuggingFace #GenerativeAI #OracleGenAI",
+      "buttonlabel": "How Can I Create Semantic Similarity Search in Oracle Database 19c",
+      "section": "Oracle AI Services"
     }
     
   ]
