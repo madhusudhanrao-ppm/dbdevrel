@@ -5,7 +5,7 @@
       {
          "title": "Create Similarity Search for Oracle Database 19c using Sentence Transformers Model, LangChain, Steamlit and Python",
          "description": "",
-         "filename": "similarity-Search.md"
+         "filename": "similarity-search.md"
       } 
    ],
    "task_type": "Sections"
