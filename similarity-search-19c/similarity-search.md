@@ -1,4 +1,4 @@
-# How can I Create Similarity Search for Oracle Database 19c?
+# How Can I Create Similarity Search in Oracle Database 19c?
  
 ## Introduction
 
