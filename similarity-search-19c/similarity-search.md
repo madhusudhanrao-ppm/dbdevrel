@@ -2,7 +2,11 @@
  
 ## Introduction
 
-Similarity search is a technique that finds items in a dataset that are most similar to a query, rather than looking for exact matches. It works by representing items as numerical vectors (called embeddings) and then using mathematical formulas like cosine similarity or Euclidean distance to find the vectors closest to the query vector. This allows systems to find related items based on shared features, making it useful for applications like image and text search, recommendation systems, and AI-driven analysis
+In this lab, you will learn how to **create a similarity search application using LangChain, Streamlit, and Sentence Transformers Hugging Face Model with Oracle Autonomous AI Database 19c**.
+
+**Similarity search** is a technique that finds items in a dataset that are most similar to a query, rather than looking for exact matches. It works by representing items as numerical vectors (called embeddings) and then using mathematical formulas like cosine similarity or Euclidean distance to find the vectors closest to the query vector. This allows systems to find related items based on shared features, making it useful for applications like image and text search, recommendation systems, and AI-driven analysis.
+
+**Semantic search** is a technique that understands the contextual meaning and intent behind a user's query, going beyond simple keyword matching to find relevant results. It works by converting text into numerical representations called vectors, which are stored in a vector database. The system then compares the vector of a new query to existing vectors to find the most similar ones, effectively connecting ideas even when the exact words are different.
 
 How it works
 
@@ -15,7 +19,7 @@ Retrieval: The system retrieves the items with the highest similarity scores
 
 [all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) is a sentence-transformers model: It maps sentences & paragraphs to a 384 dimensional dense vector space and can be used for tasks like clustering or semantic search.
 
-Semantic similarity search is a technique that understands the contextual meaning and intent behind a user's query, going beyond simple keyword matching to find relevant results. It works by converting text into numerical representations called vectors, which are stored in a vector database. The system then compares the vector of a new query to existing vectors to find the most similar ones, effectively connecting ideas even when the exact words are different.
+
 
 Estimated Time: 2 to 5 minutes.  
  
@@ -33,13 +37,14 @@ This lab assumes you have:
 
 * Oracle cloud account and privileges to create & manage Oracle Autonomous AI Database
 * Oracle Autonomous Database 19c has been created and is running.
+* Basic knowledge of Python programming language.
+* Basic knowledge of SQL and Oracle Database concepts.
 
-The **source code** folder has two subfolders 
+ 
+**Download Source Code** - similaritysearch.py and Create Table script - create-table.sql from [GitHub Repository](https://github.com/madhusudhanrao-ppm/dbdevrel/tree/main/source-codes/similaritysearch) 
 
-1. The folder **oracle-lakehouse-devedition-cli** has source code for Terraform command line interface, 
 
-
-## Task 1: Create Table
+## Task 1: Create Table and Insert Sample Records
 
 1. Create Table in Oracle Database 19c (Alternatively You can also use 23ai or 26ai) and insert few sample records
 
@@ -82,7 +87,7 @@ The **source code** folder has two subfolders
     </copy>
       ``` 
 
-## Task 2: Download database wallet, Note connection details and Create database user
+## Task 2: Download Wallet and Connection Details
 
 1. From the top right navigation menu click on **Database Connection** button
 
@@ -100,7 +105,7 @@ The **source code** folder has two subfolders
     devdbhs556l_high = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.us-phoenix-1.oraclecloud.com))(connect_data=(service_name=wkrfstesta1jcu_devdbhs556l_high.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
     ```
   
-## Task 3: Create Python Environment
+## Task 3: Setup Python Environment
 
 1. Create Python environment and install the required libraries. 
 
@@ -111,7 +116,7 @@ The **source code** folder has two subfolders
     streamlit run similaritysearch.py  
     ```
 
-## Task 4: Write Code
+## Task 4: Create Streamlit Application for Similarity Search
 
 1. Lets write similaritysearch.py and Imports
 
@@ -290,7 +295,7 @@ The **source code** folder has two subfolders
     st.sidebar.markdown("Click on 'Build Vector Store' to load data from Oracle DB.")
     ```
 
-## Task 6: Run the code
+## Task 5: Run the Python Application
 
 1. Run the streamlit code, access the application at [localhost:8501](http://localhost:8501/)
 
