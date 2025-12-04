@@ -4,7 +4,7 @@
 
 Autonomous AI Database for Developers provides you with low cost instances for developers and others to build and test new Autonomous AI Database applications.
  
-Autonomous AI Database for Developers are low-cost, fixed shape databases intended for development and testing uses cases, and are not recommended for production use cases. When you need more compute or storage resources or you want to take advantage of additional Autonomous AI Database features, you can upgrade your Autonomous AI Database for Developers instance to a full paid service instance.
+Autonomous AI Database for Developers are low-cost, fixed shape databases intended for development and testing uses cases, and are not recommended for production use cases. When you need more compute or storage resources or you want to take advantage of additional Autonomous AI Database features, you can upgrade your Autonomous AI Database for Developers instance to a full paid service instance. 
 
 With Oracle Autonomous AI Database you can work on many tools such as 
 
@@ -24,7 +24,7 @@ Estimated Time: 2 to 5 minutes (max).
 
 In this short sprint, you will:
  
-* Create an Oracle Autonomous AI Database for Developers using Oracle Resource Manager Stack.
+* Create an Oracle Autonomous AI Database for Developers using Oracle Resource Manager Stack. 
 * View Oracle Autonomous AI Database and Developer Tools.
 * (Optional) Create Oracle Autonomous AI Database for Developers using Oracle Terraform Command Line Interface CLI.
 * (Optional) Download Database Wallet, Note Connection Details and Create Database User
@@ -56,11 +56,11 @@ The **source code** folder has two subfolders
  
 ## Create an Oracle Resource Manager Stack
   
-1. Create an Autonomous AI Database using the Resource Manager Stack.
+1. Create an Autonomous AI Database using the Resource Manager Stack. You can either use the [Direct ORM deployment link](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://objectstorage.us-phoenix-1.oraclecloud.com/p/jtfUsV33KtLR937hWybAgrq8qtuQQuAaIw1K_VBThhlUF6Z1HYF0Ai50sQlp06bQ/n/oradbclouducm/b/medical_transcripts/o/Terraform/oracle-lakehouse-devedition-stack.zip) or download the source code from the GitHub location mentioned in the Prerequisites section and upload the **oracle-lakehouse-devedition-stack.zip** file.
 
     > Please Note: Billing for Autonomous AI Database for Developers databases is hourly per instance. please see more info section
 
-2. Log in to https://cloud.oracle.com from the top left navigation select **Developer Services** and **Stacks** under **Resource Manager**
+2. Log in to https://cloud.oracle.com from the top left navigation select **Developer Services** and **Stacks** under **Resource Manager** 
 
     ![Navigation](images/01-navigation.png )
     
@@ -68,7 +68,7 @@ The **source code** folder has two subfolders
 
     ![Create Stack](images/02-createstack.png )
 
-4. Provide the Stack Information. You can also accept the default values provided. Ensure that you select the right compartment, click **Next** button and verify the configuration variables, change the password as you prefer.
+4. Provide the Stack Information. You can also accept the default values provided. Ensure that you select the right compartment, click **Next** button and verify the configuration variables, change the password as you prefer. 
     
 5. Ensure that the compartment id is correct, and click **Next** button.
 
@@ -78,7 +78,7 @@ The **source code** folder has two subfolders
 
     ![Apply](images/04-apply.png )
     
-    This will create ORM (Oracle Resource Manager) Job.
+    This will create ORM (Oracle Resource Manager) Job. 
 
     ![ORM Job](images/05-orm.png )
 
@@ -207,8 +207,7 @@ The **source code** folder has two subfolders
     Refer [OCI CLI Terraform for Database Creation](https://registry.terraform.io/providers/oracle/oci/latest/docs/resources/database_autonomous_database)
            
 5. Start with Terraform initialisation
-
- 
+6. Run the following commands from the terminal where the **main.tf** file is located.
     ```
     terraform init
     ``` 
@@ -248,13 +247,7 @@ The **source code** folder has two subfolders
     ```
     devdbhs556l_high = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.us-phoenix-1.oraclecloud.com))(connect_data=(service_name=wkrfs4xeqva1jcu_devdbhs556l_high.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
     ```
-
-    <!-- ```
-    devdbhs7g6l_high = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.us-phoenix-1.oraclecloud.com))(connect_data=(service_name=wkrfs4xeqva1jcu_devdbhs7g6l_high.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
-
-    DEMOUSER/Welcome123456#
-    ``` -->
-
+  
 4. Create Database user by clicking on **Database Actions** Menu and **Database Users**
 
     ![Create User](images/create-user.png  )
@@ -281,7 +274,7 @@ The **source code** folder has two subfolders
 
     ![Confirm](images/16-destroyconfirm.png )
 
-2. If you have used Terraform CLI then run 
+2. If you have used Terraform CLI then run  
 
     ```
     terraform destroy
@@ -309,4 +302,4 @@ The **source code** folder has two subfolders
 ## Acknowledgements
 
 * **Author** - Madhusudhan Rao, Principal Product Manager, Oracle Database DevRel 
-* **Last Updated By/Date** - 28th Nov, 2025
+* **Last Updated By/Date** - 4th Dec, 2025

@@ -18,9 +18,7 @@ Retrieval: The system retrieves the items with the highest similarity scores
 [SentenceTransformers](https://huggingface.co/sentence-transformers) is a Python framework for state-of-the-art sentence, text and image embeddings.
 
 [all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) is a sentence-transformers model: It maps sentences & paragraphs to a 384 dimensional dense vector space and can be used for tasks like clustering or semantic search.
-
-
-
+ 
 Estimated Time: 2 to 5 minutes.  
  
 ### Objectives
@@ -39,7 +37,6 @@ This lab assumes you have:
 * Oracle Autonomous Database 19c has been created and is running.
 * Basic knowledge of Python programming language.
 * Basic knowledge of SQL and Oracle Database concepts.
-
  
 **Download Source Code** - similaritysearch.py and Create Table script - create-table.sql from [GitHub Repository](https://github.com/madhusudhanrao-ppm/dbdevrel/tree/main/source-codes/similaritysearch) 
 
@@ -89,7 +86,11 @@ This lab assumes you have:
 
 ## Task 2: Download Wallet and Connection Details
 
-1. From the top right navigation menu click on **Database Connection** button
+1. Check the Database version 19c is shown in the Database details page 
+
+    ![DB Conn](images/db-version.png  )
+
+    From the top right navigation menu click on **Database Connection** button to download the wallet and connection details.
 
     ![DB Conn](images/db-conn.png  )
 
@@ -97,41 +98,48 @@ This lab assumes you have:
 
     ![Wallet](images/copy-connection.png  ) 
 
-    Provide wallet password and save the wallet.
+    Provide wallet password and save the wallet. 
 
-3. Copy and save TNS Name, which would be of the following format, where database name and region will change. we will need this details for database connection. 
+3. Copy and save TNS Name, which would be of the following format, where database name and region will change. we will need this details for database connection.  
 
     ```
+    <copy>
     devdbhs556l_high = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.us-phoenix-1.oraclecloud.com))(connect_data=(service_name=wkrfstesta1jcu_devdbhs556l_high.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
+    </copy>  
     ```
   
 ## Task 3: Setup Python Environment
 
-1. Create Python environment and install the required libraries. 
+1. Create Python environment and install the required libraries.  
 
     ```
+    <copy>
     python3 -m venv myproject_env   
     source myproject_env/bin/activate    
     pip install streamlit langchain langchain-community sentence-transformers faiss-cpu oracledb
     streamlit run similaritysearch.py  
+    </copy>
     ```
 
 ## Task 4: Create Streamlit Application for Similarity Search
 
-1. Lets write similaritysearch.py and Imports
+1. Lets write similaritysearch.py and Imports 
 
     ```
+    <copy>
     import os
     import streamlit as st
     from langchain.embeddings.huggingface import HuggingFaceEmbeddings
     from langchain.vectorstores import FAISS
     from langchain.schema import Document
     import oracledb 
+    </copy>
     ```
 
 2. Page setup and Create Database Connection
 
     ``` 
+    <copy>
     # Page config
     st.set_page_config(page_title="Semantic Similarity Search", layout="wide")
     st.title("🔍 Semantic Similarity Search with LangChain & Streamlit")
@@ -211,11 +219,13 @@ This lab assumes you have:
             for s in sample_sentences
         ]
         st.sidebar.success(f"Loaded {len(documents_list)} sample documents")  
+    </copy>
     ```
 
 3. Build vector store
 
     ```
+    <copy>
     # Build vector store
     if st.sidebar.button("🔄 Build Vector Store"):
         with st.spinner("Building vector store..."):
@@ -225,11 +235,13 @@ This lab assumes you have:
             )
             st.session_state.documents = documents_list
             st.sidebar.success("✅ Vector store built!") 
+    </copy>
     ```
 
 4. Main search interface
 
     ``` 
+    <copy>
     st.header("Search Documents")
 
     if st.session_state.vector_store is None:
@@ -276,11 +288,13 @@ This lab assumes you have:
                         st.metric("Similarity", f"{(1 - score):.3f}")
                 
                 st.divider()
+    </copy>
     ```
 
 5. Sidebar: Show loaded documents and Footer
  
     ``` 
+    <copy>
     with st.sidebar.expander("📄 View Loaded Documents"):
         if st.session_state.documents:
             for i, doc in enumerate(st.session_state.documents, 1):
@@ -293,6 +307,8 @@ This lab assumes you have:
     st.sidebar.markdown("**Setup Instructions:**")
     st.sidebar.markdown("Select Datasource as 'Oracle Database'")
     st.sidebar.markdown("Click on 'Build Vector Store' to load data from Oracle DB.")
+    st.sidebar.markdown("Enter your search query and view results.")
+    </copy>
     ```
 
 ## Task 5: Run the Python Application
@@ -300,7 +316,9 @@ This lab assumes you have:
 1. Run the streamlit code, access the application at [localhost:8501](http://localhost:8501/)
 
     ```
+    <copy>
     similaritysearch % streamlit run similaritysearch.py
+    </copy>
     ```
 
 2.  Select Datasource as 'Oracle Database', Click on 'Build Vector Store' to load data from Oracle Database 19c.
@@ -333,4 +351,4 @@ This lab assumes you have:
 ## Acknowledgements
 
 * **Author** - Madhusudhan Rao, Principal Product Manager, Oracle Database DevRel 
-* **Last Updated By/Date** - 3rd Dec, 2025
+* **Last Updated By/Date** - 4th Dec, 2025
