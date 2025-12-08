@@ -32,7 +32,7 @@ def fetch_from_oracle(
     tns_name = "dbnameadw_high"   
     wall_config_dir = "/Users/Wallet-folder"
     wall_pwd = "WalletPasswordHere" 
-    table = "ASSETS"
+    table = "MYNOTES"
     col = "NOTES"
 
     if not (user and pwd and tns_name):
