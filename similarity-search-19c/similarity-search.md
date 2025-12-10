@@ -2,7 +2,7 @@
  
 ## Introduction
 
-In this lab, you will learn how to **create a similarity search application using LangChain, Streamlit, and Sentence Transformers Hugging Face Model with Oracle Autonomous AI Database 19c**.
+In this lab, you will learn how to **create a similarity search application using LangChain, Streamlit, and Sentence Transformers Hugging Face Model with Oracle Autonomous Database 19c**.
 
 **Similarity search** is a technique that finds items in a dataset that are most similar to a query, rather than looking for exact matches. It works by representing items as numerical vectors (called embeddings) and then using mathematical formulas like cosine similarity or Euclidean distance to find the vectors closest to the query vector. This allows systems to find related items based on shared features, making it useful for applications like image and text search, recommendation systems, and AI-driven analysis.
 

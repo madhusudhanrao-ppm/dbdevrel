@@ -19,7 +19,7 @@
             "filename": "../../adb-with-wallet/adb-with-wallet.md"
         }, 
         {
-            "title": "Lab 2: Develop Python Applications",
+            "title": "Lab 2: Develop Python App",
             "filename": "../../pythondb-development-oracledb/pythondb-development-oracledb.md" 
         }, 
         {
@@ -28,20 +28,30 @@
         } 
         ,
         {
-            "title": "Lab 4: Develop Node.js Applications",
+            "title": "Lab 4: Develop Node.js App",
             "filename": "../../nodedb-development/nodedb-development.md"
         }, 
         {
-            "title": "Lab 5: Develop React.js Applications",
+            "title": "Lab 5: Develop React.js App",
             "filename": "../../reactjs/reactjs.md"
         }, 
         {
-            "title": "Lab 6: Develop Java Applications",
+            "title": "Lab 6: Develop Java App",
             "filename": "../../javadb-development/javadb-development.md"
         }, 
         {
-            "title": "Lab 7: Develop .NET Applications",
+            "title": "Lab 7: Develop .NET App",
             "filename": "../../dotnet-development/dotnet-development.md"
-        }  
+        },
+        {
+         "title": "Lab 8: Develop Spring Boot App",
+         "description": "Develop Spring Boot Application connecting to Oracle Autonomous AI Database",
+         "filename": "../../spring-boot-app/spring-boot-app.md"
+       },
+       {
+        "title": "Lab 9: Develop Google Colab App",
+        "description": "Develop Google Colab App connecting to Oracle Autonomous AI Database",
+        "filename": "../../google-colab/google-colab.md"
+       } 
     ]
 }
