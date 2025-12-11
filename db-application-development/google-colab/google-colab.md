@@ -30,6 +30,9 @@ In this lab, you will:
 * Save your notebook to GitHub with one-click Colab integration
 * Run Semantic Similarity Search for Oracle Database 19c in Google Colab
 
+
+[Colab Notebook](youtube:TPQiD2m0kXA:large)  
+
 ### Prerequisites
 
 This lab assumes you have:
