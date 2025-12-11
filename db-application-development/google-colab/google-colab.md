@@ -4,6 +4,17 @@
 
 In this lab, you will learn how to develop and run Python applications in Google Colab that connect to Oracle Autonomous AI Database. You'll mount your database wallet files from Google Drive, establish secure connections, and execute queries using the oracledb Python driver. By the end, you'll have a fully functional notebook that performs CRUD operations and is saved in both Google Drive and GitHub for easy sharing and reusability.
 
+[Google Colab Jupyter Notebook](https://colab.research.google.com/) is widely used because it provides an interactive, cell-based environment that seamlessly blends live code, immediate output (including data visualizations), and narrative text into a single, shareable document. This makes it an ideal tool for data science, research, and education. 
+Key Advantages of Jupyter Notebook
+
+**Interactive and Iterative Coding:** Code can be broken down into small, independent cells and executed one section at a time. This allows for a fast feedback loop, making it easy to test snippets, debug, and experiment with data without running the entire script from the beginning.
+
+**Inline Data Visualization and Rich Output:** The output of code cells, such as data tables (pandas DataFrames), plots (from libraries like Matplotlib or Seaborn), images, and even videos, are displayed directly beneath the corresponding code cell. This immediate visual feedback is crucial for exploratory data analysis (EDA) and machine learning workflows.
+
+**Integrated Documentation:** You can interleave code cells with rich text using Markdown cells. This allows for detailed explanations, mathematical equations (using LaTeX), and images alongside the code, which helps document the thought process and methodology, effectively telling a "computational narrative".
+
+**Easy Sharing and Collaboration:** Notebooks are saved in a portable JSON format (.ipynb files), making them easy to share with colleagues or stakeholders. They can also be converted into various static formats like HTML, PDF, or Markdown for presentations or blog posts. Services like GitHub and NBViewer can render these notebooks directly in a browser.
+
 Estimated Time: 15 to 20 minutes.
 
 ### Objectives
@@ -17,6 +28,7 @@ In this lab, you will:
 * Establish secure connections to Oracle Database from Colab
 * Execute queries and display results using pandas DataFrames
 * Save your notebook to GitHub with one-click Colab integration
+* Run Semantic Similarity Search for Oracle Database 19c in Google Colab
 
 ### Prerequisites
 
@@ -29,7 +41,8 @@ This lab assumes you have:
 * A Google account with access to Google Drive and Google Colab
 * A GitHub account (optional, but recommended for sharing your notebook)
 
-**Download Source Code** - Complete example notebook is available in [this GitHub Repository](https://github.com/madhusudhanrao-ppm/devrel-colab/blob/main/mydbconnection.ipynb)
+
+**Download Source Code** - Complete example notebook is available in [this GitHub Repository](https://github.com/madhusudhanrao-ppm/dbdevrel/tree/main/source-codes/colab-code)
 
 ## Task 1: Create Table and Insert Sample Records
 
@@ -323,270 +336,182 @@ On subsequent visits, you can quickly access your saved notebook from multiple l
 
     ![Navigation](images/drive.png)
 
-## Learn More
+## Task 9: (Optional) Run Semantic Similarity Search for Oracle Database 19c in Google Colab
 
-* [Oracle Autonomous AI Database for Developers - Documentation](https://docs.oracle.com/en-us/iaas/autonomous-database-serverless/doc/autonomous-database-for-developers.html)
-* [Python oracledb Driver - Official Documentation](https://python-oracledb.readthedocs.io/)
-* [Google Colab - Official Guide](https://colab.research.google.com/)
-* [Google Colab FAQ - Working with Files](https://research.google.com/colaboratory/faq.html)
-* [Oracle Autonomous Database for Developers - Billing Information](https://docs.oracle.com/en-us/iaas/autonomous-database-serverless/doc/autonomous-database-for-developers-billing.html)
-* [Download Sample Notebook from GitHub](https://github.com/madhusudhanrao-ppm/devrel-colab/blob/main/mydbconnection.ipynb)
+Learn more about [Semantic Similarity Search for Oracle Database 19c in this Lab](https://madhusudhanrao-ppm.github.io/dbdevrel/similarity-search-19c/index.html), Here we will replace **Streamlit Web application version with Google Colab Jupyter Notebook version** 
 
-## Acknowledgements
+Please Note > The same code shown below would also work for Oracle Database 23ai or 26ai versions.
 
-* **Author** - Madhusudhan Rao, Principal Product Manager, Oracle Database DevRel
-* **Last Updated By/Date** - December 9, 2025
- 
-**Download Source Code** - mydbconnection.ipynb from [GitHub Repository](https://github.com/madhusudhanrao-ppm/devrel-colab/blob/main/mydbconnection.ipynb) 
-
-<!-- 
-## Task 1: Create Table and Insert Sample Records
-
-Create a MYNOTES table in your Oracle Autonomous Database with sample data that you'll query from Google Colab later.
-
-1. Connect to your Oracle Autonomous AI Database using SQL Developer or the Database Actions tool and execute the following SQL:
+1. [Open the Jupyter Notebook](https://github.com/madhusudhanrao-ppm/dbdevrel/blob/main/source-codes/colab-code/similaritysearch-colab.ipynb) file in Google Colab 
+2. Run the Notebook
 
     ```
     <copy>
-    CREATE TABLE "MYNOTES" 
-    (	
-        "ID" NUMBER GENERATED BY DEFAULT ON NULL AS IDENTITY MINVALUE 1 MAXVALUE 99999999 
-         INCREMENT BY 1 START WITH 4 CACHE 20 NOORDER  NOCYCLE  NOKEEP  NOSCALE  NOT NULL ENABLE, 
-        "NOTES" VARCHAR2(4000 CHAR),  
-        CONSTRAINT "MYNOTES_ID_PK" PRIMARY KEY ("ID")
-        USING INDEX  ENABLE
-    ) ;
-
-    -- Insert records
-    INSERT INTO MYNOTES (notes) VALUES ('Travel to Kashmir was an unforgettable experience with stunning landscapes.');
-    INSERT INTO MYNOTES (notes) VALUES ('Hotel Booking in Delhi was confirmed for the weekend.'); 
-    INSERT INTO MYNOTES (notes) VALUES ('Arrived in Paris, the Eiffel Tower was breathtaking at sunset.');
-    INSERT INTO MYNOTES (notes) VALUES ('Loved the croissants at a tiny bakery near the Seine.');
-    INSERT INTO MYNOTES (notes) VALUES ('Tokyo streets are incredibly clean and efficient.');
-    INSERT INTO MYNOTES (notes) VALUES ('Central Park was a perfect escape from the city buzz.');
-    INSERT INTO MYNOTES (notes) VALUES ('Bangkok night markets are a must‑try for street food.');
-    INSERT INTO MYNOTES (notes) VALUES ('Sydney Opera House illuminated at night is unforgettable.');
-    INSERT INTO MYNOTES (notes) VALUES ('Rome’s ancient ruins are best explored with a guide.');
-    INSERT INTO MYNOTES (notes) VALUES ('Tapas in Barcelona were small but packed with flavor.');
-    INSERT INTO MYNOTES (notes) VALUES ('Dubai’s desert safari was an exhilarating experience.');
-    INSERT INTO MYNOTES (notes) VALUES ('Cape Town’s Table Mountain offered stunning panoramic views.'); 
-    INSERT INTO MYNOTES (notes) VALUES ('Patient tolerated surgery well; margins clear.'); 
-    INSERT INTO MYNOTES (notes) VALUES ('Started on pembrolizumab - mild fatigue reported.'); 
-    INSERT INTO MYNOTES (notes) VALUES ('Completed 6 cycles of FOLFOX; CEA levels decreasing.'); 
-    INSERT INTO MYNOTES (notes) VALUES ('Androgen deprivation therapy initiated; PSA dropped to 0.8 ng/mL.'); 
-    INSERT INTO MYNOTES (notes) VALUES ('Bilateral lung metastases stable after 8 cycles of nivolumab.'); 
-    INSERT INTO MYNOTES (notes) VALUES ('CR achieved after induction; proceeding to consolidation.'); 
-    INSERT INTO MYNOTES (notes) VALUES ('Started on gemcitabine + nab‑paclitaxel; mild neutropenia noted.'); 
-    INSERT INTO MYNOTES (notes) VALUES ('Debulking surgery successful; plan for platinum‑based chemo.'); 
-    INSERT INTO MYNOTES (notes) VALUES ('PET scan shows complete metabolic response after 4 cycles of ABVD.'); 
-    INSERT INTO MYNOTES (notes) VALUES ('Total thyroidectomy performed; awaiting radioactive iodine.');
-    INSERT INTO MYNOTES (notes) VALUES ('Breast cancer screening scheduled for next month.');
-    INSERT INTO MYNOTES (notes) VALUES ('Lung cancer screening scheduled for next month.');
-    </copy>
-      ``` 
-
-## Task 2: Download Wallet and Connection Details
-
-1. Check the Database version 19c is shown in the Database details page, Alternatively you can also use latest 26ai Oracle Autonomous AI Database for this lab. 
-
-    ![DB Conn](images/db-version.png  )
-
-    From the top right navigation menu click on **Database Connection** button to download the wallet and connection details.
-
-    ![DB Conn](images/db-conn.png  )
-
-2. Download wallet and Copy connection details. 
-
-    ![Wallet](images/copy-connection.png  ) 
-
-    Provide wallet password and save the wallet. 
-
-3. Copy and save TNS Name, which would be of the following format, where database name and region will change. we will need this details for database connection.  
-
-    ```
-    <copy>
-    devdbhs556l_high = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.us-phoenix-1.oraclecloud.com))(connect_data=(service_name=wkrfstesta1jcu_devdbhs556l_high.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
-    </copy>  
-    ```
-  
-## Task 3: Upload Database Wallet files to Google Drive Folder
-
-1. Mounting Google Drive on Colab allows any code in your notebook to access any files in your Google Drive. This usually require that users manually grant this access every time they connect to a new runtime by adding a code cell to the notebook. This ensures that the user fully understands the permissions being granted to the notebook.
-
-2. In some cases, we only require Google Drive authorization once, and automatically re-mount Google Drive during future sessions. To protect your files, Google only allow this when a notebook passes multiple checks.  [More info](https://research.google.com/colaboratory/faq.html#drive-mount-code-cell)
-3. Upload the Oracle Autonomous Database Wallet files to Google Drive
-
-    ![Wallet](images/drive1.png  ) 
-
-4. In the [Google Colab](https://colab.research.google.com/), Create a new notebook and click on files icon and create a new drive mount connection. 
-
-    ![Wallet](images/drive4.png  )
-
-5. Authorize Google Colab to use Google Drive
-    
-    ![Wallet](images/drive2.png  )
-
-6. You should now see your wallet files.
-
-    ![Wallet](images/drive3.png  )
-
-7. Copy the folder path next to the folder name. for example
-
-    ```
-    /content/drive/MyDrive/Wallet_IndEducation 
-    ```
-
-## Task 4: Create New NoteBook File
-
-1. Create New Notebook File 
-
-    ![Wallet](images/nb1.png  )
-
-    ```
-    <copy>
-    !pip install oracledb
+    !pip install -q sentence-transformers faiss-cpu oracledb numpy
     </copy>
     ```
+3. Ensure that Database Table is already created and Database wallet files are already uploaded to Google Drive
 
-    ![Wallet](images/nb2.png  )
+4. Run the main Jupyter Notebook code
 
-2. Run the code block
-
-3. Create new code block with required inputs & run the code block
-
-    ``` 
-    <copy>
-    import os
+    ```
+    <copy> 
+    import json
+    from typing import List, Dict, Optional
+    import numpy as np
     import oracledb
-    import pandas as pd 
-    </copy>
-    ```
-
-    ![Wallet](images/nb3.png  )
-
-4. Mount Google Drive 
-
-    ```
-    <copy>
+    from sentence_transformers import SentenceTransformer
+    import faiss
     from google.colab import drive
     drive.mount('/content/drive')
-    </copy>
-    ``` 
 
-    ![Wallet](images/mount.png  )
+    MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 
-5. Authorize Google Drive Connection
+    def fetch_from_oracle(
+        table: str = "MYNOTES",
+        column: str = "NOTES",
+        max_rows: int = 1000,
+        use_wallet: bool = True,
+        wallet_dir: Optional[str] = None,
+    ) -> List[str]:
+        """Fetch text rows from Oracle. Uses env vars ORACLE_USER, ORACLE_PASSWORD, ORACLE_DSN.
+        If use_wallet=True, provide wallet_dir and wallet_password via env vars.
+        Returns list of strings (may be empty).
+        """
+        username = "YourDBUser"  # Update with your username
+        password = "YourPassword"  # Update with your password
+        tns_name = "indeducation_high"
+        wall_config_dir = "/content/drive/MyDrive/Wallet_Folder"
+        wall_pwd = "walletpassword"
+        table = "MYNOTES"
+        col = "NOTES"
 
-    ![Wallet](images/conndrive.png  )
+        if not (username and password and tns_name):
+            print("Oracle credentials (ORACLE_USER, ORACLE_PASSWORD, ORACLE_DSN) not set. Returning empty list.")
+            return []
 
-6. Add new code block and establish Database Connection
-
-    ``` 
-    <copy>
-    # Connection parameters
-    # Update with your TNS alias from tnsnames.ora
-    username = "YourDBUser"  # Update with your username
-    password = "YourDBPassword"  # Update with your password
-    tns_name = "YourConnection_high"
-    wall_config_dir = "/content/drive/MyDrive/Wallet_Folder"
-    wall_pwd = "YourWalletPassword"
-    table = "MYNOTES"
-    col = "NOTES"
-    try:
-        # Connect to Oracle Database
-        conn = oracledb.connect(user=username,
+        conn = None
+        try:
+            conn = oracledb.connect(user=username,
                                 password=password,
                                 dsn=tns_name,
                                 config_dir=wall_config_dir,
                                 wallet_location=wall_config_dir,
                                 wallet_password=wall_pwd)
 
-        print("✓ Successfully connected to Oracle Database")
-    except Exception as e:
-        print(f"✗ Connection failed: {e}")
-        connection = None 
-    </copy>
-    ```
+            # Always use config_dir and wallet_location if wall_config_dir is set,
+            # as TNS aliases often require it to find tnsnames.ora.
+            
+            print("✓ Successfully connected to Oracle Database")
 
-    Run the code block and verify database connection
-
-    ![Wallet](images/dbconn.png  )
-
-7. Display Records in a loop
- 
-    ``` 
-    <copy>
-    # Query mynotes table
-    if conn:
-        try:
-            cursor = conn.cursor()
-
-            # Execute query
-            query = "select * from MYNOTES where ROWNUM <= 10"
-            cursor.execute(query)
-
-            # Fetch all records
-            rows = cursor.fetchall()
-
-            # Get column names
-            columns = [desc[0] for desc in cursor.description]
-
-            # Create DataFrame for better display
-            df = pd.DataFrame(rows, columns=columns)
-
-            print(f"✓ Retrieved {len(df)} records from mynotes table\n")
-            print(df.to_string(index=False))
-
-            cursor.close()
+            cur = conn.cursor()
+            sql = f"SELECT {column} FROM {table} WHERE {column} IS NOT NULL AND ROWNUM <= :maxrows"
+            cur.execute(sql, [max_rows])
+            rows = cur.fetchall()
+            texts = [r[0] for r in rows if r and r[0] is not None]
+            cur.close()
+            return texts
         except Exception as e:
-            print(f"✗ Query failed: {e}")
+            print(f"Error fetching from Oracle: {e}")
+            return []
+        finally:
+            if conn:
+                try:
+                    conn.close()
+                except Exception:
+                    pass
+
+    def build_embeddings(texts: List[str], model_name: str = MODEL_NAME, batch_size: int = 64):
+        """Return (model, numpy array of embeddings L2-normalized)."""
+        model = SentenceTransformer(model_name)
+        embs = model.encode(texts, batch_size=batch_size, convert_to_numpy=True, show_progress_bar=True)
+        # normalize
+        faiss.normalize_L2(embs)
+        return model, embs
+
+    def build_faiss_index(embs: np.ndarray):
+        """Create an inner-product index. Inputs should be L2-normalized vectors; inner product == cosine similarity."""
+        dim = embs.shape[1]
+        index = faiss.IndexFlatIP(dim)
+        index.add(embs)
+        return index
+
+    def search_index(query: str, model: SentenceTransformer, index: faiss.IndexFlatIP, texts: List[str], k: int = 5):
+        q_emb = model.encode([query], convert_to_numpy=True)
+        faiss.normalize_L2(q_emb)
+        D, I = index.search(q_emb, k)
+        # D contains inner products (cosine similarity between -1 and 1)
+        results = []
+        for score, idx in zip(D[0], I[0]):
+            if idx < 0:
+                continue
+            results.append({"index": int(idx), "text": texts[idx], "score": float(score)})
+        return results
+
+    def save_index(path_prefix: str, embs: np.ndarray, texts: List[str]):
+        np.save(f"{path_prefix}_emb.npy", embs)
+        with open(f"{path_prefix}_texts.json", "w", encoding="utf-8") as f:
+            json.dump(texts, f, ensure_ascii=False)
+
+    def load_index(path_prefix: str):
+        embs = np.load(f"{path_prefix}_emb.npy")
+        with open(f"{path_prefix}_texts.json", "r", encoding="utf-8") as f:
+            texts = json.load(f)
+        index = build_faiss_index(embs)
+        return index, embs, texts
+
+
+    # Configuration: switch to True to fetch from Oracle
+    use_oracle = True
+
+    texts = []
+    if use_oracle:
+        print("Fetching from Oracle...")
+        # Note: 'use_wallet=False' was passed here, but the DSN might still implicitly require a config_dir.
+        # The hardcoded values for Oracle connection parameters inside fetch_from_oracle also need review.
+        texts = fetch_from_oracle(table="MYNOTES", column="NOTES", max_rows=1000, use_wallet=False)
+        print(f"Fetched {len(texts)} rows")
     else:
-        print("✗ No database connection available")
+        texts = [
+            "I want to open an account.",
+            "I want a credit card.",
+            "I need to update my address.",
+            "I want to apply for a loan.",
+            "How do I check my balance?",
+            "I lost my debit card."
+        ]
+        print(f"Using {len(texts)} sample texts")
+
+    # Build model + embeddings + index
+    model = None # Initialize model to None
+    embs = None # Initialize embs to None
+    index = None # Initialize index to None
+
+    if texts: # Only build embeddings and index if texts list is not empty
+        model, embs = build_embeddings(texts)
+        index = build_faiss_index(embs)
+        print("Index ready. Use search_index(query, model, index, texts, k)")
+    else:
+        print("No texts available to build embeddings and index.")
+        print("Please check the Oracle connection details or provide sample texts.")
+
+
+    query = input("Enter search query: ")
+    if query.strip():
+        results = search_index(query, model, index, texts, k=5)
+        for i, r in enumerate(results, 1):
+            print(f"{i}. score={r['score']:.4f}\n   {r['text'][:300]}\n")
+    else:
+        print("No query provided.")
+
     </copy>
     ```
+5. Similarity Search for Cancer Treatment
+    ![Wallet](images/test1.png)
 
-    ![Wallet](images/results.png  )
-
-8. Close Database Connection 
-
-    ``` 
-    <copy>
-    if conn:
-    try:
-        conn.close()
-        print("✓ Database connection closed")
-    except Exception as e:
-        print(f"✗ Error closing connection: {e}")
-    </copy>
-    ```
-
-    ![Wallet](images/close.png  )
-
-## Task 5: Save the Code in GitHub Repository
-
-1. Rename the file saved in Google Drive and Save a copy of this file in GitHub Repo
-
-    ![Wallet](images/save.png  )
-
-2.  Copy to GitHub, Select the Repo Name and Branch
-
-    ![Navigation](images/repo.png )
-  
-3.  Now this file is saved in GitHub Repo with Open in Colab Button on top. Please not you would need to authorize Google Colab and GitHub Repository to work seemless together 
-
-    ![Navigation](images/git.png )
-
-## Task 6: (Optional) Open the Notebook file from GitHub into Google Colab
-     
-1. Next time you can open the Notebook file by clicking on Open in Colab button
-
-    ![Navigation](images/open.png )
-
-## Task 7: (Optional) Open the Notebook file from Google Drive
-     
-1. You can also open the Notebook file by clicking on Google Drive Folder and locating the .ipynb file
-
-    ![Navigation](images/drive.png )
+6. Similarity Search for Clean City
+    ![Wallet](images/test2.png)
+ 
 ## Learn More
 
 * [Oracle Autonomous AI Database for Developers - Documentation](https://docs.oracle.com/en-us/iaas/autonomous-database-serverless/doc/autonomous-database-for-developers.html)
@@ -594,9 +519,12 @@ Create a MYNOTES table in your Oracle Autonomous Database with sample data that 
 * [Google Colab - Official Guide](https://colab.research.google.com/)
 * [Google Colab FAQ - Working with Files](https://research.google.com/colaboratory/faq.html)
 * [Oracle Autonomous Database for Developers - Billing Information](https://docs.oracle.com/en-us/iaas/autonomous-database-serverless/doc/autonomous-database-for-developers-billing.html)
-* [Download Sample Notebook from GitHub](https://github.com/madhusudhanrao-ppm/devrel-colab/blob/main/mydbconnection.ipynb)
+* [Download Colab Notebook code from GitHub](https://github.com/madhusudhanrao-ppm/dbdevrel/tree/main/source-codes/colab-code)
 
 ## Acknowledgements
 
 * **Author** - Madhusudhan Rao, Principal Product Manager, Oracle Database DevRel
-* **Last Updated By/Date** - December 9, 2025 -->
+* **Last Updated By/Date** - December 11th, 2025
+ 
+**Download Source Code** - mydbconnection.ipynb from [GitHub Repository](https://github.com/madhusudhanrao-ppm/dbdevrel/tree/main/source-codes/colab-code) 
+ 
