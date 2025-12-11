@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this lab, you will learn how to develop and run Python applications in Google Colab that connect to Oracle Autonomous AI Database. You'll mount your database wallet files from Google Drive, establish secure connections, and execute queries using the oracledb Python driver. By the end, you'll have a fully functional notebook that performs CRUD operations and is saved in both Google Drive and GitHub for easy sharing and reusability.
+In this lab, you will learn how to develop and run Python applications in Google Colab that connect to Oracle Autonomous AI Database. You'll mount your database wallet files from Google Drive, establish secure connections, and execute queries using the oracledb Python driver. By the end, you'll have a fully functional notebook that performs CRUD operations and is saved in both Google Drive and GitHub for easy sharing and reusability.  
 
 [Google Colab Jupyter Notebook](https://colab.research.google.com/) is widely used because it provides an interactive, cell-based environment that seamlessly blends live code, immediate output (including data visualizations), and narrative text into a single, shareable document. This makes it an ideal tool for data science, research, and education. 
 Key Advantages of Jupyter Notebook
@@ -527,7 +527,7 @@ Please Note > The same code shown below would also work for Oracle Database 23ai
 ## Acknowledgements
 
 * **Author** - Madhusudhan Rao, Principal Product Manager, Oracle Database DevRel
-* **Last Updated By/Date** - December 11th, 2025
+* **Last Updated By/Date** - December 11th, 2025.
  
 **Download Source Code** - mydbconnection.ipynb from [GitHub Repository](https://github.com/madhusudhanrao-ppm/dbdevrel/tree/main/source-codes/colab-code) 
  
