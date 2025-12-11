@@ -514,11 +514,21 @@
       "id": 52,
       "title": "How Can I Create Semantic Similarity Search in Oracle Database 19c",
       "description": "In this lab, you will learn how to create a similarity search application using LangChain, Streamlit, and Sentence Transformers Hugging Face Model with Oracle Autonomous AI Database 19c",
-      "image": "images/053l.png",
+      "image": "images/052l.png",
       "url": "https://madhusudhanrao-ppm.github.io/dbdevrel/similarity-search-19c/index.html",
       "technologies": "#OracleDatabase19c #SemanticSimilaritySearch #LangChain #Streamlit #HuggingFace #GenerativeAI #OracleGenAI",
       "buttonlabel": "How Can I Create Semantic Similarity Search in Oracle Database 19c",
       "section": "Oracle AI Services"
+    },
+    {
+      "id": 53,
+      "title": "Create Google Colab Notebook Applications with Oracle Autonomous AI Database",
+      "description": "In this lab, you will learn how to develop and run Python applications in Google Colab that connect to Oracle Autonomous AI Database. You'll mount your database wallet files from Google Drive, establish secure connections, and execute queries using the oracledb Python driver",
+      "image": "images/053l.jpeg",
+      "url": "https://madhusudhanrao-ppm.github.io/dbdevrel/generative-ai-apex-workshop/index.html",
+      "technologies": "#GoogleColab #OracleAutonomousAIDatabase #Python #oracledb #NoteBook #GoogleDrive #GitHub",
+      "buttonlabel": "Create Google Colab Notebook Applications",
+      "section": "Oracle AI Database - Machine Learning"
     }
     
   ]
