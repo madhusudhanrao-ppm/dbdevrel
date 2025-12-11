@@ -525,7 +525,7 @@
       "title": "Create Google Colab Notebook Applications with Oracle Autonomous AI Database",
       "description": "In this lab, you will learn how to develop and run Python applications in Google Colab that connect to Oracle Autonomous AI Database. You'll mount your database wallet files from Google Drive, establish secure connections, and execute queries using the oracledb Python driver",
       "image": "images/053l.jpeg",
-      "url": "https://madhusudhanrao-ppm.github.io/dbdevrel/generative-ai-apex-workshop/index.html",
+      "url": "https://madhusudhanrao-ppm.github.io/dbdevrel/db-application-development/workshops/freetier/index.html?lab=google-colab",
       "technologies": "#GoogleColab #OracleAutonomousAIDatabase #Python #oracledb #NoteBook #GoogleDrive #GitHub",
       "buttonlabel": "Create Google Colab Notebook Applications",
       "section": "Oracle AI Database - Machine Learning"
