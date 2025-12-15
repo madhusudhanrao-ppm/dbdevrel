@@ -528,6 +528,4 @@ Please Note > The same code shown below would also work for Oracle Database 23ai
 
 * **Author** - Madhusudhan Rao, Principal Product Manager, Oracle Database DevRel
 * **Last Updated By/Date** - December 11th, 2025.
- 
-**Download Source Code** - mydbconnection.ipynb from [GitHub Repository](https://github.com/madhusudhanrao-ppm/dbdevrel/tree/main/source-codes/colab-code) 
- 
+  
