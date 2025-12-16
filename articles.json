@@ -535,8 +535,8 @@
       "title": "Working with JSON Relational Duality in Oracle AI Database and Google Colab",
       "description": "JSON-relational duality views combine the advantages of using JSON documents with the advantages of the relational model, while avoiding the limitations of each. With duality views, the only objects you map to relational data are JSON documents. You could say that a duality view is a document-relational mapping (DRM), or a JSON-relational mapping (JRM).",
       "image": "images/054l.jpeg",
-      "url": "https://madhusudhanrao-ppm.github.io/dbdevrel/json-relational-duality/workshop/index.html",
-      "technologies": "#OracleAPEX #GenerativeAI #NLP #NaturalLanguageProcessing #Chatbots #AI Applications #OracleDatabase23ai #OCI",
+      "url": "https://madhusudhanrao-ppm.github.io/dbdevrel/json-relational-duality/index.html",
+      "technologies": "#JSONRelationalDualityViews #OracleAIDatabase #GoogleColab #GenerativeAI #OracleGenAI",
       "buttonlabel": "Building Generative AI Applications with Oracle APEX",
       "section": "Oracle AI Database"
     }
