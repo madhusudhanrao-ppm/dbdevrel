@@ -1,105 +1,88 @@
 # DevRel Technical Content Repository - AI Coding Guide
 
-## Repository Purpose
-This repository hosts Developer Relations technical content—tutorials, source code examples, and workshop materials—focused on Oracle Autonomous AI Database (23ai, 26ai) with polyglot application frameworks.
+## Repository Overview
+A Developer Relations repository for Oracle Autonomous AI Database (23ai, 26ai) tutorials, source code samples, and workshop materials across polyglot frameworks.
 
-## Architecture & Content Organization
+## Architecture Essentials
 
-### Directory Structure
-- **`db-application-development/`** – Tutorial markdown files organized by technology pattern:
-  - `adb-with-wallet/` – Database provisioning & wallet setup (foundational)
-  - `spring-boot-app/`, `nodedb-development/`, `pythondb-development-oracledb/`, `streamlit-python/`, `reactjs/`, `javadb-development/`, `dotnet-development/` – Language-specific CRUD application tutorials
-  - `google-colab/` – Jupyter notebook development pattern
-  - `tools-install/`, `introduction/` – Prerequisite content
-  - `workshops/` – Bundled multi-lab workshop materials
-- **`source-codes/db-applications/`** – Executable code samples (Java, Python, Node.js, React, .NET, Streamlit)
-- **`source-codes/spring-boot-source-codes/BankCustomersApp/`** – Full Maven-based Spring Boot application (reference project)
-- **`articles.json`, `links.json`, `videos.json`** – Content metadata for web portal aggregation
-- **`index.html`** – Landing page portal with Bootstrap styling
+### Content Organization
+- **`db-application-development/`** – Language-specific tutorials (Spring Boot, Python, Node.js, React, .NET, Streamlit) + foundational setup (`adb-with-wallet/`, `tools-install/`)
+- **`source-codes/db-applications/`** – Runnable code samples per language (reference implementations)
+- **`source-codes/spring-boot-source-codes/BankCustomersApp/`** – Full Maven Spring Boot reference project (Java 21, Spring Boot 3.5.7)
+- **Content aggregation** – `articles.json` + `links.json` → indexed in `index.html` portal
 
-### Data Flow Pattern
-Tutorials → JSON metadata → HTML portal. Each tutorial in `db-application-development/` typically has a corresponding entry in `articles.json` with `section`, `technologies`, `description`, and linked `index.html` from workshop subdirectories.
+### Data Flow
+Tutorials link to source code via GitHub URLs. Workshops extend tutorials with `workshop/index.html` + `manifest.json`. All reference Oracle AI Database connectivity patterns.
 
-## Tutorial Writing Conventions
+## Critical Patterns & Workflows
 
-### Markdown Structure
-Use strict heading hierarchy for all `.md` files:
-1. Title as `# Topic Title`
-2. Sections: `## Introduction`, `## Task N: [Description]`, `## Learn More`, `## Acknowledgements`
-3. SQL/code blocks wrapped in `<copy>` tags for cloud labs (see `google-colab.md` lines 27–67)
+### Database Connectivity (All Languages)
+**Wallet-based (recommended):**
+```
+TNS_ADMIN env var or config_dir parameter → wallet files → TNS name (e.g., `indeducation_high`)
+```
+See implementations: [customers360.py](source-codes/db-applications/Python-codes/customers360.py#L7-L21) (wallet + TLS), [customers-crud.py](source-codes/db-applications/Streamlit/customers-crud.py#L8-L25) (Streamlit pattern), [DataSourceSample.java](source-codes/db-applications/Java-codes/DataSourceSample.java) (Spring Boot JDBC)
 
-### Content Patterns
-- **Intro section**: 2-3 sentences, estimated time, objectives list, prerequisites
-- **Task sections**: Sequential numbered instructions with screenshots (`![description](images/filename.png)`)
-- **Placeholder placeholders**: Use `XXX` for incomplete content (e.g., `google-colab.md` line 6)
-- **Database connection examples**: Always include TNS/connection string + wallet path in code samples (reference `customers360.py`, `DataSourceSample.java`)
+**Connection credentials**: All use `<Your-Password>` placeholders; never commit real secrets.
 
-## Development Environment & Key Dependencies
+### Java Projects (Spring Boot)
+- **Build**: `mvn clean install` or `mvn spring-boot:run` (pom.xml defines Java 21, Spring Boot 3.5.7)
+- **Dependencies**: `ojdbc11-production` (v21.5.0.0), Spring Data JPA, Jakarta EE
+- **Schema**: Tasks create `BANK_CUSTOMERS` table via SQL Worksheets (see [spring-boot-app.md Task 1](db-application-development/spring-boot-app/spring-boot-app.md#L24-L40))
+- **Reference**: [BankCustomersApp/pom.xml](source-codes/spring-boot-source-codes/BankCustomersApp/pom.xml)
 
-### Java Projects
-- **Build tool**: Maven 3.8+ (see `BankCustomersApp/pom.xml`)
-- **Key dependencies**: Spring Boot 3.5.7, Jakarta EE, Oracle JDBC (`ojdbc11-production` v21.5.0.0), Spring Data JPA
-- **Java version**: JDK 21 (property in pom.xml)
-- **Runtime command**: `mvn spring-boot:run` or `mvn clean install`
+### Python Projects (oracledb Driver)
+- **Driver**: `oracledb` (modern replacement for cx_Oracle)
+- **Pattern**: Wallet config with `config_dir` + `wallet_location` + `wallet_password` (see [customers-crud.py](source-codes/db-applications/Streamlit/customers-crud.py#L14-L25))
+- **Streamlit apps**: Define connection function, then reactive CRUD functions (insert, view, update, delete)
+- **No hardcoded TNS** – Always externalize in env vars or config
 
-### Python/Streamlit Projects
-- **Main library**: `oracledb` (newer Python driver, replaces cx_Oracle)
-- **Connection pattern**: Use TNS name + wallet config, not plain connection strings (see `customers-crud.py` lines 7–10, 16–21)
-- **Streamlit apps**: Follow reactive component pattern (see `customers-crud.py` CRUD functions)
+### Node.js & React
+- **Driver**: `oracledb` v6.6.0+ (see [package.json](source-codes/db-applications/NodeJS-codes/package.json))
+- **Architecture**: Express backend + React client (see `react/my-client-server-app/`)
+- **CORS**: Configure for client-server communication
 
-### Node.js Projects
-- **Package manager**: npm
-- **Key dependency**: `oracledb` v6.9.0 (see `server/package.json`)
-- **Framework**: Express.js with CORS support
+## Markdown Tutorial Conventions
 
-### React/Full-Stack
-- **Structure**: `react/my-client-server-app/` with `client/` (React) and `server/` (Node.js backend)
-- **Client build**: Standard React with public/index.html and src/App.js
+### Structure (Strict Hierarchy)
+```
+# Title
+## Introduction (2-3 sentences, estimated time, objectives, prerequisites)
+## Task 1: [Action]
+## Task 2: [Action]
+...
+## Learn More
+## Acknowledgements
+```
 
-## Cross-Component Communication & Integration
+### Content Requirements
+- SQL/long code blocks use `<copy>` tags (cloud lab requirement)
+- Images: relative paths only (`images/filename.png`) in same directory
+- Database connection examples: must include TNS/connection string + wallet path
+- Placeholders: use `<Your-Password>` for credentials, `XXX` for incomplete sections (must be resolved before publishing)
+- Sample tables: `CUSTOMERS360`, `SALES360`, `BANK_CUSTOMERS`, `MYNOTES`
 
-### Database Connectivity Patterns
-1. **Wallet-based** (recommended for autonomous databases):
-   - Download wallet from OCI console → extract → reference via `TNS_ADMIN` env var or `config_dir` parameter
-   - TNS names include service tier suffix: `indeducation_high`, `indeducation_medium`
-   
-2. **TLS/mTLS wallet-less**:
-   - One-way TLS supported (see `adb-with-wallet.md` Task 5)
-   - Connection descriptor in code (see `customers360.py` tlsconnstr example)
+### Metadata Mapping
+Each tutorial `db-application-development/{topic}/{topic}.md` should have corresponding `articles.json` entry with `section`, `technologies` tags, and optional `workshop/index.html` + `manifest.json` for complex labs.
 
-3. **Schema setup**:
-   - Always reference Task 2 in wallet guides for user creation and initial schema
-   - Sample tables: `CUSTOMERS360`, `SALES360`, `BANK_CUSTOMERS`, `MYNOTES` (see google-colab.md)
+## Common Editing Tasks
 
-### External Dependencies
-- **OCI Services**: Vision AI (articles.json id:1), Generative AI integration via APIs
-- **Cloud portals**: OCI Cockpit console for database provisioning, resource management
-- **Tools**: SQL Developer (connection testing), cloud wallets, Terraform for IaC (create-adb-terraform/)
+### Add a Tutorial
+1. Create `db-application-development/{topic}/{topic}.md` (follow structure above)
+2. Create `images/` subfolder; add screenshots
+3. Add entry to `articles.json` (`section`, `technologies`, `url`)
+4. For multi-task tutorials: add `workshop/index.html` + `manifest.json`
 
-## Key Editing Tasks & Common Changes
+### Update Code Examples
+- Verify `oracledb` (Python), `ojdbc11-production` v21.5.0.0 (Java), `oracledb` v6.6.0+ (Node.js) versions
+- Check wallet paths—must be externalized (env vars, config files)
+- Ensure credentials are `<Your-Password>` placeholders
+- Run locally against dev database to confirm execution
 
-### Adding a New Tutorial
-1. Create `db-application-development/{topic}/{topic}.md` following markdown structure above
-2. Create `images/` subfolder within topic directory
-3. Add entry to `articles.json` with matching `section`, `technologies` tags
-4. For workshops: create `db-application-development/{topic}/workshop/` with `index.html`, `manifest.json`
-
-### Updating Code Examples
-- **Connection strings**: Check for hardcoded passwords (should be `<Your-Password>` placeholder)
-- **Wallet paths**: Verify relative or absolute paths match tutorial context
-- **Database drivers**: Ensure `oracledb` (Python ≥3.8), `ojdbc11-production` (Java 21+), `node-oracledb` (Node.js) versions match recommendations
-
-### Fixing Incomplete Content
-- Search for `XXX` placeholders across `.md` files and replace with actual descriptions
-- Validate image references exist in corresponding `images/` folders
-- Ensure Learn More & Acknowledgements sections are complete
-
-## Validation Checklist for PR Reviews
-- [ ] All markdown headings follow hierarchy (# → ## → ### only)
-- [ ] Code blocks use `<copy>` tags for SQL/long scripts
-- [ ] Image paths are relative (`images/filename.png`)
-- [ ] Database credentials are placeholders, not real secrets
-- [ ] JSON metadata (articles.json) entries match tutorial titles and technologies
-- [ ] Java: pom.xml versions align with Spring Boot 3.5.7 + JDK 21
-- [ ] Python: uses `oracledb` driver with wallet config pattern
-- [ ] No XXX placeholders remain in published tutorials
+### Validate Before Publishing
+- [ ] Images in `images/` folder; paths relative (`![desc](images/file.png)`)
+- [ ] Code: wallets + connection strings properly externalized
+- [ ] `articles.json` entries match tutorial title & technologies
+- [ ] Java: Spring Boot 3.5.7 + JDK 21 in pom.xml
+- [ ] Python: `oracledb` driver; wallet config pattern in samples
+- [ ] Markdown: strict heading hierarchy (# → ## → ### only)
