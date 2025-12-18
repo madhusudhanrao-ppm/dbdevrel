@@ -1,14 +1,19 @@
-# Natural Language Processing with Oracle SelectAI
+# Natural Language Processing with Oracle Select AI and Google Colab Notebook
 
 ## Introduction
 
-This tutorial demonstrates how to use Oracle SelectAI with the Cohere AI provider to generate SQL queries from natural language prompts. SelectAI enables you to ask questions about your database in plain English, and the AI generates the corresponding SQL queries automatically. This tutorial takes approximately 30 minutes to complete.
+This tutorial demonstrates how to use [Oracle Autonomous AI Database Select AI](https://www.oracle.com/in/autonomous-database/select-ai/) with the Cohere AI provider to generate SQL queries from natural language prompts. SelectAI enables you to ask questions about your database in plain English, and the AI generates the corresponding SQL queries automatically. This tutorial takes approximately 10 minutes to complete.
 
-Estimated Time: 5 mins.  
+With Select AI use natural language to analyze your data and get quick insights about your business—no matter where the data is stored.
+
+![Select AI](images/selai.jpeg)
+
+Estimated Time: 10 mins.  
 
 ###Prerequisites  
-
-Oracle Autonomous Database, admin access, Cohere API key  
+- Oracle Autonomous AI Database is running
+- Download [Google Colab Code](https://github.com/madhusudhanrao-ppm/dbdevrel/blob/main/source-codes/colab-code/selectai-colab.ipynb) 
+- Admin access to Database and Cohere API key is generated  
 
 ### Objectives 
 - Grant necessary privileges for SelectAI
@@ -213,6 +218,7 @@ FROM dual;
 - [Cohere API Documentation](https://docs.cohere.ai/)
 - [Oracle DBMS\_CLOUD\_AI Package Reference](https://docs.oracle.com/en/database/oracle/oracle-database/23/arpls/dbms_cloud_ai.html)
 - This tutorial is based on the LinkedIn article: [How to Use Oracle SelectAI with Cohere and OpenAI to Generate SQLs from Natural Language](https://www.linkedin.com/pulse/how-use-oracle-select-ai-cohere-openai-generate-sqls-from-rao-zabjf/)
+- [Google Colab Code](https://github.com/madhusudhanrao-ppm/dbdevrel/blob/main/source-codes/colab-code/selectai-colab.ipynb)
 
 ---
 
