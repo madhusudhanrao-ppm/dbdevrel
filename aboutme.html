@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>DevRel Technical Content - by Madhusudhan Rao B M</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #3A3632;
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding-top: 60px;
+        }
+        .navbar {
+            background-color: #2C2A26 !important;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+        }
+        .navbar.fixed-top { z-index: 1030; }
+        .card {
+            background-color: #2C2A26;
+            border: 1px solid #404040;
+            transition: transform .3s ease, box-shadow .3s ease;
+            display:flex;
+            flex-direction:column;
+        }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 8px 16px rgba(0,0,0,0.5); }
+        .card-title { color:#fff; font-size:1rem; }
+        .card-text { color:#b0b0b0; flex-grow:1; font-size:.9rem; }
+        .card-body { display:flex; flex-direction:column; }
+        .btn-primary { background-color:#4F693F; border-color:#0066cc; margin-top:auto; }
+        .btn-primary:hover { background-color:#0052a3; border-color:#0052a3; }
+
+        .site-padding { padding-left:1rem; padding-right:1rem; }
+        @media(min-width:992px){ .site-padding { padding-left:3rem; padding-right:3rem; } }
+
+        .card-img-top { height:220px; object-fit:cover; }
+
+        .loading { text-align:center; padding:2rem; color:#e0e0e0; }
+
+        .section-header {
+            display:flex; align-items:center; justify-content:space-between; gap:1rem;
+            margin:1rem 0 .5rem;
+        }
+        .section-header h2 { margin:0; font-size:1.25rem; color:#ffffff; }
+        .section-divider {
+            width:100%; height:1px;
+            background:linear-gradient(90deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+            margin:.75rem 0 1.5rem; border:none;
+        }
+
+        .section-toggle {
+            background:transparent; border:none; color:#cfcfcf; display:inline-flex;
+            align-items:center; gap:.5rem; font-size:.95rem; padding:.25rem .5rem;
+        }
+        .section-toggle:focus { outline:none; box-shadow:none; }
+        .chev { display:inline-block; transition:transform .2s ease; width:0; height:0;
+            border-left:6px solid transparent; border-right:6px solid transparent;
+            border-top:8px solid #cfcfcf; transform-origin:center; }
+        .collapsed .chev { transform:rotate(0deg); } .expanded .chev { transform:rotate(180deg); }
+
+        .nav-search .form-control { background: rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.06); color:#e0e0e0; }
+        .nav-search .btn { min-width:66px; }
+        .header-section { display: flex; align-items: flex-start; justify-content: space-between; gap: 2rem; margin-bottom: 2rem; }
+        .header-section h1 { margin: 0; }
+        .profile-photo { width: 180px; height: 180px; border-radius: 8px; object-fit: cover; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+        @media(max-width:768px) { .header-section { flex-direction: column; align-items: center; } .profile-photo { width: 120px; height: 120px; } }
+        a { color: #99FFFF; text-decoration: none; }
+        a:hover { color: #99FFFF; text-decoration: underline; }
+    </style>
+</head>
+<body>
+<!-- Navigation (fixed-top) -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" aria-label="Main navigation">
+        <div class="container-fluid">
+            <a class="navbar-brand me-3" href="index.html"><strong>DevRel Technical Content</strong></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav"> 
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="videos.html"   style="color: aqua;">My Videos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html"  style="color: aqua;">Technical Content</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="header-section">
+            <div>
+                <h1>Madhusudhan Rao <br/></h1>
+                <p><strong>Email:</strong> <a href="softwarearchitect73@gmail.com" target="_new">softwarearchitect73@gmail.com</a> </p>
+                <p><strong>City:</strong> Bangalore, Karnataka</p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/madhusudhanraobm/" target="_new">@madhusudhanraobm</a></p>
+            </div>
+            <img src="images/madhu.jpg" alt="Madhusudhan Rao" class="profile-photo">
+        </div> 
+
+    <h3>Professional Summary</h3>
+    <p>Results-driven Oracle Database Principal Product Manager and AI enthusiast with a passion for building scalable applications using Oracle AI Database, Oracle APEX, and Generative AI technologies. Proven expertise in leveraging machine learning models for data analysis and developing innovative industry solutions for enterprise applications.
+    </p>
+    <p>
+    As an innovative and forward-thinking leader, I bring deep technical expertise in Oracle Database, cloud architecture, and infrastructure automation to drive business growth and customer success.
+    </p>
+    <p> 
+    Key Achievements:
+    <ul>
+    <li>Led a cross-functional team of cloud architects, achieving 85% cloud adoption among startup customers within 12 months</li>
+    <li>Served as one of the architects for <a href="https://livelabs.oracle.com/ords/r/dbpm/livelabs/home" target="_new">LiveLabs</a>, designing and automating infrastructure for 200+ workshops annually, enhancing delivery and scalability</li>
+    <li>Developed and delivered hands-on training programs on AI, Oracle Database, and cloud services, upskilling students, startup founders, and research scholars</li>
+    <li>Identified market opportunities, shaped product roadmaps, and drove revenue growth in competitive cloud-first environments</li>
+    <li>Collaborated with engineering, sales, and partner teams to translate customer requirements into actionable product features, aligning with Oracle's cloud strategy</li>
+    <li><i>25 years of World-class IT Work experience in Database, various technologies and Cloud architecture, of which 18 years at </i><b>Oracle</b></li>
+    </ul>
+    Key Strengths:
+    <ul>
+    <li>Product Vision & Evangelized Developer Experience</li>
+    <li>Technical Architecture & TOGAF 9 Enterprise Architecture Certified</li>
+    <li>Team Leadership, Infrastructure Automation, Stakeholder Communication</li> 
+    </ul> 
+    </p> 
+    <h3>Work Experience</h3>
+    <h4>Principal Product Manager, Oracle Database</h4>
+    <p>September 2020 - Present | Bangalore</p>
+    <ul>
+    <li><strong>Outbound Product Manager Database DevRel Role:</strong>
+    <ul>
+    <li>Connect with developers and architecture community</li>
+    <li>Conduct cloud coaching sessions</li>
+    <li>Present in webinars and Oracle events</li>
+    </ul>
+    </li>
+    <li>Evangelized and demonstrated AI use cases in:
+    <ul>
+    <li>Healthcare, Travel, Financial Services, Environment, Media industries</li>
+    <li>Generative AI, Chatbots, Document Processing</li>
+    </ul>
+    <ul> 
+    <li>Data Migration from NoSQL and 3rd party Databases to Oracle AI Database</
+    </ul>
+    </li> 
+    <li>Published several articles on:</li>
+    </ul>
+    <ul>
+    <li><a href="index.html">Oracle Database, AI, Industry Solutions, MCP, Globally Distributed Database, Migration, Database & AI Application Development etc</a></li> 
+    </ul>
+    </li>
+    <li>Developed the Oracle Database Applied Systems curriculum taught at prestigious universities, now part of Oracle Academy</li> 
+    <li>Created Oracle Cloud Infrastructure automation for 80+ LiveLabs workshops using Terraform and PL/SQL</li>
+    <li>Presented at various Developer Events:
+    <ul>
+    <li><a href="https://www.linkedin.com/posts/madhusudhanraobm_dear-friends-it-was-an-incredible-experience-activity-7181918888425648128-zgUP/" target="_blank">Oracle DevLive Events</a>, <a href="https://www.linkedin.com/posts/madhusudhanraobm_dear-friends-i-am-pleased-to-announce-that-activity-7323023118808104961-7fR3" target="_blank">Oracle Dev Tour Events</a></li>
+    <li>University Guest Lectures & Faculty Development Programs in (<a href="https://www.linkedin.com/posts/madhusudhanraobm_machinelearning-oraclemachinelearning-artificialintelligence-activity-6760803406476136448-3DHY/" target="_new">B.R Ambedkar Institute of Technology</a>, BITS Pilani Goa, <a href="https://www.linkedin.com/feed/update/urn:li:activity:7225466129211670528/" target="_blank">Vignan University - Guntur AP</a>)</li>
+    </ul>
+    </li>
+    </ul>
+    <h4>Cloud Architect, Oracle JAPAC Communications</h4>
+    <p>May 2019 - September 2020 | Bangalore</p>
+    <ul>
+    <li>Compliance Reviews for JAPAC Internal Applications.</li>
+    <li>Led In-House Product Development and Process Automation for Communications Platform Teams.</li>
+    </ul>
+    <h4>Cloud Architect, Startup Mentor @ Oracle for Startups</h4>
+    <p>May 2016 - April 2019 | Bangalore</p>
+    <ul>
+    <li>Led a team of Cloud Architects across APAC Region.</li>
+    <li>Achieved 85% Cloud Adoption by Startups.</li>
+    <li>Led Technical Training Session for Startup, Startup Selections and On-boarding</li>
+    <li>Mentored 50+ Startups on Cloud Architecture, Database Design, and Application Development</li>
+    </ul>
+    <h4>Principal Sales Consultant, EMEA Technology Sales Consulting</h4>
+    <p>May 2014 - May 2016 | Oracle, Bangalore</p>
+    <ul>
+    <li>Pre-sales Consulting for EMEA Solution Hub, Proof of Concept Development, Architecture, RFI/RFX</li>
+    </ul>
+    <h4>Senior Sales Consultant, North America Technology Sales Consulting</h4>
+    <p>December 2007 - May 2014 | Oracle, Bangalore</p>
+    <ul>
+    <li>Pre-sales consulting for North America Sales Org, Customer Demos, Proof of Concept Development. RFI/RFX</li>
+    </ul>
+    <h4>Educational Background & Certifications</h4>
+    <ul>
+    <li>Bachelor of Engineering in Telecommunication Engineering, Bangalore University (1991-1995)</li>
+    <li>TOGAF 9 Enterprise Architecture Certified</li>
+    </ul> 
+</div>
+</body>
+</html>
