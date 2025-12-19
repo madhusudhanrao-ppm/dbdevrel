@@ -18,7 +18,7 @@
       "url": "https://www.linkedin.com/pulse/oracle-database-developer-series-2-create-streamlit-madhusudhan-rao-aiwnf/",
       "technologies": "#OracleAutonomousAIDatabase #Streamlit #Python #ReactJS #OracleAutonomousLinux #Python-oracledb #OracleDatabase23ai #OracleAIDatabase26ai #MCP",
       "buttonlabel": "Streamlit Python and ReactJS AI Database App",
-      "section": "Oracle AI Database - Developer Applications"
+      "section": "Oracle AI Database - Develop Apps"
     },
     {
       "id": 3,
@@ -38,7 +38,7 @@
       "url": "https://www.linkedin.com/pulse/mcp-toolbox-write-your-own-servers-concepts-web-inspector-rao-verpf",
       "technologies": "#CustomerSupport #OracleAI #OracleAPEX",
       "buttonlabel": "MCP Toolbox Write your own MCP Servers",
-      "section": "Oracle AI Services"
+      "section": "Oracle AI Database - MCP Servers"
     },  
     {
       "id": 5,
@@ -48,7 +48,7 @@
       "url": "https://www.linkedin.com/pulse/unlocking-power-model-context-protocol-mcp-oracle-database-rao-l2hsf",
       "technologies": "#MCP, #OracleDatabase23ai, #SQLcl , #Claude #GitHub #Copilot. ",
       "buttonlabel": "Power of MCP and Oracle Database 23ai",
-      "section": "Oracle AI Services"
+      "section": "Oracle AI Database - MCP Servers"
     },
     {
       "id": 6,
@@ -128,7 +128,7 @@
       "url": "https://www.linkedin.com/pulse/hands-on-guide-model-context-protocol-mcp-from-server-madhusudhan-rao-kxdvf/",
       "technologies": "#MCP #OracleDatabase23ai #GitHub #CursorAI #AICodeGenerator",
       "buttonlabel": "Model Context Protocol Server Setup Guide",
-      "section": "Oracle AI Database"
+      "section": "Oracle AI Database - MCP Servers"
     },
     {
       "id": 14,
@@ -228,7 +228,7 @@
       "url": "https://www.linkedin.com/pulse/langchain4j-llm-framework-oracle-database-23ai-vector-madhusudhan-rao-jwvuf/",
       "technologies": "#LangChain4j #LLMFramework #OracleDatabase23ai #VectorEmbeddingStore #JavaApp #GenerativeAI #OracleGenAI",
       "buttonlabel": "LangChain4j with Oracle Database 23ai Vector Embedding Store",
-      "section": "Oracle AI Database - Developer Applications"
+      "section": "Oracle AI Database - Develop Apps"
     },
     {
       "id": 24,
@@ -238,7 +238,7 @@
       "url": "https://www.linkedin.com/pulse/sticker-sorcery-oracle-database-23ai-reactjs-node-db-driver-rao-bhtpf",
       "technologies": "#OracleDatabase23ai #ReactJs #NodeOracleDBDriver #GenerativeAI #OracleGenAI",
       "buttonlabel": "Sticker Sorcery with Oracle Database 23ai",
-      "section": "Oracle AI Database - Developer Applications"
+      "section": "Oracle AI Database - Develop Apps"
     },
     {
       "id": 25,
@@ -258,7 +258,7 @@
       "url": "https://www.linkedin.com/pulse/oracle-database-23c-cool-essential-features-madhusudhan-rao-ykqxf/",
       "technologies": "#OracleDatabase23ai #NewFeatures #AICapabilities #OCI #GenerativeAI #OracleGenAI",
       "buttonlabel": "Oracle Database 23ai New Features & Capabilities",
-      "section": "Oracle AI Services"
+      "section": "Oracle AI Database"
     },
     {
       "id": 27,
@@ -278,7 +278,7 @@
       "url": "https://www.linkedin.com/pulse/oracle-database-23ai-application-development-reactjs-rao-lvvxf",
       "technologies": "#OracleAPEX #OracleAI #Chatbots #GenerativeAI #OracleGenAI #OracleAIDatabase26ai",
       "buttonlabel": "Application Development with Oracle Database 23ai",
-      "section": "Oracle AI Database - Developer Applications"
+      "section": "Oracle AI Database - Develop Apps"
     },
     {
       "id": 29,
@@ -358,7 +358,7 @@
       "url": "https://www.linkedin.com/pulse/how-work-langchain-oracle-generative-ai-madhusudhan-rao-8efgf",
       "technologies": "#LangChain #OracleGenerativeAI #Streamlit #Python #IntelligentApplications #GenerativeAI #OracleGenAI",
       "buttonlabel": "How to work with LangChain and Oracle Generative AI",
-      "section": "Oracle AI Database - Developer Applications"
+      "section": "Oracle AI Database - Develop Apps"
     },
     {
       "id": 37,
@@ -368,7 +368,7 @@
       "url": "https://www.linkedin.com/pulse/working-oracle-container-engine-kubernetes-oke-google-madhusudhan-rao-ycgjf",
       "technologies": "#OracleContainerEngine #Kubernetes #OKE #Microservices #Docker #LoadBalancer #Tomcat #Nginx #PHP #Redis",
       "buttonlabel": "Container Engine for Kubernetes, Microservices and Dockers",
-      "section": "Oracle AI Database - Developer Applications"
+      "section": "Oracle AI Database - Develop Apps"
     },
     {
       "id": 38,
@@ -388,7 +388,7 @@
       "url": "https://www.linkedin.com/pulse/oracle-database-23c-cool-essential-features-madhusudhan-rao-ykqxf",
       "technologies": "#OracleDatabase23c #NewFeatures #EssentialFeatures #DatabaseManagement",
       "buttonlabel": "Oracle Database 23c cool & essential features",
-      "section": "Oracle AI Database - Developer Applications"
+      "section": "Oracle AI Database - Develop Apps"
     },
     {
       "id": 40,
@@ -438,7 +438,7 @@
       "url": "https://www.linkedin.com/pulse/how-create-enterprise-grade-dynamic-website-always-free-rao-9hgmf",
       "technologies": "#OracleCloud #AlwaysFree #ComputeInstance #LAMPStack #WebsiteDevelopment #GenerativeAI #OracleGenAI",
       "buttonlabel": "Create dynamic websites on OCI",
-      "section": "Oracle AI Database - Developer Applications"   
+      "section": "Oracle AI Database - Develop Apps"   
     },
     {
       "id": 45,
@@ -478,7 +478,7 @@
       "url": "https://madhusudhanrao-ppm.github.io/dbdevrel/db-application-development/workshops/freetier/index.html",
       "technologies": "#OracleGenerativeAI #EducationIndustry #AIinEducation #GenerativeAI #OracleGenAI #Java #Python #NodeJS #DotNet #Streamlit",
       "buttonlabel": "Start Application Development with Oracle Autonomous AI Database",
-      "section": "Oracle AI Database - Developer Applications"
+      "section": "Oracle AI Database - Develop Apps"
     },
     {
       "id": 49,
@@ -488,7 +488,7 @@
       "url": "https://madhusudhanrao-ppm.github.io/dbdevrel/create-oracleaidb26ai-devrel/index.html",
       "technologies": "#OracleGenerativeAI #Terraform #OracleResourceManager #Stack",
       "buttonlabel": "Create Oracle Autonomous AI Database in 1 minute",
-      "section": "Oracle AI Database - Developer Applications"
+      "section": "Oracle AI Database - Develop Apps"
     },
     {
       "id": 50,
@@ -498,7 +498,7 @@
       "url": "https://www.youtube.com/watch?v=PUKRWh_sVB8",
       "technologies": "#OracleDatabase23ai #OracleGenerativeAI #UNESCO #MCPServer",
       "buttonlabel": "Innovate with Oracle Generative AI & Oracle Database 23ai",
-      "section": "Oracle AI Services"
+      "section": "Oracle AI Database - MCP Servers"
     },  
     {
       "id": 51,
@@ -508,7 +508,7 @@
       "url": "https://madhusudhanrao-ppm.github.io/dbdevrel/spring-boot-oracleaidb-app/workshop/index.html?lab=spring-boot-app",
       "technologies": "#SpringBoot #OracleAutonomousAIDatabase #Java #Microservices #GenerativeAI #OracleGenAI",
       "buttonlabel": "Spring Boot + Oracle Autonomous AI Database Workshop",
-      "section": "Oracle AI Database - Developer Applications"
+      "section": "Oracle AI Database - Develop Apps"
     },
     { 
       "id": 52,
@@ -518,7 +518,7 @@
       "url": "https://madhusudhanrao-ppm.github.io/dbdevrel/similarity-search-19c/index.html",
       "technologies": "#OracleDatabase19c #SemanticSimilaritySearch #LangChain #Streamlit #HuggingFace #GenerativeAI #OracleGenAI",
       "buttonlabel": "How Can I Create Semantic Similarity Search in Oracle Database 19c",
-      "section": "Oracle AI Services"
+      "section": "Oracle AI Database - Colab Notebooks"
     },
     {
       "id": 53,
@@ -528,7 +528,7 @@
       "url": "https://madhusudhanrao-ppm.github.io/dbdevrel/db-application-development/workshops/freetier/index.html?lab=google-colab",
       "technologies": "#GoogleColab #OracleAutonomousAIDatabase #Python #oracledb #NoteBook #GoogleDrive #GitHub",
       "buttonlabel": "Create Google Colab Notebook Applications",
-      "section": "Oracle AI Database - Machine Learning"
+      "section": "Oracle AI Database - Colab Notebooks"
     },
     {
       "id": 54,
@@ -538,7 +538,17 @@
       "url": "https://madhusudhanrao-ppm.github.io/dbdevrel/json-relational-duality/index.html",
       "technologies": "#JSONRelationalDualityViews #OracleAIDatabase #GoogleColab #GenerativeAI #OracleGenAI",
       "buttonlabel": "Building Generative AI Applications with Oracle APEX",
-      "section": "Oracle AI Database"
+      "section": "Oracle AI Database - Colab Notebooks"
+    },
+    {
+      "id": 55,
+      "title": "Natural Language Processing with Oracle Select AI",
+      "description": "This tutorial demonstrates how to use Oracle Autonomous AI Database Select AI with the Cohere AI provider to generate SQL queries from natural language prompts",
+      "image": "images/055l.jpeg",
+      "url": "https://madhusudhanrao-ppm.github.io/dbdevrel/nlp-with-selectai/index.html",
+      "technologies": "#OracleSelectAI #CohereAI #NaturalLanguageProcessing #OracleAIDatabase",
+      "buttonlabel": "Natural Language Processing with Oracle Select AI",
+      "section": "Oracle AI Database - Colab Notebooks"
     }
     
   ]
