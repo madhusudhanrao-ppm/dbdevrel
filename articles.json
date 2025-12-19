@@ -58,7 +58,7 @@
       "url": "https://www.linkedin.com/pulse/streamlining-data-migration-snowflake-oracle-database-madhusudhan-rao-zkbrf",
       "technologies": "#Snowflake #Migration" ,
       "buttonlabel": "Data Migration: Snowflake to Oracle Database 23ai",
-      "section":"Oracle AI Database"
+      "section":"Oracle AI Database - Data Migration"
     },
     {
       "id": 7,
@@ -118,7 +118,7 @@
       "url": "https://www.linkedin.com/pulse/migrating-oracle-apex-applications-across-workspaces-madhusudhan-rao-qzssf/",
       "technologies": "#OracleAPEX #ApplicationMigration #DatabaseManagement #CloudMigration #OracleAPEX #MigrationGuide",
       "buttonlabel": "Migrating Oracle APEX Applications",
-      "section": "Oracle AI Database"
+      "section": "Oracle AI Database - Data Migration"
     },
     {
       "id": 13,
@@ -168,7 +168,7 @@
       "url": "https://www.linkedin.com/pulse/how-migrate-mern-stack-mongodb-application-oracle-autonomous-rao-fpv0f",
       "technologies": "#OracleDigitalAssistant #OracleAI #Chatbots #GenerativeAI #OracleGenAI #OracleAIDatabase26ai",
       "buttonlabel": "How to migrate the MERN stack MongoDB application",
-      "section": "Oracle AI Services"
+      "section": "Oracle AI Database - Data Migration"
     },
     {
       "id": 18,
@@ -288,7 +288,7 @@
       "url": "https://www.linkedin.com/pulse/how-migrate-mern-stack-mongodb-application-oracle-autonomous-rao-fpv0f",
       "technologies": "#MongoDB #OracleDatabase23ai #DataMigration #Python #GenerativeAI #OracleGenAI",
       "buttonlabel": "Data Migration from MongoDB to Oracle Autonomous Database 23ai",
-      "section": "Oracle AI Database"
+      "section": "Oracle AI Database - Data Migration"
     },  
     {
       "id": 30,
@@ -298,7 +298,7 @@
       "url": "https://www.linkedin.com/pulse/streamlining-data-migration-snowflake-oracle-database-madhusudhan-rao-zkbrf",
       "technologies": "#Snowflake #Migration" ,
       "buttonlabel": "Data Migration: Snowflake to Oracle Database 23ai",
-      "section":"Oracle AI Database"
+      "section":"Oracle AI Database - Data Migration"
     },
     {
       "id": 31,
