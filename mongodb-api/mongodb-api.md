@@ -6,6 +6,8 @@ Oracle Database API for MongoDB makes it possible to connect to Oracle Autonomou
 
 Oracle Database API for MongoDB allows you to use standard MongoDB drivers and tools while accessing Oracle Autonomous AI Database. This lets you manage multiple data types (relational, JSON, graph, vector) within a single database and query them seamlessly with SQL.
 
+![Enable ACL](images/developer.jpeg)
+
 Estimated Time: 20 mins.
 
 ### Objectives
@@ -20,8 +22,7 @@ In this lab, you will:
 
 This lab assumes you have:
 * Oracle Cloud account with privileges to create and manage Oracle Autonomous AI Database
-* Oracle Autonomous AI Database instance (23ai or 26ai) deployed
-* Database wallet downloaded to local filesystem
+* Oracle Autonomous AI Database instance (23ai or 26ai) deployed 
 * MongoDB driver installed (Python, Node.js, SQL Worksheet or Google Colab Notebook)
 
 ### Source Code Download
