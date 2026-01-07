@@ -7,16 +7,9 @@ Oracle Database API for MongoDB makes it possible to connect to Oracle Autonomou
 Oracle Database API for MongoDB allows you to use standard MongoDB drivers and tools while accessing Oracle Autonomous AI Database. This lets you manage multiple data types (relational, JSON, graph, vector) within a single database and query them seamlessly with SQL.
 
 Get ready to experience the power of MongoDB API on Oracle Autonomous AI Database! 
-
-🚀 In this lab, you'll learn how to:
-
-* ✅ Enable MongoDB API access
-* ✅ Connect using MongoDB drivers (Python/Node.js)
-* ✅ Execute MongoDB queries against Oracle data
-* ✅ Query the same data using SQL and MongoDB API interchangeably
-
+ 
 Perfect for developers and data professionals looking to leverage the flexibility of MongoDB API with the power of Oracle's Autonomous Database. 
-
+ 
 💻 #MongoDB API #Oracle #AutonomousDatabase #DataScience #GoogleColab #Notebook
 
 ![Enable ACL](images/developer.jpeg)
@@ -25,11 +18,13 @@ Estimated Time: 20 mins.
 
 ### Objectives
 
-In this lab, you will learn how to:
-* Enable MongoDB API access on Oracle Autonomous AI Database
-* Connect using MongoDB drivers (Python/Node.js)
-* Execute MongoDB queries against Oracle data
-* Query the same data using SQL and MongoDB API interchangeably
+🚀 In this lab, you'll learn how to:
+
+* ✅ Enable MongoDB API access
+* ✅ Connect using MongoDB drivers (Python/Node.js)
+* ✅ Execute MongoDB queries against Oracle data
+* ✅ Query the same data using SQL and MongoDB API interchangeably
+* ✅ Run MongoDB APIs using Google Colab Notebooks. 
 
 ### Prerequisites
 
