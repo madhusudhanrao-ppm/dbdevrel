@@ -549,6 +549,16 @@
       "technologies": "#OracleSelectAI #CohereAI #NaturalLanguageProcessing #OracleAIDatabase",
       "buttonlabel": "Natural Language Processing with Oracle Select AI",
       "section": "Oracle AI Database - Colab Notebooks"
+    },
+    {
+      "id": 56,
+      "title": "Unlocking Oracle AI Database API for MongoDB with Google Colab",
+      "description": "In this lab, you will learn how to build generative AI applications using Oracle APEX and Oracle Generative AI services. You will create an Oracle APEX application that interacts with Oracle Generative AI to generate text based on user input.",
+      "image": "images/056l.jpeg",
+      "url": "https://madhusudhanrao-ppm.github.io/dbdevrel/mongodb-api/index.html",
+      "technologies": "#OracleGenerativeAI #OracleAPEX #GenerativeAI #OracleGenAI",
+      "buttonlabel": "Unlocking Oracle AI Database API for MongoDB with Google Colab",
+      "section": "Oracle AI Database - Colab Notebooks"
     }
     
   ]
