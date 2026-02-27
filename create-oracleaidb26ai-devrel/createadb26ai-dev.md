@@ -42,10 +42,10 @@ This lab assumes you have:
 
     ```
     -- Clone the GitHub Repo
-    git clone https://github.com/madhusudhanrao-ppm/dbdevrel.git
- 
-    -- GitHub Repo
-    https://github.com/madhusudhanrao-ppm/dbdevrel/tree/main/source-codes/create-adb-terraform
+    gh repo clone oracle-devrel/oracle-ai-developer-hub
+
+    or /sourcecode folder 
+   
     ```
 
 The **source code** folder has two subfolders 
@@ -100,7 +100,7 @@ The **source code** folder has two subfolders
 
 1.   From the left navigation, select **Oracle AI Database** and **Oracle Autonomous AI Database**
     
-    ![ADB view](images/11-adb2.png )
+![ADB view](images/11-adb2.png )
     
     
 2. View the newly created Oracle Autonomous AI Database, with the Developer tag on the right side of the name.
@@ -297,9 +297,4 @@ The **source code** folder has two subfolders
 * [Autonomous AI Database for Developers](https://docs.oracle.com/en-us/iaas/autonomous-database-serverless/doc/autonomous-database-for-developers.html) 
 * [Download Source code](https://github.com/madhusudhanrao-ppm/dbdevrel/tree/main/source-codes)
 * [Direct ORM deployment link](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://objectstorage.us-phoenix-1.oraclecloud.com/p/jtfUsV33KtLR937hWybAgrq8qtuQQuAaIw1K_VBThhlUF6Z1HYF0Ai50sQlp06bQ/n/oradbclouducm/b/medical_transcripts/o/Terraform/oracle-lakehouse-devedition-stack.zip)
-* [See Autonomous AI Database for Developers Billing and Tenancy Service Limit for details] (https://docs.oracle.com/en-us/iaas/autonomous-database-serverless/doc/autonomous-database-for-developers-billing.html)
-
-## Acknowledgements
-
-* **Author** - Madhusudhan Rao, Principal Product Manager, Oracle Database DevRel 
-* **Last Updated By/Date** - 4th Dec, 2025
+ 

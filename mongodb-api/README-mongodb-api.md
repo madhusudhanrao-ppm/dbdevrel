@@ -30,21 +30,10 @@ Estimated Time: 20 mins.
 
 This lab assumes you have:
 * Oracle Cloud account with privileges to create and manage Oracle Autonomous AI Database
-* Oracle Autonomous AI Database instance (23ai or 26ai) deployed 
+* Oracle Autonomous AI Database instance 26ai deployed 
 * MongoDB driver installed (Python, Node.js, SQL Worksheet or Google Colab Notebook)
-
-### Source Code Download
-
-Clone the complete repository to access all MongoDB API examples:
-
-```
-<copy>
-git clone https://github.com/madhusudhanrao-ppm/dbdevrel.git
-cd dbdevrel/source-codes
-</copy>
-``` 
-
-Download and Run [Google Colab Notebook](https://github.com/madhusudhanrao-ppm/devrel-colab/blob/main/mongodb_create_customers.ipynb). Follow the instructions from Task 1 & Task 6
+  
+Download and Run [Google Colab Notebook](mongodb_create_customers.ipynb). Follow the instructions from Task 1 & Task 6
  
 ## Task 1: Enable MongoDB API on Your Database
 
@@ -73,10 +62,8 @@ Download and Run [Google Colab Notebook](https://github.com/madhusudhanrao-ppm/d
     ![Enable ACL](images/enable-acl5.png)
 
     The URL format is:
-    ```
-    <copy>
-    mongodb://user:<Your-Password>@host:27017/user?authMechanism=PLAIN&authSource=$external&ssl=true&retryWrites=false&loadBalanced=true
-    </copy>
+    ``` 
+    mongodb://user:<Your-Password>@host:27017/user?authMechanism=PLAIN&authSource=$external&ssl=true&retryWrites=false&loadBalanced=true 
     ```
     
     Where:
@@ -90,16 +77,13 @@ Download and Run [Google Colab Notebook](https://github.com/madhusudhanrao-ppm/d
 
 1. Install the MongoDB Python driver:
 
-    ```
-    <copy>
-    pip install pymongo
-    </copy>
+    ``` 
+    pip install pymongo 
     ```
 
 2. Create a Python script to connect and query data:
 
-    ```
-    <copy>
+    ``` 
     from pymongo import MongoClient
 
     # Replace with your MongoDB connection URL from Task 1
@@ -209,18 +193,15 @@ Download and Run [Google Colab Notebook](https://github.com/madhusudhanrao-ppm/d
         print(f"✗ Connection failed: {e}")
     finally:
         client.close()
-        print("\n✓ Database connection closed") 
-    </copy>
+        print("\n✓ Database connection closed")  
     ```
  
 ## Task 3: Connect Using Node.js MongoDB Driver
 
 1. Install the MongoDB Node.js driver:
 
-    ```
-    <copy>
-    npm install mongodb
-    </copy>
+    ``` 
+    npm install mongodb 
     ```
 
 2. Create a Node.js script:
@@ -384,7 +365,7 @@ Oracle's converged database enables querying MongoDB collections directly using 
 
 ## Task 6: Connect  to Oracle MongoDB API Using Google Colab Notebook
 
-1. Download and Run [Google Colab Notebook](https://github.com/madhusudhanrao-ppm/devrel-colab/blob/main/mongodb_create_customers.ipynb)
+1. Download and Run [Google Colab Notebook](mongodb_create_customers.ipynb)
 
 2. Install the required libraries
 
@@ -584,8 +565,4 @@ Oracle's converged database enables querying MongoDB collections directly using 
 * [MongoDB Node.js Driver Documentation](https://www.mongodb.com/docs/drivers/node/)
 * [Download All Source Code](https://github.com/madhusudhanrao-ppm/dbdevrel/tree/main/source-codes)
 * [Autonomous AI Database Billing](https://docs.oracle.com/en-us/iaas/autonomous-database-serverless/doc/autonomous-database-for-developers-billing.html)
-
-## Acknowledgements
-
-* **Author** - Madhusudhan Rao, Principal Product Manager, Oracle Database DevRel
-* **Last Updated By/Date** - January 6th, 2026
+ 
