@@ -559,6 +559,46 @@
       "technologies": "#OracleGenerativeAI #OracleAPEX #GenerativeAI #OracleGenAI",
       "buttonlabel": "Unlocking Oracle AI Database API for MongoDB with Google Colab",
       "section": "Oracle AI Database - Colab Notebooks"
+    },
+    {
+      "id": 57,
+      "title": "Building Intelligent AI Agents with Oracle Database Memory on Google Cloud Colab",
+      "description": "In this comprehensive guide, we’ll explore how to build powerful AI agents that leverage Oracle Autonomous Database running on Google Cloud Platform (GCP) as their persistent memory backbone. This combination creates a robust, scalable system where your agents can maintain rich contextual understanding across unlimited conversations.",
+      "image": "images/057l.png",
+      "url": "https://medium.com/@softwarearchitect73/building-intelligent-ai-agents-with-oracle-database-memory-on-google-cloud-d18b6067c207",
+      "technologies": "#OracleGenerativeAI #OracleAPEX #GenerativeAI #OracleGenAI",
+      "buttonlabel": "Building Intelligent AI Agents with Oracle Database Memory on Google Cloud Colab",
+      "section": "Oracle Multicloud"
+    },
+    {
+      "id": 58,
+      "title": "Building AI Apps with Oracle Database@AWS and Amazon Bedrock",
+      "description": "In this comprehensive guide, we’ll explore how to build powerful AI apps that leverage Oracle Autonomous Database running on AWS as their persistent memory backbone. This combination creates a robust, scalable system where your apps can maintain rich contextual understanding across unlimited conversations.",
+      "image": "images/058l.png",
+      "url": "https://medium.com/@softwarearchitect73/building-ai-apps-with-oracle-database-aws-and-amazon-bedrock-9657242894d5",
+      "technologies": "#OracleGenerativeAI #OracleAPEX #GenerativeAI #OracleGenAI",
+      "buttonlabel": "Building AI Apps with Oracle Database@AWS and Amazon Bedrock",
+      "section": "Oracle Multicloud"
+    },
+    {
+      "id": 59,
+      "title": "Building AI Agents with Multicloud Oracle Database@AWS",
+      "description": "In this article would emphasize how this multi-cloud approach empowers enterprises to buildsophisticated AI agents by providing a high-performance, flexible, and integrated data foundation usingOracle databases within the AWS ecosystem",
+      "image": "images/059l.png",
+      "url": "https://medium.com/@softwarearchitect73/building-ai-agents-with-multicloud-oracle-database-aws-3ac5db640715",
+      "technologies": "#OracleGenerativeAI #OracleAPEX #GenerativeAI #OracleGenAI",
+      "buttonlabel": "Building AI Agents with Multicloud Oracle Database@AWS",
+      "section": "Oracle Multicloud"
+    },
+    {
+      "id": 60,
+      "title": "Multicloud Benefits with Oracle Database @ AWS",
+      "description": "In this article would emphasize how this multi-cloud approach empowers enterprises to buildsophisticated AI agents by providing a high-performance, flexible, and integrated data foundation usingOracle databases within the Azure ecosystem",
+      "image": "images/060l.png",
+      "url": "https://medium.com/@softwarearchitect73/multicloud-strategy-with-oracle-database-aws-565e0258ddc2",
+      "technologies": "#OracleGenerativeAI #OracleAPEX #GenerativeAI #OracleGenAI",
+      "buttonlabel": "Building AI Agents with Multicloud Oracle Database@Azure",
+      "section": "Oracle Multicloud"
     }
     
   ]
