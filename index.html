@@ -198,15 +198,15 @@
             h2.textContent = title;
             header.appendChild(h2);
 
-            const isFirst = sectionCounter === 1;
+            const isOpen = true;
             const toggleBtn = document.createElement('button');
-            toggleBtn.className = `section-toggle ${isFirst ? 'expanded' : 'collapsed'}`;
+            toggleBtn.className = `section-toggle ${isOpen ? 'expanded' : 'collapsed'}`;
             toggleBtn.setAttribute('type', 'button');
             toggleBtn.setAttribute('data-bs-toggle', 'collapse');
             toggleBtn.setAttribute('data-bs-target', `#${collapseId}`);
-            toggleBtn.setAttribute('aria-expanded', isFirst ? 'true' : 'false');
+            toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
             toggleBtn.setAttribute('aria-controls', collapseId);
-            toggleBtn.innerHTML = `<span class="chev"></span><span>${isFirst ? 'Collapse' : 'Expand'}</span>`;
+            toggleBtn.innerHTML = `<span class="chev"></span><span>${isOpen ? 'Collapse' : 'Expand'}</span>`;
 
             header.appendChild(toggleBtn);
             sectionWrapper.appendChild(header);
@@ -216,7 +216,7 @@
             sectionWrapper.appendChild(divider);
 
             const collapseDiv = document.createElement('div');
-            collapseDiv.className = isFirst ? 'collapse show' : 'collapse';
+            collapseDiv.className = isOpen ? 'collapse show' : 'collapse';
             collapseDiv.id = collapseId;
 
             const row = document.createElement('div');
