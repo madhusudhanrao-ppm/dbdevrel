@@ -478,7 +478,7 @@
       "url": "https://madhusudhanrao-ppm.github.io/dbdevrel/db-application-development/workshops/freetier/index.html",
       "technologies": "#OracleGenerativeAI #EducationIndustry #AIinEducation #GenerativeAI #OracleGenAI #Java #Python #NodeJS #DotNet #Streamlit",
       "buttonlabel": "Start Application Development with Oracle Autonomous AI Database",
-      "section": "Oracle AI Database - Develop Apps"
+      "section": "Oracle LiveLabs"
     },
     {
       "id": 49,
@@ -599,6 +599,56 @@
       "technologies": "#OracleGenerativeAI #OracleAPEX #GenerativeAI #OracleGenAI",
       "buttonlabel": "Building AI Agents with Multicloud Oracle Database@Azure",
       "section": "Oracle Multicloud"
+    },  
+    {
+      "id": 61,
+      "title": "AI for Healthcare LiveLabs",
+      "description": "Machine Learning and Artificial Intelligence tools are unprecedentedly changing modern healthcare. Given the speed of innovation and global outreach, it can be challenging for patients and healthcare providers to stay abreast of the latest technological advances and how they will impact the future. In this workshop, we will show how Artificial Intelligence (AI) and Machine Learning (ML) are helping identify breast cancer using Oracle APEX, Oracle AI Vision Service, and Oracle Autonomous Database. We will share how we trained our AI Machine learning models with X-Ray mammography images to identify breast cancers and even incorporated many other features, such as helping doctors or patients dictate medical symptoms and diagnoses quickly by sending an email of the audio message and the medical transcription text.",
+      "image": "images/061l.png",
+      "url": "https://oracle-livelabs.github.io/oci/healthcare-innovations/ai-vision/workshops/tenancy/index.html",
+      "technologies": "#AIforHealthcare #HealthcareIndustry #OracleAPEX #OracleAIVision #MachineLearning #GenerativeAI #HealthcareInnovations",
+      "buttonlabel": "AI for Healthcare LiveLabs",
+      "section": "Oracle LiveLabs"
+    },  
+    {
+      "id": 62,
+      "title": "AI for Financial Services LiveLabs",
+      "description": "In today's digital age, the banking and financial services sector has undergone a significant transformation. The rise of online banking, mobile banking apps, and digital payment systems has revolutionized the way customers interact with financial institutions. This workshop provides a comprehensive guide to the digital banking ecosystem, covering various aspects of online banking, from initiating conversations with chatbots to ensuring business continuity through high availability and disaster recovery.Through 23 labs, this workshop takes readers on a journey through the digital banking landscape, exploring topics such as user profile management, account creation, fund transfers, e-commerce transactions, credit card applications, fraud detection, and spend analytics. The book also delves into the importance of ensuring business continuity, highlighting the need for high availability and disaster recovery measures. Whether you are a banking professional, a fintech enthusiast, or simply someone interested in understanding the digital banking ecosystem, this workshop and labs provides valuable insights and knowledge to help you navigate the complex world of digital banking.",
+      "image": "images/062l.png",
+      "url": "https://madhusudhanrao-ppm.github.io/developer/ai-for-financialservices/workshops/tenancy/index.html",
+      "technologies": "#AIforFinancialServices #FinancialIndustry #OracleAPEX #OracleAnalyticsCloud #OracleMachineLearning #GenerativeAI #FinancialInnovations",
+      "buttonlabel": "AI for Financial Services LiveLabs",
+      "section": "Oracle LiveLabs"
+    },
+    {
+      "id": 63,
+      "title": "AI for Travel LiveLabs",
+      "description": "In today's digital age, the travel industry has undergone a significant transformation. The rise of online booking platforms, mobile travel apps, and personalized travel experiences has revolutionized the way customers plan and book their trips. This workshop provides a comprehensive guide to the travel ecosystem, covering various aspects of online travel planning, from destination research to booking management and customer service.Through 23 labs, this workshop takes readers on a journey through the travel landscape, exploring topics such as customer segmentation, personalized recommendations, demand forecasting, supply chain optimization, and sales performance analysis. The book also delves into the importance of leveraging data and analytics to drive business growth and enhance customer experiences. Whether you are a travel professional, a data analyst, or simply someone interested in understanding the travel ecosystem, this workshop and labs provides valuable insights and knowledge to help you navigate the complex world of travel.",
+      "image": "images/063l.png",
+      "url": "https://madhusudhanrao-ppm.github.io/developer/ai-for-travel/workshops/tenancy/index.html",
+      "technologies": "#AIforTravel #TravelIndustry #OracleAPEX #OracleAnalyticsCloud #OracleMachineLearning #GenerativeAI #TravelInnovations",
+      "buttonlabel": "AI for Travel LiveLabs",
+      "section": "Oracle LiveLabs"
+    },
+    {
+      "id": 64,
+      "title": "Oracle Advanced Compression LiveLabs",
+      "description": "Oracle Advanced Compression provides a comprehensive set of compression features to reduce costs and improve performance by enabling compression for structured data, unstructured data, indexes and backups. Although storage cost savings and optimization across servers is the most tangible benefit, all of the features with Advanced Compression are designed to improve performance across components of your IT infrastructure, including memory, network bandwidth and storage. In this hands-on lab, we will work on compression based hands-on labs to understand the compression concepts and their corresponding use cases.",
+      "image": "images/064l.png",
+      "url": "https://oracle-livelabs.github.io/database/adv-compression/workshops/freetier/index.html",
+      "technologies": "#OracleAdvancedCompression #DatabaseCompression #StorageOptimization #ITInfrastructure #PerformanceTuning",
+      "buttonlabel": "Oracle Advanced Compression LiveLabs",
+      "section": "Oracle LiveLabs"
+    },  
+    {
+      "id": 65,
+      "title": "8 Partitioning Techniques in Oracle Database",
+      "description": "Partitioning is a database feature that allows you to divide large tables into smaller, more manageable pieces called partitions. This can significantly improve query performance and make database management easier. In this hands-on lab, we will explore the different partitioning techniques available in Oracle Database and learn how to implement them for your specific use cases.",
+      "image": "images/065l.png",
+      "url": "https://oracle-livelabs.github.io/database/db-partitioning/workshops/freetier/index.html",
+      "technologies": "#OracleDatabase #Partitioning #DatabasePerformance #QueryOptimization #DataManagement",
+      "buttonlabel": "Oracle Database Partitioning Techniques LiveLabs",
+      "section": "Oracle LiveLabs"
     }
     
   ]
