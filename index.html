@@ -232,6 +232,17 @@
             sectionWrapper.appendChild(collapseDiv);
             container.appendChild(sectionWrapper);
 
+            // Accordion behavior: close other sections when this one opens
+            toggleBtn.addEventListener('click', () => {
+                // Close all other collapse divs except this one
+                document.querySelectorAll('#articlesContainer .collapse').forEach(otherCollapse => {
+                    if (otherCollapse.id !== collapseId && otherCollapse.classList.contains('show')) {
+                        const inst = bootstrap.Collapse.getOrCreateInstance(otherCollapse);
+                        inst.hide();
+                    }
+                });
+            });
+
             collapseDiv.addEventListener('hide.bs.collapse', () => {
                 toggleBtn.classList.remove('expanded');
                 toggleBtn.classList.add('collapsed');
@@ -315,20 +326,20 @@
                 a.textContent = title;
                 a.addEventListener('click', (e) => {
                     e.preventDefault();
-                    // collapse other sections
-                    document.querySelectorAll('#articlesContainer .collapse.show').forEach(c => {
+                    // Close all collapse sections
+                    document.querySelectorAll('#articlesContainer .collapse').forEach(c => {
                         if (c.id !== collapseId) {
                             const inst = bootstrap.Collapse.getOrCreateInstance(c);
                             inst.hide();
                         }
                     });
-                    // show target section
+                    // Show target section
                     if (collapseId) {
                         const target = document.getElementById(collapseId);
                         const inst = bootstrap.Collapse.getOrCreateInstance(target);
                         inst.show();
                     }
-                    // smooth scroll
+                    // Smooth scroll
                     document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth', block: 'start' });
                 });
                 li.appendChild(a);
